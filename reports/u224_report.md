@@ -6,10 +6,10 @@ Introduction, meaning of dimensions, other?
 ## ATDx of your projects
 |||
 |-|-|
-|<img src="./plots/apache_sling-org-apache-sling-junit-core.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-junit-core) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-junit-core) <br> [Complete issue report (JSON)](./json/apache_sling-org-apache-sling-junit-core.json)</p>|<img src="./plots/apache_sling-org-apache-sling-testing-clients.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-testing-clients) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-testing-clients) <br> [Complete issue report (JSON)](./json/apache_sling-org-apache-sling-testing-clients.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-junit-core.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-junit-core) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-junit-core) <br> [Complete issue report (JSON)](./json/apache_sling-org-apache-sling-junit-core.json)</p>|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-testing-clients.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-testing-clients) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-testing-clients) <br> [Complete issue report (JSON)](./json/apache_sling-org-apache-sling-testing-clients.json)</p>
 # Project report summaries
 ## Project: _apache/sling-org-apache-sling-junit-core_
-|./plots/apache_sling-org-apache-sling-junit-core.jpg|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-junit-core) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-junit-core) <br> [Complete issue report (JSON)](./json/apache_sling-org-apache-sling-junit-core.json)</p>
+|https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-junit-core.jpg|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-junit-core) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-junit-core) <br> [Complete issue report (JSON)](./json/apache_sling-org-apache-sling-junit-core.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | Class name                |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                     |
@@ -21,7 +21,7 @@ Introduction, meaning of dimensions, other?
 | PlainTextRenderer.java    |              3 |             2 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/junit/impl/servlet/PlainTextRenderer.java |
 
 ## Project: _apache/sling-org-apache-sling-testing-clients_
-|./plots/apache_sling-org-apache-sling-testing-clients.jpg|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-testing-clients) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-testing-clients) <br> [Complete issue report (JSON)](./json/apache_sling-org-apache-sling-testing-clients.json)</p>
+|https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-testing-clients.jpg|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-testing-clients) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-testing-clients) <br> [Complete issue report (JSON)](./json/apache_sling-org-apache-sling-testing-clients.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | Class name               |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                       |

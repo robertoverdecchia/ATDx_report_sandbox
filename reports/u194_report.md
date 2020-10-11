@@ -6,10 +6,10 @@ Introduction, meaning of dimensions, other?
 ## ATDx of your projects
 |||
 |-|-|
-|<img src="./plots/apache_incubator-iotdb.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/apache/incubator-iotdb) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_incubator-iotdb) <br> [Complete issue report (JSON)](./json/apache_incubator-iotdb.json)</p>|<img src="./plots/apache_plc4x.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/apache/plc4x) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_plc4x) <br> [Complete issue report (JSON)](./json/apache_plc4x.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_incubator-iotdb.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/apache/incubator-iotdb) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_incubator-iotdb) <br> [Complete issue report (JSON)](./json/apache_incubator-iotdb.json)</p>|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_plc4x.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/apache/plc4x) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_plc4x) <br> [Complete issue report (JSON)](./json/apache_plc4x.json)</p>
 # Project report summaries
 ## Project: _apache/incubator-iotdb_
-|./plots/apache_incubator-iotdb.jpg|<p style="text-align:left">[Project on Github](https://github.com/apache/incubator-iotdb) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_incubator-iotdb) <br> [Complete issue report (JSON)](./json/apache_incubator-iotdb.json)</p>
+|https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_incubator-iotdb.jpg|<p style="text-align:left">[Project on Github](https://github.com/apache/incubator-iotdb) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_incubator-iotdb) <br> [Complete issue report (JSON)](./json/apache_incubator-iotdb.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | Class name                     |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                         |
@@ -26,7 +26,7 @@ Introduction, meaning of dimensions, other?
 | TSRecord.java                  |              3 |             0 |           0 |      0 |           3 |           0 |            0 | tsfile/src/main/java/org/apache/iotdb/tsfile/write/record/TSRecord.java                      |
 
 ## Project: _apache/plc4x_
-|./plots/apache_plc4x.jpg|<p style="text-align:left">[Project on Github](https://github.com/apache/plc4x) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_plc4x) <br> [Complete issue report (JSON)](./json/apache_plc4x.json)</p>
+|https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_plc4x.jpg|<p style="text-align:left">[Project on Github](https://github.com/apache/plc4x) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_plc4x) <br> [Complete issue report (JSON)](./json/apache_plc4x.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | Class name                      |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                                                                         |

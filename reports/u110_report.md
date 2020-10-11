@@ -6,12 +6,12 @@ Introduction, meaning of dimensions, other?
 ## ATDx of your projects
 ||||
 |-|-|-|
-|<img src="./plots/onap_externalapi-nbi.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/onap/externalapi-nbi) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_externalapi-nbi) <br> [Complete issue report (JSON)](./json/onap_externalapi-nbi.json)</p>|<img src="./plots/onap_so-libs.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/onap/so-libs) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_so-libs) <br> [Complete issue report (JSON)](./json/onap_so-libs.json)</p>|<img src="./plots/onap_so.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/onap/so) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_so) <br> [Complete issue report (JSON)](./json/onap_so.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_externalapi-nbi.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/onap/externalapi-nbi) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_externalapi-nbi) <br> [Complete issue report (JSON)](./json/onap_externalapi-nbi.json)</p>|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_so-libs.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/onap/so-libs) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_so-libs) <br> [Complete issue report (JSON)](./json/onap_so-libs.json)</p>|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_so.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/onap/so) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_so) <br> [Complete issue report (JSON)](./json/onap_so.json)</p>
  | |
 
 # Project report summaries
 ## Project: _onap/externalapi-nbi_
-|./plots/onap_externalapi-nbi.jpg|<p style="text-align:left">[Project on Github](https://github.com/onap/externalapi-nbi) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_externalapi-nbi) <br> [Complete issue report (JSON)](./json/onap_externalapi-nbi.json)</p>
+|https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_externalapi-nbi.jpg|<p style="text-align:left">[Project on Github](https://github.com/onap/externalapi-nbi) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_externalapi-nbi) <br> [Complete issue report (JSON)](./json/onap_externalapi-nbi.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | component                                                                                  |   inheritance |   exception |   vmsmell |   interface |   threading |   complexity |   sum |
@@ -22,7 +22,7 @@ Introduction, meaning of dimensions, other?
 | src/main/java/org/onap/nbi/apis/serviceorder/utils/MacroServiceUtils.java                  |             0 |           0 |         0 |           1 |           0 |            0 |     1 |
 
 ## Project: _onap/so-libs_
-|./plots/onap_so-libs.jpg|<p style="text-align:left">[Project on Github](https://github.com/onap/so-libs) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_so-libs) <br> [Complete issue report (JSON)](./json/onap_so-libs.json)</p>
+|https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_so-libs.jpg|<p style="text-align:left">[Project on Github](https://github.com/onap/so-libs) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_so-libs) <br> [Complete issue report (JSON)](./json/onap_so-libs.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | Class name                      |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                            |
@@ -33,7 +33,7 @@ Introduction, meaning of dimensions, other?
 | SubnetForCreate.java            |              3 |             0 |           0 |      0 |           3 |           0 |            0 | quantum-model/src/main/java/com/woorea/openstack/quantum/model/SubnetForCreate.java             |
 
 ## Project: _onap/so_
-|./plots/onap_so.jpg|<p style="text-align:left">[Project on Github](https://github.com/onap/so) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_so) <br> [Complete issue report (JSON)](./json/onap_so.json)</p>
+|https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_so.jpg|<p style="text-align:left">[Project on Github](https://github.com/onap/so) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_so) <br> [Complete issue report (JSON)](./json/onap_so.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | Class name                          |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                                       |

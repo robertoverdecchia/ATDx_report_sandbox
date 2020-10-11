@@ -6,10 +6,10 @@ Introduction, meaning of dimensions, other?
 ## ATDx of your projects
 |||
 |-|-|
-|<img src="./plots/pdfbox-reactor.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/apache/pdfbox) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=pdfbox-reactor) <br> [Complete issue report (JSON)](./json/pdfbox-reactor.json)</p>|<img src="./plots/poi-parent.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/apache/poi) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=poi-parent) <br> [Complete issue report (JSON)](./json/poi-parent.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/pdfbox-reactor.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/apache/pdfbox) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=pdfbox-reactor) <br> [Complete issue report (JSON)](./json/pdfbox-reactor.json)</p>|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/poi-parent.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/apache/poi) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=poi-parent) <br> [Complete issue report (JSON)](./json/poi-parent.json)</p>
 # Project report summaries
 ## Project: _apache/pdfbox_
-|./plots/pdfbox-reactor.jpg|<p style="text-align:left">[Project on Github](https://github.com/apache/pdfbox) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=pdfbox-reactor) <br> [Complete issue report (JSON)](./json/pdfbox-reactor.json)</p>
+|https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/pdfbox-reactor.jpg|<p style="text-align:left">[Project on Github](https://github.com/apache/pdfbox) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=pdfbox-reactor) <br> [Complete issue report (JSON)](./json/pdfbox-reactor.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | Class name                   |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                   |
@@ -26,7 +26,7 @@ Introduction, meaning of dimensions, other?
 | GlyphSubstitutionTable.java  |              4 |             0 |           0 |      0 |           0 |           0 |            4 | fontbox/src/main/java/org/apache/fontbox/ttf/GlyphSubstitutionTable.java               |
 
 ## Project: _apache/poi_
-|./plots/poi-parent.jpg|<p style="text-align:left">[Project on Github](https://github.com/apache/poi) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=poi-parent) <br> [Complete issue report (JSON)](./json/poi-parent.json)</p>
+|https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/poi-parent.jpg|<p style="text-align:left">[Project on Github](https://github.com/apache/poi) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=poi-parent) <br> [Complete issue report (JSON)](./json/poi-parent.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | Class name                |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                         |

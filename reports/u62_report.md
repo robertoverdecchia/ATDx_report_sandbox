@@ -6,12 +6,12 @@ Introduction, meaning of dimensions, other?
 ## ATDx of your projects
 ||||
 |-|-|-|
-|<img src="./plots/onap_dmaap-messagerouter-dmaapclient.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/onap/dmaap-messagerouter-dmaapclient) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_dmaap-messagerouter-dmaapclient) <br> [Complete issue report (JSON)](./json/onap_dmaap-messagerouter-dmaapclient.json)</p>|<img src="./plots/onap_dmaap-messagerouter-messageservice.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/onap/dmaap-messagerouter-messageservice) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_dmaap-messagerouter-messageservice) <br> [Complete issue report (JSON)](./json/onap_dmaap-messagerouter-messageservice.json)</p>|<img src="./plots/onap_dmaap-messagerouter-mirroragent.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/onap/dmaap-messagerouter-mirroragent) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_dmaap-messagerouter-mirroragent) <br> [Complete issue report (JSON)](./json/onap_dmaap-messagerouter-mirroragent.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_dmaap-messagerouter-dmaapclient.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/onap/dmaap-messagerouter-dmaapclient) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_dmaap-messagerouter-dmaapclient) <br> [Complete issue report (JSON)](./json/onap_dmaap-messagerouter-dmaapclient.json)</p>|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_dmaap-messagerouter-messageservice.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/onap/dmaap-messagerouter-messageservice) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_dmaap-messagerouter-messageservice) <br> [Complete issue report (JSON)](./json/onap_dmaap-messagerouter-messageservice.json)</p>|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_dmaap-messagerouter-mirroragent.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/onap/dmaap-messagerouter-mirroragent) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_dmaap-messagerouter-mirroragent) <br> [Complete issue report (JSON)](./json/onap_dmaap-messagerouter-mirroragent.json)</p>
  | |
-|<img src="./plots/onap_dmaap-messagerouter-msgrtr.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/onap/dmaap-messagerouter-msgrtr) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_dmaap-messagerouter-msgrtr) <br> [Complete issue report (JSON)](./json/onap_dmaap-messagerouter-msgrtr.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_dmaap-messagerouter-msgrtr.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/onap/dmaap-messagerouter-msgrtr) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_dmaap-messagerouter-msgrtr) <br> [Complete issue report (JSON)](./json/onap_dmaap-messagerouter-msgrtr.json)</p>
 # Project report summaries
 ## Project: _onap/dmaap-messagerouter-dmaapclient_
-|./plots/onap_dmaap-messagerouter-dmaapclient.jpg|<p style="text-align:left">[Project on Github](https://github.com/onap/dmaap-messagerouter-dmaapclient) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_dmaap-messagerouter-dmaapclient) <br> [Complete issue report (JSON)](./json/onap_dmaap-messagerouter-dmaapclient.json)</p>
+|https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_dmaap-messagerouter-dmaapclient.jpg|<p style="text-align:left">[Project on Github](https://github.com/onap/dmaap-messagerouter-dmaapclient) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_dmaap-messagerouter-dmaapclient) <br> [Complete issue report (JSON)](./json/onap_dmaap-messagerouter-dmaapclient.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | Class name                   |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                     |
@@ -26,7 +26,7 @@ Introduction, meaning of dimensions, other?
 | MRConsumerImpl.java          |              3 |             0 |           1 |      0 |           2 |           0 |            0 | src/main/java/org/onap/dmaap/mr/client/impl/MRConsumerImpl.java          |
 
 ## Project: _onap/dmaap-messagerouter-messageservice_
-|./plots/onap_dmaap-messagerouter-messageservice.jpg|<p style="text-align:left">[Project on Github](https://github.com/onap/dmaap-messagerouter-messageservice) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_dmaap-messagerouter-messageservice) <br> [Complete issue report (JSON)](./json/onap_dmaap-messagerouter-messageservice.json)</p>
+|https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_dmaap-messagerouter-messageservice.jpg|<p style="text-align:left">[Project on Github](https://github.com/onap/dmaap-messagerouter-messageservice) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_dmaap-messagerouter-messageservice) <br> [Complete issue report (JSON)](./json/onap_dmaap-messagerouter-messageservice.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | Class name         |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                    |
@@ -35,7 +35,7 @@ Introduction, meaning of dimensions, other?
 | MMRestService.java |              4 |             0 |           4 |      0 |           0 |           0 |            0 | src/main/java/org/onap/dmaap/service/MMRestService.java |
 
 ## Project: _onap/dmaap-messagerouter-mirroragent_
-|./plots/onap_dmaap-messagerouter-mirroragent.jpg|<p style="text-align:left">[Project on Github](https://github.com/onap/dmaap-messagerouter-mirroragent) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_dmaap-messagerouter-mirroragent) <br> [Complete issue report (JSON)](./json/onap_dmaap-messagerouter-mirroragent.json)</p>
+|https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_dmaap-messagerouter-mirroragent.jpg|<p style="text-align:left">[Project on Github](https://github.com/onap/dmaap-messagerouter-mirroragent) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_dmaap-messagerouter-mirroragent) <br> [Complete issue report (JSON)](./json/onap_dmaap-messagerouter-mirroragent.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | Class name                     |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                              |
@@ -44,7 +44,7 @@ Introduction, meaning of dimensions, other?
 | MirrorMakerProcessHandler.java |              3 |             1 |           1 |      0 |           1 |           0 |            0 | src/main/java/org/onap/dmaap/mr/dmaapMMAgent/utils/MirrorMakerProcessHandler.java |
 
 ## Project: _onap/dmaap-messagerouter-msgrtr_
-|./plots/onap_dmaap-messagerouter-msgrtr.jpg|<p style="text-align:left">[Project on Github](https://github.com/onap/dmaap-messagerouter-msgrtr) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_dmaap-messagerouter-msgrtr) <br> [Complete issue report (JSON)](./json/onap_dmaap-messagerouter-msgrtr.json)</p>
+|https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_dmaap-messagerouter-msgrtr.jpg|<p style="text-align:left">[Project on Github](https://github.com/onap/dmaap-messagerouter-msgrtr) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_dmaap-messagerouter-msgrtr) <br> [Complete issue report (JSON)](./json/onap_dmaap-messagerouter-msgrtr.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | Class name                      |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                 |
