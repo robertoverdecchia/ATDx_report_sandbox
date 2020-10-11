@@ -1,0 +1,53 @@
+
+# ATDx Report Summary
+
+Introduction, meaning of dimensions, other?
+
+## ATDx of your projects
+||||
+|-|-|-|
+|<img src="./plots/JMeter.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/apache/jmeter) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=JMeter) <br> [Complete issue report (JSON)](./json/JMeter.json)</p>|<img src="./plots/commons-compress.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/apache/commons-compress) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=commons-compress) <br> [Complete issue report (JSON)](./json/commons-compress.json)</p>|<img src="./plots/servicecomb-pack.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/apache/servicecomb-pack) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=servicecomb-pack) <br> [Complete issue report (JSON)](./json/servicecomb-pack.json)</p>
+ | |
+
+# Project report summaries
+## Project: _apache/jmeter_
+|./plots/JMeter.jpg|<p style="text-align:left">[Project on Github](https://github.com/apache/jmeter) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=JMeter) <br> [Complete issue report (JSON)](./json/JMeter.json)</p>
+|-|-|
+### Top classes with architectural debt violations
+| Class name                     |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                              |
+|:-------------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:--------------------------------------------------------------------------------------------------|
+| LoggingManager.java            |             16 |             0 |           0 |      0 |          16 |           0 |            0 | src/jorphan/src/main/java/org/apache/jorphan/logging/LoggingManager.java                          |
+| SampleResult.java              |             10 |             1 |           0 |      0 |           9 |           0 |            0 | src/core/src/main/java/org/apache/jmeter/samplers/SampleResult.java                               |
+| Logger.java                    |             10 |             0 |           0 |      0 |          10 |           0 |            0 | src/jorphan/src/main/java/org/apache/log/Logger.java                                              |
+| JMeterUtils.java               |              8 |             0 |           5 |      0 |           3 |           0 |            0 | src/core/src/main/java/org/apache/jmeter/util/JMeterUtils.java                                    |
+| XMLDefaultMutableTreeNode.java |              5 |             0 |           4 |      0 |           1 |           0 |            0 | src/components/src/main/java/org/apache/jmeter/visualizers/XMLDefaultMutableTreeNode.java         |
+| PreciseThroughputTimer.java    |              5 |             1 |           0 |      0 |           4 |           0 |            0 | src/components/src/main/java/org/apache/jmeter/timers/poissonarrivals/PreciseThroughputTimer.java |
+| TableEditor.java               |              5 |             0 |           5 |      0 |           0 |           0 |            0 | src/core/src/main/java/org/apache/jmeter/testbeans/gui/TableEditor.java                           |
+| TestBeanGUI.java               |              4 |             0 |           3 |      0 |           1 |           0 |            0 | src/core/src/main/java/org/apache/jmeter/testbeans/gui/TestBeanGUI.java                           |
+| JMeterContext.java             |              4 |             0 |           0 |      0 |           4 |           0 |            0 | src/core/src/main/java/org/apache/jmeter/threads/JMeterContext.java                               |
+| HTTPSamplerBase.java           |              4 |             0 |           0 |      0 |           4 |           0 |            0 | src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/sampler/HTTPSamplerBase.java      |
+
+## Project: _apache/commons-compress_
+|./plots/commons-compress.jpg|<p style="text-align:left">[Project on Github](https://github.com/apache/commons-compress) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=commons-compress) <br> [Complete issue report (JSON)](./json/commons-compress.json)</p>
+|-|-|
+### Top classes with architectural debt violations
+| Class name                       |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                         |
+|:---------------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:---------------------------------------------------------------------------------------------|
+| SevenZFile.java                  |             17 |             0 |           3 |      0 |           3 |           0 |           11 | src/main/java/org/apache/commons/compress/archivers/sevenz/SevenZFile.java                   |
+| Charsets.java                    |              7 |             0 |           0 |      0 |           7 |           0 |            0 | src/main/java/org/apache/commons/compress/utils/Charsets.java                                |
+| TarArchiveOutputStream.java      |              5 |             0 |           1 |      0 |           4 |           0 |            0 | src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java          |
+| TarArchiveEntry.java             |              5 |             0 |           0 |      0 |           2 |           0 |            3 | src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveEntry.java                 |
+| SevenZArchiveEntry.java          |              4 |             0 |           0 |      0 |           4 |           0 |            0 | src/main/java/org/apache/commons/compress/archivers/sevenz/SevenZArchiveEntry.java           |
+| BZip2CompressorOutputStream.java |              3 |             1 |           0 |      0 |           0 |           0 |            2 | src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java |
+| LocalFileHeader.java             |              3 |             0 |           0 |      0 |           3 |           0 |            0 | src/main/java/org/apache/commons/compress/archivers/arj/LocalFileHeader.java                 |
+| Expander.java                    |              3 |             0 |           0 |      0 |           3 |           0 |            0 | src/main/java/org/apache/commons/compress/archivers/examples/Expander.java                   |
+
+## Project: _apache/servicecomb-pack_
+|./plots/servicecomb-pack.jpg|<p style="text-align:left">[Project on Github](https://github.com/apache/servicecomb-pack) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=servicecomb-pack) <br> [Complete issue report (JSON)](./json/servicecomb-pack.json)</p>
+|-|-|
+### Top classes with architectural debt violations
+| Class name                 |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                                      |
+|:---------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:----------------------------------------------------------------------------------------------------------|
+| TxEvent.java               |              5 |             0 |           0 |      0 |           5 |           0 |            0 | alpha/alpha-core/src/main/java/org/apache/servicecomb/pack/alpha/core/TxEvent.java                        |
+| TransactionRepository.java |              4 |             0 |           4 |      0 |           0 |           0 |            0 | alpha/alpha-fsm/src/main/java/org/apache/servicecomb/pack/alpha/fsm/repository/TransactionRepository.java |
+
