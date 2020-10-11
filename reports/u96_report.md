@@ -6,12 +6,12 @@ Introduction, meaning of dimensions, other?
 ## ATDx of your projects
 ||||
 |-|-|-|
-|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_incubator-ratis.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/apache/incubator-ratis) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_incubator-ratis) <br> [Complete issue report (JSON)](./json/apache_incubator-ratis.json)</p>|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/hadoop-ozone.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/apache/hadoop-ozone) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=hadoop-ozone) <br> [Complete issue report (JSON)](./json/hadoop-ozone.json)</p>|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/knox-gateway.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/apache/knox) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=knox-gateway) <br> [Complete issue report (JSON)](./json/knox-gateway.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_incubator-ratis.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/apache/incubator-ratis) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_incubator-ratis) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/apache_incubator-ratis.json)</p>|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/hadoop-ozone.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/apache/hadoop-ozone) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=hadoop-ozone) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/hadoop-ozone.json)</p>|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/knox-gateway.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/apache/knox) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=knox-gateway) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/knox-gateway.json)</p>
  | |
 
 # Project report summaries
 ## Project: _apache/incubator-ratis_
-|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_incubator-ratis.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/incubator-ratis) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_incubator-ratis) <br> [Complete issue report (JSON)](./json/apache_incubator-ratis.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_incubator-ratis.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/incubator-ratis) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_incubator-ratis) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/apache_incubator-ratis.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | Class name            |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                    |
@@ -27,7 +27,7 @@ Introduction, meaning of dimensions, other?
 | LogAppender.java      |              3 |             0 |           3 |      0 |           0 |           0 |            0 | ratis-server/src/main/java/org/apache/ratis/server/impl/LogAppender.java                |
 
 ## Project: _apache/hadoop-ozone_
-|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/hadoop-ozone.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/hadoop-ozone) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=hadoop-ozone) <br> [Complete issue report (JSON)](./json/hadoop-ozone.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/hadoop-ozone.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/hadoop-ozone) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=hadoop-ozone) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/hadoop-ozone.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | Class name               |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                              |
@@ -44,7 +44,7 @@ Introduction, meaning of dimensions, other?
 | OzoneManagerLock.java    |              4 |             0 |           2 |      0 |           2 |           0 |            0 | hadoop-ozone/common/src/main/java/org/apache/hadoop/ozone/om/lock/OzoneManagerLock.java           |
 
 ## Project: _apache/knox_
-|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/knox-gateway.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/knox) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=knox-gateway) <br> [Complete issue report (JSON)](./json/knox-gateway.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/knox-gateway.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/knox) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=knox-gateway) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/knox-gateway.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | Class name             |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                             |

@@ -6,10 +6,10 @@ Introduction, meaning of dimensions, other?
 ## ATDx of your projects
 |||
 |-|-|
-|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/commons-geometry.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/apache/commons-geometry) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=commons-geometry) <br> [Complete issue report (JSON)](./json/commons-geometry.json)</p>|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/commons-numbers.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/apache/commons-numbers) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=commons-numbers) <br> [Complete issue report (JSON)](./json/commons-numbers.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/commons-geometry.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/apache/commons-geometry) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=commons-geometry) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/commons-geometry.json)</p>|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/commons-numbers.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/apache/commons-numbers) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=commons-numbers) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/commons-numbers.json)</p>
 # Project report summaries
 ## Project: _apache/commons-geometry_
-|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/commons-geometry.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/commons-geometry) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=commons-geometry) <br> [Complete issue report (JSON)](./json/commons-geometry.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/commons-geometry.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/commons-geometry) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=commons-geometry) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/commons-geometry.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | component                                                                                                              |   inheritance |   exception |   vmsmell |   interface |   threading |   complexity |   sum |
@@ -22,7 +22,7 @@ Introduction, meaning of dimensions, other?
 | commons-geometry-euclidean/src/main/java/org/apache/commons/geometry/euclidean/oned/Vector1D.java                      |             0 |           0 |         0 |           1 |           0 |            0 |     1 |
 
 ## Project: _apache/commons-numbers_
-|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/commons-numbers.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/commons-numbers) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=commons-numbers) <br> [Complete issue report (JSON)](./json/commons-numbers.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/commons-numbers.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/commons-numbers) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=commons-numbers) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/commons-numbers.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | component                                                                                     |   inheritance |   exception |   vmsmell |   interface |   threading |   complexity |   sum |
