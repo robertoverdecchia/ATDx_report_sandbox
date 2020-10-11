@@ -61,6 +61,8 @@ Introduction, meaning of dimensions, other?
 | MRMetaClient.java            |              4 |             0 |           4 |      0 |           0 |           0 |            0 | src/main/java/org/onap/dmaap/mr/client/impl/MRMetaClient.java            |
 | MRTopicManager.java          |              3 |             0 |           2 |      0 |           1 |           0 |            0 | src/main/java/org/onap/dmaap/mr/client/MRTopicManager.java               |
 | MRConsumerImpl.java          |              3 |             0 |           1 |      0 |           2 |           0 |            0 | src/main/java/org/onap/dmaap/mr/client/impl/MRConsumerImpl.java          |
+| MRBatchPublisher.java        |              2 |             0 |           1 |      0 |           1 |           0 |            0 | src/main/java/org/onap/dmaap/mr/client/impl/MRBatchPublisher.java        |
+| SimpleExamplePublisher.java  |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/onap/dmaap/mr/dme/client/SimpleExamplePublisher.java   |
 
 ## Project: _onap/dmaap-messagerouter-msgrtr_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_dmaap-messagerouter-msgrtr.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/dmaap-messagerouter-msgrtr) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_dmaap-messagerouter-msgrtr) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_dmaap-messagerouter-msgrtr.json)</p>
@@ -75,6 +77,9 @@ Introduction, meaning of dimensions, other?
 | KafkaConsumerCache.java         |              3 |             0 |           0 |      0 |           0 |           0 |            3 | src/main/java/org/onap/dmaap/dmf/mr/backends/kafka/KafkaConsumerCache.java           |
 | TopicServiceImpl.java           |              3 |             0 |           3 |      0 |           0 |           0 |            0 | src/main/java/org/onap/dmaap/dmf/mr/service/impl/TopicServiceImpl.java               |
 | DMaaPCambriaClientFactory.java  |              3 |             0 |           0 |      0 |           3 |           0 |            0 | src/main/java/org/onap/dmaap/dmf/mr/metrics/publisher/DMaaPCambriaClientFactory.java |
+| UIServiceImpl.java              |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/onap/dmaap/dmf/mr/service/impl/UIServiceImpl.java                  |
+| TopicService.java               |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/onap/dmaap/dmf/mr/service/TopicService.java                        |
+| CambriaPublisherUtility.java    |              2 |             0 |           1 |      0 |           1 |           0 |            0 | src/main/java/org/onap/dmaap/dmf/mr/metrics/publisher/CambriaPublisherUtility.java   |
 
 ## Project: _onap/music_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_music.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/music) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_music) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_music.json)</p>
@@ -89,6 +94,9 @@ Introduction, meaning of dimensions, other?
 | CipherUtil.java             |              4 |             0 |           0 |      0 |           4 |           0 |            0 | music-core/src/main/java/org/onap/music/main/CipherUtil.java                   |
 | MusicDeadlockException.java |              4 |             0 |           4 |      0 |           0 |           0 |            0 | music-core/src/main/java/org/onap/music/exceptions/MusicDeadlockException.java |
 | MusicCassaCore.java         |              3 |             0 |           0 |      0 |           3 |           0 |            0 | music-core/src/main/java/org/onap/music/service/impl/MusicCassaCore.java       |
+| JsonInsert.java             |              2 |             0 |           0 |      0 |           2 |           0 |            0 | music-core/src/main/java/org/onap/music/datastore/jsonobjects/JsonInsert.java  |
+| JsonSelect.java             |              2 |             0 |           0 |      0 |           2 |           0 |            0 | music-core/src/main/java/org/onap/music/datastore/jsonobjects/JsonSelect.java  |
+| MusicServiceException.java  |              2 |             0 |           2 |      0 |           0 |           0 |            0 | music-core/src/main/java/org/onap/music/exceptions/MusicServiceException.java  |
 
 ## Project: _onap/portal_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_portal.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/portal) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_portal) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_portal.json)</p>
@@ -134,6 +142,12 @@ Introduction, meaning of dimensions, other?
 | ResourceMonitorServiceConvert.java |              4 |             0 |           4 |      0 |           0 |           0 |            0 | server/src/main/java/org/onap/usecaseui/server/service/nsmf/impl/ResourceMonitorServiceConvert.java |
 | SotnServiceTemplateService.java    |              4 |             0 |           4 |      0 |           0 |           0 |            0 | server/src/main/java/org/onap/usecaseui/server/service/lcm/SotnServiceTemplateService.java          |
 | DateUtils.java                     |              3 |             0 |           2 |      0 |           1 |           0 |            0 | server/src/main/java/org/onap/usecaseui/server/util/DateUtils.java                                  |
+| CommonConstant.java                |              2 |             0 |           0 |      0 |           2 |           0 |            0 | server/src/main/java/org/onap/usecaseui/server/constant/CommonConstant.java                         |
+| Constant.java                      |              2 |             0 |           0 |      0 |           2 |           0 |            0 | server/src/main/java/org/onap/usecaseui/server/constant/Constant.java                               |
+| SotnServiceLcmController.java      |              2 |             0 |           2 |      0 |           0 |           0 |            0 | server/src/main/java/org/onap/usecaseui/server/controller/lcm/SotnServiceLcmController.java         |
+| UuiServerApplication.java          |              1 |             0 |           0 |      0 |           1 |           0 |            0 | server/src/main/java/org/onap/usecaseui/server/UuiServerApplication.java                            |
+| AlarmsHeader.java                  |              1 |             0 |           0 |      0 |           1 |           0 |            0 | server/src/main/java/org/onap/usecaseui/server/bean/AlarmsHeader.java                               |
+| ServiceTemplateInput.java          |              1 |             0 |           0 |      0 |           1 |           0 |            0 | server/src/main/java/org/onap/usecaseui/server/bean/lcm/ServiceTemplateInput.java                   |
 
 ## Project: _onap/vnfsdk-ves-agent_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_vnfsdk-ves-agent.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/vnfsdk-ves-agent) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_vnfsdk-ves-agent) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_vnfsdk-ves-agent.json)</p>
@@ -149,4 +163,6 @@ Introduction, meaning of dimensions, other?
 | AgentMain.java              |              3 |             0 |           0 |      0 |           3 |           0 |            0 | src/main/java/evel_javalibrary/att/com/AgentMain.java              |
 | EvelVoiceQuality.java       |              3 |             2 |           0 |      0 |           1 |           0 |            0 | src/main/java/evel_javalibrary/att/com/EvelVoiceQuality.java       |
 | EvelFault.java              |              3 |             2 |           0 |      0 |           1 |           0 |            0 | src/main/java/evel_javalibrary/att/com/EvelFault.java              |
+| EvelSyslog.java             |              2 |             2 |           0 |      0 |           0 |           0 |            0 | src/main/java/evel_javalibrary/att/com/EvelSyslog.java             |
+| EvelPnfRegistration.java    |              2 |             2 |           0 |      0 |           0 |           0 |            0 | src/main/java/evel_javalibrary/att/com/EvelPnfRegistration.java    |
 

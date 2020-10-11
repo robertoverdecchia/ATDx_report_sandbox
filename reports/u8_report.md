@@ -25,50 +25,61 @@ Introduction, meaning of dimensions, other?
 | ResourceChange.java      |              4 |             0 |           0 |      0 |           4 |           0 |            0 | src/main/java/org/apache/sling/api/resource/observation/ResourceChange.java      |
 | CompositeValueMap.java   |              3 |             2 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/api/wrappers/CompositeValueMap.java               |
 | NonExistingResource.java |              3 |             3 |           0 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/api/resource/NonExistingResource.java             |
+| ResourceMetadata.java    |              2 |             1 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/api/resource/ResourceMetadata.java                |
+| ResourceProvider.java    |              2 |             0 |           0 |      0 |           2 |           0 |            0 | src/main/java/org/apache/sling/api/resource/ResourceProvider.java                |
+| RuntimeDTO.java          |              2 |             0 |           0 |      0 |           2 |           0 |            0 | src/main/java/org/apache/sling/api/resource/runtime/dto/RuntimeDTO.java          |
+| ValueMapDecorator.java   |              2 |             2 |           0 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/api/wrappers/ValueMapDecorator.java               |
 
 ## Project: _apache/sling-org-apache-sling-clam_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-clam.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-clam) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-clam) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/apache_sling-org-apache-sling-clam.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| Class name       |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                               |
-|:-----------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:-------------------------------------------------------------------|
-| RequestUtil.java |             10 |             0 |          10 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/clam/http/internal/RequestUtil.java |
-| ClamUtil.java    |              3 |             0 |           2 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/clam/internal/ClamUtil.java         |
+| Class name                               |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                         |
+|:-----------------------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:---------------------------------------------------------------------------------------------|
+| RequestUtil.java                         |             10 |             0 |          10 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/clam/http/internal/RequestUtil.java                           |
+| ClamUtil.java                            |              3 |             0 |           2 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/clam/internal/ClamUtil.java                                   |
+| JcrPropertyScanJobConsumer.java          |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/clam/job/internal/JcrPropertyScanJobConsumer.java             |
+| ResourcePersistingScanResultHandler.java |              2 |             0 |           1 |      0 |           0 |           1 |            0 | src/main/java/org/apache/sling/clam/result/internal/ResourcePersistingScanResultHandler.java |
+| NodeDescendingJcrPropertyDigger.java     |              1 |             0 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/clam/jcr/NodeDescendingJcrPropertyDigger.java                 |
 
 ## Project: _apache/sling-org-apache-sling-commons-html_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-commons-html.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-commons-html) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-commons-html) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/apache_sling-org-apache-sling-commons-html.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| Class name            |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                          |
-|:----------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:------------------------------------------------------------------------------|
-| TagParser.java        |             26 |             0 |           8 |      0 |           3 |           0 |           15 | src/main/java/org/apache/sling/commons/html/impl/parser/TagParser.java        |
-| Token.java            |              8 |             0 |           0 |      0 |           8 |           0 |            0 | src/main/java/org/apache/sling/commons/html/impl/parser/Token.java            |
-| ParseException.java   |              7 |             0 |           4 |      0 |           3 |           0 |            0 | src/main/java/org/apache/sling/commons/html/impl/parser/ParseException.java   |
-| SimpleCharStream.java |              4 |             0 |           1 |      0 |           3 |           0 |            0 | src/main/java/org/apache/sling/commons/html/impl/parser/SimpleCharStream.java |
-| TokenMgrError.java    |              3 |             2 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/commons/html/impl/parser/TokenMgrError.java    |
+| Class name                 |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                               |
+|:---------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:-----------------------------------------------------------------------------------|
+| TagParser.java             |             26 |             0 |           8 |      0 |           3 |           0 |           15 | src/main/java/org/apache/sling/commons/html/impl/parser/TagParser.java             |
+| Token.java                 |              8 |             0 |           0 |      0 |           8 |           0 |            0 | src/main/java/org/apache/sling/commons/html/impl/parser/Token.java                 |
+| ParseException.java        |              7 |             0 |           4 |      0 |           3 |           0 |            0 | src/main/java/org/apache/sling/commons/html/impl/parser/ParseException.java        |
+| SimpleCharStream.java      |              4 |             0 |           1 |      0 |           3 |           0 |            0 | src/main/java/org/apache/sling/commons/html/impl/parser/SimpleCharStream.java      |
+| TokenMgrError.java         |              3 |             2 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/commons/html/impl/parser/TokenMgrError.java         |
+| TagParserTokenManager.java |              2 |             0 |           1 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/commons/html/impl/parser/TagParserTokenManager.java |
+| StartTag.java              |              1 |             1 |           0 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/commons/html/impl/tag/StartTag.java                 |
 
 ## Project: _apache/sling-org-apache-sling-commons-jcr-file_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-commons-jcr-file.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-commons-jcr-file) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-commons-jcr-file) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/apache_sling-org-apache-sling-commons-jcr-file.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| component                                                                           |   inheritance |   exception |   vmsmell |   interface |   threading |   complexity |   sum |
-|:------------------------------------------------------------------------------------|--------------:|------------:|----------:|------------:|------------:|-------------:|------:|
-| src/main/java/org/apache/sling/commons/jcr/file/internal/JcrFileSystemProvider.java |             1 |           0 |         0 |           0 |           0 |            0 |     1 |
-| src/main/java/org/apache/sling/commons/jcr/file/internal/JcrFileChannel.java        |             0 |           1 |         0 |           0 |           0 |            0 |     1 |
-| src/main/java/org/apache/sling/commons/jcr/file/internal/JcrFileAttributes.java     |             0 |           0 |         0 |           1 |           0 |            0 |     1 |
-| src/main/java/org/apache/sling/commons/jcr/file/internal/PathUtil.java              |             0 |           0 |         0 |           1 |           0 |            0 |     1 |
-| src/main/java/org/apache/sling/commons/jcr/file/internal/JcrDirectoryStream.java    |             0 |           1 |         0 |           0 |           0 |            0 |     1 |
+| Class name                 |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                |
+|:---------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:------------------------------------------------------------------------------------|
+| JcrFile.java               |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/commons/jcr/file/internal/JcrFile.java               |
+| JcrFileSystemProvider.java |              1 |             1 |           0 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/commons/jcr/file/internal/JcrFileSystemProvider.java |
+| JcrFileChannel.java        |              1 |             0 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/commons/jcr/file/internal/JcrFileChannel.java        |
+| JcrFileAttributes.java     |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/commons/jcr/file/internal/JcrFileAttributes.java     |
+| PathUtil.java              |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/commons/jcr/file/internal/PathUtil.java              |
+| JcrDirectoryStream.java    |              1 |             0 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/commons/jcr/file/internal/JcrDirectoryStream.java    |
 
 ## Project: _apache/sling-org-apache-sling-commons-metrics_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-commons-metrics.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-commons-metrics) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-commons-metrics) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/apache_sling-org-apache-sling-commons-metrics.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| component                                                                        |   inheritance |   exception |   vmsmell |   interface |   threading |   complexity |   sum |
-|:---------------------------------------------------------------------------------|--------------:|------------:|----------:|------------:|------------:|-------------:|------:|
-| src/main/java/org/apache/sling/commons/metrics/internal/BundleMetricsMapper.java |             0 |           1 |         0 |           0 |           0 |            0 |     1 |
-| src/main/java/org/apache/sling/commons/metrics/MetricsServiceFactory.java        |             0 |           0 |         0 |           1 |           0 |            0 |     1 |
-| src/main/java/org/apache/sling/commons/metrics/internal/JSONReporter.java        |             0 |           1 |         0 |           0 |           0 |            0 |     1 |
-| src/main/java/org/apache/sling/commons/metrics/internal/JmxUtil.java             |             0 |           0 |         0 |           1 |           0 |            0 |     1 |
+| Class name                 |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                             |
+|:---------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:---------------------------------------------------------------------------------|
+| MetricsServiceImpl.java    |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/commons/metrics/internal/MetricsServiceImpl.java  |
+| BundleMetricsMapper.java   |              1 |             0 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/commons/metrics/internal/BundleMetricsMapper.java |
+| MetricsServiceFactory.java |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/commons/metrics/MetricsServiceFactory.java        |
+| JSONReporter.java          |              1 |             0 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/commons/metrics/internal/JSONReporter.java        |
+| JmxUtil.java               |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/commons/metrics/internal/JmxUtil.java             |
 
 ## Project: _apache/sling-org-apache-sling-i18n_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-i18n.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-i18n) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-i18n) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/apache_sling-org-apache-sling-i18n.json)</p>
@@ -77,23 +88,34 @@ Introduction, meaning of dimensions, other?
 | Class name                     |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                    |
 |:-------------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:------------------------------------------------------------------------|
 | JcrResourceBundleProvider.java |              3 |             0 |           1 |      0 |           2 |           0 |            0 | src/main/java/org/apache/sling/i18n/impl/JcrResourceBundleProvider.java |
+| JcrResourceBundle.java         |              1 |             1 |           0 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/i18n/impl/JcrResourceBundle.java         |
+| LocaleResolver.java            |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/i18n/LocaleResolver.java                 |
 
 ## Project: _apache/sling-org-apache-sling-jcr-contentloader_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-jcr-contentloader.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-jcr-contentloader) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-jcr-contentloader) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/apache_sling-org-apache-sling-jcr-contentloader.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| Class name     |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                             |
-|:---------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:---------------------------------------------------------------------------------|
-| XmlReader.java |             14 |             0 |           3 |      0 |          10 |           1 |            0 | src/main/java/org/apache/sling/jcr/contentloader/internal/readers/XmlReader.java |
-| PathEntry.java |              3 |             3 |           0 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/jcr/contentloader/internal/PathEntry.java         |
+| Class name               |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                               |
+|:-------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:-----------------------------------------------------------------------------------|
+| XmlReader.java           |             14 |             0 |           3 |      0 |          10 |           1 |            0 | src/main/java/org/apache/sling/jcr/contentloader/internal/readers/XmlReader.java   |
+| PathEntry.java           |              3 |             3 |           0 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/jcr/contentloader/internal/PathEntry.java           |
+| ContentTypeUtil.java     |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/jcr/contentloader/ContentTypeUtil.java              |
+| ImportOptions.java       |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/jcr/contentloader/ImportOptions.java                |
+| BundleContentLoader.java |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/jcr/contentloader/internal/BundleContentLoader.java |
 
 ## Project: _apache/sling-org-apache-sling-jcr-repoinit_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-jcr-repoinit.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-jcr-repoinit) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-jcr-repoinit) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/apache_sling-org-apache-sling-jcr-repoinit.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| Class name      |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                             |
-|:----------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:-----------------------------------------------------------------|
-| AclVisitor.java |              5 |             0 |           5 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/jcr/repoinit/impl/AclVisitor.java |
+| Class name                  |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                         |
+|:----------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:-----------------------------------------------------------------------------|
+| AclVisitor.java             |              5 |             0 |           5 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/jcr/repoinit/impl/AclVisitor.java             |
+| GroupMembershipVisitor.java |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/jcr/repoinit/impl/GroupMembershipVisitor.java |
+| UserVisitor.java            |              1 |             0 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/jcr/repoinit/impl/UserVisitor.java            |
+| DoNothingVisitor.java       |              1 |             0 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/jcr/repoinit/impl/DoNothingVisitor.java       |
+| AclUtil.java                |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/jcr/repoinit/impl/AclUtil.java                |
+| NodePropertiesVisitor.java  |              1 |             0 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/jcr/repoinit/impl/NodePropertiesVisitor.java  |
+| UserUtil.java               |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/jcr/repoinit/impl/UserUtil.java               |
 
 ## Project: _apache/sling-org-apache-sling-pipes_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-pipes.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-pipes) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-pipes) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/apache_sling-org-apache-sling-pipes.json)</p>
@@ -106,4 +128,9 @@ Introduction, meaning of dimensions, other?
 | PlumberImpl.java       |              4 |             0 |           4 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/pipes/internal/PlumberImpl.java       |
 | MultiPropertyPipe.java |              4 |             0 |           2 |      0 |           0 |           0 |            2 | src/main/java/org/apache/sling/pipes/internal/MultiPropertyPipe.java |
 | PipeBuilder.java       |              4 |             0 |           4 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/pipes/PipeBuilder.java                |
+| CommandUtil.java       |              2 |             0 |           1 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/pipes/internal/CommandUtil.java       |
+| SuperPipe.java         |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/pipes/SuperPipe.java                  |
+| Plumber.java           |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/pipes/Plumber.java                    |
+| Pipe.java              |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/pipes/Pipe.java                       |
+| ReferencePipe.java     |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/pipes/internal/ReferencePipe.java     |
 

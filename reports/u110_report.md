@@ -14,23 +14,29 @@ Introduction, meaning of dimensions, other?
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_externalapi-nbi.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/externalapi-nbi) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_externalapi-nbi) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_externalapi-nbi.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| component                                                                                  |   inheritance |   exception |   vmsmell |   interface |   threading |   complexity |   sum |
-|:-------------------------------------------------------------------------------------------|--------------:|------------:|----------:|------------:|------------:|-------------:|------:|
-| src/main/java/org/onap/nbi/apis/serviceorder/workflow/ExecutionTaskProcessorScheduler.java |             0 |           1 |         0 |           0 |           0 |            0 |     1 |
-| src/main/java/org/onap/nbi/apis/hub/service/EventFactory.java                              |             0 |           0 |         0 |           1 |           0 |            0 |     1 |
-| src/main/java/org/onap/nbi/apis/serviceorder/utils/E2EServiceUtils.java                    |             0 |           0 |         0 |           1 |           0 |            0 |     1 |
-| src/main/java/org/onap/nbi/apis/serviceorder/utils/MacroServiceUtils.java                  |             0 |           0 |         0 |           1 |           0 |            0 |     1 |
+| Class name                           |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                       |
+|:-------------------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:-------------------------------------------------------------------------------------------|
+| MongoConfig.java                     |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/onap/nbi/configuration/MongoConfig.java                                  |
+| ExecutionTaskProcessorScheduler.java |              1 |             0 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/onap/nbi/apis/serviceorder/workflow/ExecutionTaskProcessorScheduler.java |
+| EventFactory.java                    |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/onap/nbi/apis/hub/service/EventFactory.java                              |
+| E2EServiceUtils.java                 |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/onap/nbi/apis/serviceorder/utils/E2EServiceUtils.java                    |
+| MacroServiceUtils.java               |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/onap/nbi/apis/serviceorder/utils/MacroServiceUtils.java                  |
 
 ## Project: _onap/so-libs_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_so-libs.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/so-libs) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_so-libs) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_so-libs.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| Class name                      |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                            |
-|:--------------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:------------------------------------------------------------------------------------------------|
-| Network.java                    |              6 |             0 |           0 |      0 |           6 |           0 |            0 | quantum-model/src/main/java/com/woorea/openstack/quantum/model/Network.java                     |
-| SecurityGroupsExtension.java    |              5 |             0 |           0 |      0 |           5 |           0 |            0 | nova-client/src/main/java/com/woorea/openstack/nova/api/extensions/SecurityGroupsExtension.java |
-| SecurityGroupRuleForCreate.java |              4 |             0 |           0 |      0 |           4 |           0 |            0 | nova-model/src/main/java/com/woorea/openstack/nova/model/SecurityGroupRuleForCreate.java        |
-| SubnetForCreate.java            |              3 |             0 |           0 |      0 |           3 |           0 |            0 | quantum-model/src/main/java/com/woorea/openstack/quantum/model/SubnetForCreate.java             |
+| Class name                      |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                                             |
+|:--------------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:-----------------------------------------------------------------------------------------------------------------|
+| Network.java                    |              6 |             0 |           0 |      0 |           6 |           0 |            0 | quantum-model/src/main/java/com/woorea/openstack/quantum/model/Network.java                                      |
+| SecurityGroupsExtension.java    |              5 |             0 |           0 |      0 |           5 |           0 |            0 | nova-client/src/main/java/com/woorea/openstack/nova/api/extensions/SecurityGroupsExtension.java                  |
+| SecurityGroupRuleForCreate.java |              4 |             0 |           0 |      0 |           4 |           0 |            0 | nova-model/src/main/java/com/woorea/openstack/nova/model/SecurityGroupRuleForCreate.java                         |
+| SubnetForCreate.java            |              3 |             0 |           0 |      0 |           3 |           0 |            0 | quantum-model/src/main/java/com/woorea/openstack/quantum/model/SubnetForCreate.java                              |
+| AbsOpenStackCmd.java            |              1 |             0 |           1 |      0 |           0 |           0 |            0 | quantum-client/src/main/java/com/woorea/openstack/quantum/api/query/AbsOpenStackCmd.java                         |
+| KeystoneUtils.java              |              1 |             0 |           1 |      0 |           0 |           0 |            0 | keystone-client/src/main/java/com/woorea/openstack/keystone/utils/KeystoneUtils.java                             |
+| HttpClientConnector.java        |              1 |             0 |           1 |      0 |           0 |           0 |            0 | openstack-client-connectors/http-connector/src/main/java/com/woorea/openstack/connector/HttpClientConnector.java |
+| PortForCreate.java              |              1 |             0 |           0 |      0 |           1 |           0 |            0 | quantum-model/src/main/java/com/woorea/openstack/quantum/model/PortForCreate.java                                |
+| NetworkForCreate.java           |              1 |             0 |           0 |      0 |           1 |           0 |            0 | quantum-model/src/main/java/com/woorea/openstack/quantum/model/NetworkForCreate.java                             |
 
 ## Project: _onap/so_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_so.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/so) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_so) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_so.json)</p>

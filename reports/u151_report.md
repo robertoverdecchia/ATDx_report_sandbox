@@ -32,4 +32,13 @@ Introduction, meaning of dimensions, other?
 | Class name                |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                          |
 |:--------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:------------------------------------------------------------------------------|
 | ModelBasedProcessing.java |              6 |             0 |           0 |      0 |           6 |           0 |            0 | aai-traversal/src/main/java/org/onap/aai/dbgraphgen/ModelBasedProcessing.java |
+| DslConsumer.java          |              2 |             0 |           0 |      0 |           2 |           0 |            0 | aai-traversal/src/main/java/org/onap/aai/rest/DslConsumer.java                |
+| AuthorizationService.java |              2 |             0 |           2 |      0 |           0 |           0 |            0 | aai-traversal/src/main/java/org/onap/aai/service/AuthorizationService.java    |
+| NodeQueryProcessor.java   |              2 |             2 |           0 |      0 |           0 |           0 |            0 | aai-traversal/src/main/java/org/onap/aai/rest/search/NodeQueryProcessor.java  |
+| QueryConsumer.java        |              2 |             0 |           0 |      0 |           2 |           0 |            0 | aai-traversal/src/main/java/org/onap/aai/rest/QueryConsumer.java              |
+| AAIDslErrorListener.java  |              1 |             0 |           1 |      0 |           0 |           0 |            0 | aai-traversal/src/main/java/org/onap/aai/rest/dsl/AAIDslErrorListener.java    |
+| DslListener.java          |              1 |             0 |           1 |      0 |           0 |           0 |            0 | aai-traversal/src/main/java/org/onap/aai/rest/dsl/v2/DslListener.java         |
+| SearchProvider.java       |              1 |             0 |           0 |      0 |           1 |           0 |            0 | aai-traversal/src/main/java/org/onap/aai/rest/search/SearchProvider.java      |
+| DslContext.java           |              1 |             0 |           0 |      0 |           1 |           0 |            0 | aai-traversal/src/main/java/org/onap/aai/rest/dsl/DslContext.java             |
+| DslListener.java          |              1 |             0 |           1 |      0 |           0 |           0 |            0 | aai-traversal/src/main/java/org/onap/aai/rest/dsl/v1/DslListener.java         |
 

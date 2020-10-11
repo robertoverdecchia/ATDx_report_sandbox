@@ -21,6 +21,9 @@ Introduction, meaning of dimensions, other?
 | Environment.java        |              4 |             0 |           0 |      0 |           4 |           0 |            0 | src/main/java/org/apache/sling/feature/maven/Environment.java              |
 | FeatureProjectInfo.java |              4 |             0 |           0 |      0 |           4 |           0 |            0 | src/main/java/org/apache/sling/feature/maven/FeatureProjectInfo.java       |
 | ApisJarMojo.java        |              3 |             0 |           3 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/feature/maven/mojos/ApisJarMojo.java        |
+| InfoMojo.java           |              2 |             0 |           0 |      0 |           2 |           0 |            0 | src/main/java/org/apache/sling/feature/maven/mojos/InfoMojo.java           |
+| JarDecompressor.java    |              2 |             1 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/feature/maven/mojos/JarDecompressor.java    |
+| Substitution.java       |              2 |             0 |           1 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/feature/maven/Substitution.java             |
 
 ## Project: _apache/sling-whiteboard_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-whiteboard.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-whiteboard) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-whiteboard) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/apache_sling-whiteboard.json)</p>
@@ -34,4 +37,7 @@ Introduction, meaning of dimensions, other?
 | VerifySignatureCredentials.java |              7 |             0 |           6 |      0 |           1 |           0 |            0 | saml-handler/src/main/java/org/apache/sling/auth/saml2/sp/VerifySignatureCredentials.java      |
 | ModelPersistor.java             |              4 |             0 |           4 |      0 |           0 |           0 |            0 | SlingModelPersist/src/main/java/org/apache/sling/models/persistor/ModelPersistor.java          |
 | TokenStore.java                 |              3 |             0 |           3 |      0 |           0 |           0 |            0 | saml-handler/src/main/java/org/apache/sling/auth/saml2/TokenStore.java                         |
+| Saml2UserMgtServiceImpl.java    |              2 |             0 |           0 |      0 |           2 |           0 |            0 | saml-handler/src/main/java/org/apache/sling/auth/saml2/impl/Saml2UserMgtServiceImpl.java       |
+| Activator.java                  |              1 |             0 |           1 |      0 |           0 |           0 |            0 | saml-handler/src/main/java/org/apache/sling/auth/saml2/Activator.java                          |
+| Helpers.java                    |              1 |             0 |           0 |      0 |           1 |           0 |            0 | saml-handler/src/main/java/org/apache/sling/auth/saml2/Helpers.java                            |
 

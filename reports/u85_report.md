@@ -12,15 +12,13 @@ Introduction, meaning of dimensions, other?
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_dcaegen2-services-son-handler.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/dcaegen2-services-son-handler) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_dcaegen2-services-son-handler) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_dcaegen2-services-son-handler.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| component                                                                              |   inheritance |   exception |   vmsmell |   interface |   threading |   complexity |   sum |
-|:---------------------------------------------------------------------------------------|--------------:|------------:|----------:|------------:|------------:|-------------:|------:|
-| src/main/java/org/onap/dcaegen2/services/sonhms/utils/AppConfig.java                   |             0 |           0 |         0 |           1 |           0 |            0 |     1 |
-| src/main/java/org/onap/dcaegen2/services/sonhms/EventHandler.java                      |             0 |           1 |         0 |           0 |           0 |            0 |     1 |
-| src/main/java/org/onap/dcaegen2/services/sonhms/model/LteNeighborListInUseLteCell.java |             0 |           0 |         0 |           1 |           0 |            0 |     1 |
-| src/main/java/org/onap/dcaegen2/services/sonhms/restclient/OofRestClient.java          |             0 |           0 |         0 |           1 |           0 |            0 |     1 |
-| src/main/java/org/onap/dcaegen2/services/sonhms/dmaap/NotificationCallback.java        |             0 |           0 |         0 |           1 |           0 |            0 |     1 |
-| src/main/java/org/onap/dcaegen2/services/sonhms/child/ChildThread.java                 |             0 |           0 |         0 |           0 |           0 |            0 |     0 |
-| src/main/java/org/onap/dcaegen2/services/sonhms/utils/BeanUtil.java                    |             0 |           0 |         0 |           0 |           0 |            0 |     0 |
+| Class name                       |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                   |
+|:---------------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:---------------------------------------------------------------------------------------|
+| AppConfig.java                   |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/onap/dcaegen2/services/sonhms/utils/AppConfig.java                   |
+| EventHandler.java                |              1 |             0 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/onap/dcaegen2/services/sonhms/EventHandler.java                      |
+| LteNeighborListInUseLteCell.java |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/onap/dcaegen2/services/sonhms/model/LteNeighborListInUseLteCell.java |
+| OofRestClient.java               |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/onap/dcaegen2/services/sonhms/restclient/OofRestClient.java          |
+| NotificationCallback.java        |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/onap/dcaegen2/services/sonhms/dmaap/NotificationCallback.java        |
 
 ## Project: _onap/so_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_so.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/so) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_so) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_so.json)</p>

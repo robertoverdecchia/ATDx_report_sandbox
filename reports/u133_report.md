@@ -14,27 +14,28 @@ Introduction, meaning of dimensions, other?
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_clamp.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/clamp) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_clamp) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_clamp.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| component                                                                           |   inheritance |   exception |   vmsmell |   interface |   threading |   complexity |   sum |
-|:------------------------------------------------------------------------------------|--------------:|------------:|----------:|------------:|------------:|-------------:|------:|
-| src/main/java/org/onap/clamp/clds/tosca/ToscaYamlToJsonConvertor.java               |             0 |           0 |         0 |           1 |           0 |            0 |     1 |
-| src/main/java/org/onap/clamp/clds/util/XmlTools.java                                |             0 |           1 |         0 |           0 |           0 |            0 |     1 |
-| src/main/java/org/onap/clamp/util/PassDecoder.java                                  |             0 |           0 |         0 |           1 |           0 |            0 |     1 |
-| src/main/java/org/onap/clamp/clds/util/drawing/SvgLoopGenerator.java                |             0 |           0 |         0 |           1 |           0 |            0 |     1 |
-| src/main/java/org/onap/clamp/clds/model/dcae/DcaeInventoryResponse.java             |             1 |           0 |         0 |           0 |           0 |            0 |     1 |
-| src/main/java/org/onap/clamp/authorization/SecureServicePermissionDeserializer.java |             0 |           1 |         0 |           0 |           0 |            0 |     1 |
-| src/main/java/org/onap/clamp/util/SemanticVersioning.java                           |             0 |           0 |         0 |           1 |           0 |            0 |     1 |
-| src/main/java/org/onap/clamp/loop/deploy/DcaeDeployParameters.java                  |             0 |           0 |         0 |           1 |           0 |            0 |     1 |
-| src/main/java/org/onap/clamp/loop/CsarInstaller.java                                |             0 |           1 |         0 |           0 |           0 |            0 |     1 |
-| src/main/java/org/onap/clamp/clds/tosca/update/execution/ToscaMetadataProcess.java  |             0 |           0 |         0 |           1 |           0 |            0 |     1 |
+| Class name                               |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                |
+|:-----------------------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:------------------------------------------------------------------------------------|
+| ToscaYamlToJsonConvertor.java            |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/onap/clamp/clds/tosca/ToscaYamlToJsonConvertor.java               |
+| XmlTools.java                            |              1 |             0 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/onap/clamp/clds/util/XmlTools.java                                |
+| PassDecoder.java                         |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/onap/clamp/util/PassDecoder.java                                  |
+| SvgLoopGenerator.java                    |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/onap/clamp/clds/util/drawing/SvgLoopGenerator.java                |
+| DcaeInventoryResponse.java               |              1 |             1 |           0 |      0 |           0 |           0 |            0 | src/main/java/org/onap/clamp/clds/model/dcae/DcaeInventoryResponse.java             |
+| SecureServicePermissionDeserializer.java |              1 |             0 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/onap/clamp/authorization/SecureServicePermissionDeserializer.java |
+| SemanticVersioning.java                  |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/onap/clamp/util/SemanticVersioning.java                           |
+| DcaeDeployParameters.java                |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/onap/clamp/loop/deploy/DcaeDeployParameters.java                  |
+| CsarInstaller.java                       |              1 |             0 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/onap/clamp/loop/CsarInstaller.java                                |
+| ToscaMetadataProcess.java                |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/onap/clamp/clds/tosca/update/execution/ToscaMetadataProcess.java  |
 
 ## Project: _onap/sdc-sdc-workflow-designer_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_sdc-sdc-workflow-designer.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/sdc-sdc-workflow-designer) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_sdc-sdc-workflow-designer) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_sdc-sdc-workflow-designer.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| component                                                                                                    |   inheritance |   exception |   vmsmell |   interface |   threading |   complexity |   sum |
-|:-------------------------------------------------------------------------------------------------------------|--------------:|------------:|----------:|------------:|------------:|-------------:|------:|
-| sdc-workflow-designer-be/src/main/java/org/onap/sdc/workflow/api/ArtifactAssociationService.java             |             0 |           0 |         0 |           1 |           0 |            0 |     1 |
-| sdc-workflow-designer-be/src/main/java/org/onap/sdc/workflow/services/types/WorkflowValidationConstants.java |             0 |           0 |         0 |           1 |           0 |            0 |     1 |
+| Class name                       |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                                         |
+|:---------------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:-------------------------------------------------------------------------------------------------------------|
+| JsonUtil.java                    |              2 |             0 |           2 |      0 |           0 |           0 |            0 | sdc-workflow-designer-be/src/main/java/org/onap/sdc/workflow/services/utilities/JsonUtil.java                |
+| ArtifactAssociationService.java  |              1 |             0 |           0 |      0 |           1 |           0 |            0 | sdc-workflow-designer-be/src/main/java/org/onap/sdc/workflow/api/ArtifactAssociationService.java             |
+| WorkflowValidationConstants.java |              1 |             0 |           0 |      0 |           1 |           0 |            0 | sdc-workflow-designer-be/src/main/java/org/onap/sdc/workflow/services/types/WorkflowValidationConstants.java |
 
 ## Project: _onap/sdc_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_sdc.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/sdc) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_sdc) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_sdc.json)</p>

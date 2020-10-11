@@ -24,15 +24,22 @@ Introduction, meaning of dimensions, other?
 | MRMetaClient.java            |              4 |             0 |           4 |      0 |           0 |           0 |            0 | src/main/java/org/onap/dmaap/mr/client/impl/MRMetaClient.java            |
 | MRTopicManager.java          |              3 |             0 |           2 |      0 |           1 |           0 |            0 | src/main/java/org/onap/dmaap/mr/client/MRTopicManager.java               |
 | MRConsumerImpl.java          |              3 |             0 |           1 |      0 |           2 |           0 |            0 | src/main/java/org/onap/dmaap/mr/client/impl/MRConsumerImpl.java          |
+| MRBatchPublisher.java        |              2 |             0 |           1 |      0 |           1 |           0 |            0 | src/main/java/org/onap/dmaap/mr/client/impl/MRBatchPublisher.java        |
+| SimpleExamplePublisher.java  |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/onap/dmaap/mr/dme/client/SimpleExamplePublisher.java   |
 
 ## Project: _onap/dmaap-messagerouter-messageservice_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_dmaap-messagerouter-messageservice.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/dmaap-messagerouter-messageservice) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_dmaap-messagerouter-messageservice) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_dmaap-messagerouter-messageservice.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| Class name         |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                    |
-|:-------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:--------------------------------------------------------|
-| MirrorMaker.java   |              5 |             0 |           0 |      0 |           5 |           0 |            0 | src/main/java/org/onap/dmaap/mmagent/MirrorMaker.java   |
-| MMRestService.java |              4 |             0 |           4 |      0 |           0 |           0 |            0 | src/main/java/org/onap/dmaap/service/MMRestService.java |
+| Class name                    |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                            |
+|:------------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:----------------------------------------------------------------|
+| MirrorMaker.java              |              5 |             0 |           0 |      0 |           5 |           0 |            0 | src/main/java/org/onap/dmaap/mmagent/MirrorMaker.java           |
+| MMRestService.java            |              4 |             0 |           4 |      0 |           0 |           0 |            0 | src/main/java/org/onap/dmaap/service/MMRestService.java         |
+| TopicRestService.java         |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/onap/dmaap/service/TopicRestService.java      |
+| ApiKeysRestService.java       |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/onap/dmaap/service/ApiKeysRestService.java    |
+| ServiceUtil.java              |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/onap/dmaap/service/ServiceUtil.java           |
+| ServicePropertiesMapBean.java |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/onap/dmaap/util/ServicePropertiesMapBean.java |
+| CreateMirrorMaker.java        |              1 |             0 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/onap/dmaap/mmagent/CreateMirrorMaker.java     |
 
 ## Project: _onap/dmaap-messagerouter-mirroragent_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_dmaap-messagerouter-mirroragent.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/dmaap-messagerouter-mirroragent) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_dmaap-messagerouter-mirroragent) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_dmaap-messagerouter-mirroragent.json)</p>
@@ -42,6 +49,7 @@ Introduction, meaning of dimensions, other?
 |:-------------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:----------------------------------------------------------------------------------|
 | MirrorMaker.java               |              7 |             0 |           0 |      0 |           7 |           0 |            0 | src/main/java/org/onap/dmaap/mr/dmaapMMAgent/dao/MirrorMaker.java                 |
 | MirrorMakerProcessHandler.java |              3 |             1 |           1 |      0 |           1 |           0 |            0 | src/main/java/org/onap/dmaap/mr/dmaapMMAgent/utils/MirrorMakerProcessHandler.java |
+| MirrorMakerAgent.java          |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/onap/dmaap/mr/dmaapMMAgent/MirrorMakerAgent.java                |
 
 ## Project: _onap/dmaap-messagerouter-msgrtr_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_dmaap-messagerouter-msgrtr.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/dmaap-messagerouter-msgrtr) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_dmaap-messagerouter-msgrtr) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_dmaap-messagerouter-msgrtr.json)</p>
@@ -56,4 +64,7 @@ Introduction, meaning of dimensions, other?
 | KafkaConsumerCache.java         |              3 |             0 |           0 |      0 |           0 |           0 |            3 | src/main/java/org/onap/dmaap/dmf/mr/backends/kafka/KafkaConsumerCache.java           |
 | TopicServiceImpl.java           |              3 |             0 |           3 |      0 |           0 |           0 |            0 | src/main/java/org/onap/dmaap/dmf/mr/service/impl/TopicServiceImpl.java               |
 | DMaaPCambriaClientFactory.java  |              3 |             0 |           0 |      0 |           3 |           0 |            0 | src/main/java/org/onap/dmaap/dmf/mr/metrics/publisher/DMaaPCambriaClientFactory.java |
+| UIServiceImpl.java              |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/onap/dmaap/dmf/mr/service/impl/UIServiceImpl.java                  |
+| TopicService.java               |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/onap/dmaap/dmf/mr/service/TopicService.java                        |
+| CambriaPublisherUtility.java    |              2 |             0 |           1 |      0 |           1 |           0 |            0 | src/main/java/org/onap/dmaap/dmf/mr/metrics/publisher/CambriaPublisherUtility.java   |
 

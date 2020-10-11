@@ -31,9 +31,9 @@ Introduction, meaning of dimensions, other?
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_multicloud-framework-artifactbroker.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/multicloud-framework) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_multicloud-framework-artifactbroker) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_multicloud-framework-artifactbroker.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| component                                                            |   inheritance |   exception |   vmsmell |   interface |   threading |   complexity |   sum |
-|:---------------------------------------------------------------------|--------------:|------------:|----------:|------------:|------------:|-------------:|------:|
-| model/src/main/java/org/onap/policy/distribution/model/GsonUtil.java |             0 |           0 |         0 |           1 |           0 |            0 |     1 |
+| Class name    |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                 |
+|:--------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:---------------------------------------------------------------------|
+| GsonUtil.java |              1 |             0 |           0 |      0 |           1 |           0 |            0 | model/src/main/java/org/onap/policy/distribution/model/GsonUtil.java |
 
 ## Project: _onap/so_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_so.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/so) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_so) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_so.json)</p>

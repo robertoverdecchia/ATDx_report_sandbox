@@ -14,13 +14,13 @@ Introduction, meaning of dimensions, other?
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-jcr-resource.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-jcr-resource) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-jcr-resource) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/apache_sling-org-apache-sling-jcr-resource.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| component                                                                                |   inheritance |   exception |   vmsmell |   interface |   threading |   complexity |   sum |
-|:-----------------------------------------------------------------------------------------|--------------:|------------:|----------:|------------:|------------:|-------------:|------:|
-| src/main/java/org/apache/sling/jcr/resource/internal/helper/jcr/JcrResourceProvider.java |             0 |           1 |         0 |           0 |           0 |            0 |     1 |
-| src/main/java/org/apache/sling/jcr/resource/internal/helper/JcrResourceUtil.java         |             0 |           0 |         0 |           1 |           0 |            0 |     1 |
-| src/main/java/org/apache/sling/jcr/resource/internal/JcrValueMap.java                    |             0 |           0 |         0 |           1 |           0 |            0 |     1 |
-| src/main/java/org/apache/sling/jcr/resource/api/JcrResourceConstants.java                |             0 |           0 |         0 |           1 |           0 |            0 |     1 |
-| src/main/java/org/apache/sling/jcr/resource/internal/NodeUtil.java                       |             0 |           0 |         0 |           1 |           0 |            0 |     1 |
+| Class name                |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                     |
+|:--------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:-----------------------------------------------------------------------------------------|
+| JcrResourceProvider.java  |              1 |             0 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/jcr/resource/internal/helper/jcr/JcrResourceProvider.java |
+| JcrResourceUtil.java      |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/jcr/resource/internal/helper/JcrResourceUtil.java         |
+| JcrValueMap.java          |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/jcr/resource/internal/JcrValueMap.java                    |
+| JcrResourceConstants.java |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/jcr/resource/api/JcrResourceConstants.java                |
+| NodeUtil.java             |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/jcr/resource/internal/NodeUtil.java                       |
 
 ## Project: _apache/sling-org-apache-sling-models-impl_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-models-impl.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-models-impl) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-models-impl) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/apache_sling-org-apache-sling-models-impl.json)</p>
@@ -29,6 +29,7 @@ Introduction, meaning of dimensions, other?
 | Class name               |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                |
 |:-------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:--------------------------------------------------------------------|
 | ModelAdapterFactory.java |              7 |             0 |           6 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/models/impl/ModelAdapterFactory.java |
+| ExportServlet.java       |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/models/impl/ExportServlet.java       |
 
 ## Project: _apache/sling-org-apache-sling-pipes_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-pipes.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-pipes) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-pipes) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/apache_sling-org-apache-sling-pipes.json)</p>
@@ -41,4 +42,9 @@ Introduction, meaning of dimensions, other?
 | PlumberImpl.java       |              4 |             0 |           4 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/pipes/internal/PlumberImpl.java       |
 | MultiPropertyPipe.java |              4 |             0 |           2 |      0 |           0 |           0 |            2 | src/main/java/org/apache/sling/pipes/internal/MultiPropertyPipe.java |
 | PipeBuilder.java       |              4 |             0 |           4 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/pipes/PipeBuilder.java                |
+| CommandUtil.java       |              2 |             0 |           1 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/pipes/internal/CommandUtil.java       |
+| SuperPipe.java         |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/pipes/SuperPipe.java                  |
+| Plumber.java           |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/pipes/Plumber.java                    |
+| Pipe.java              |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/pipes/Pipe.java                       |
+| ReferencePipe.java     |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/pipes/internal/ReferencePipe.java     |
 

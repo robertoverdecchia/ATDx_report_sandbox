@@ -41,33 +41,42 @@ Introduction, meaning of dimensions, other?
 | BZip2CompressorOutputStream.java |              3 |             1 |           0 |      0 |           0 |           0 |            2 | src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java |
 | LocalFileHeader.java             |              3 |             0 |           0 |      0 |           3 |           0 |            0 | src/main/java/org/apache/commons/compress/archivers/arj/LocalFileHeader.java                 |
 | Expander.java                    |              3 |             0 |           0 |      0 |           3 |           0 |            0 | src/main/java/org/apache/commons/compress/archivers/examples/Expander.java                   |
+| JarArchiveEntry.java             |              2 |             0 |           0 |      0 |           2 |           0 |            0 | src/main/java/org/apache/commons/compress/archivers/jar/JarArchiveEntry.java                 |
+| ZipArchiveEntry.java             |              2 |             1 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/apache/commons/compress/archivers/zip/ZipArchiveEntry.java                 |
 
 ## Project: _apache/commons-geometry_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/commons-geometry.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/commons-geometry) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=commons-geometry) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/commons-geometry.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| component                                                                                                              |   inheritance |   exception |   vmsmell |   interface |   threading |   complexity |   sum |
-|:-----------------------------------------------------------------------------------------------------------------------|--------------:|------------:|----------:|------------:|------------:|-------------:|------:|
-| commons-geometry-euclidean/src/main/java/org/apache/commons/geometry/euclidean/internal/Matrices.java                  |             0 |           0 |         0 |           1 |           0 |            0 |     1 |
-| commons-geometry-euclidean/src/main/java/org/apache/commons/geometry/euclidean/threed/rotation/QuaternionRotation.java |             0 |           0 |         0 |           1 |           0 |            0 |     1 |
-| commons-geometry-euclidean/src/main/java/org/apache/commons/geometry/euclidean/threed/AffineTransformMatrix3D.java     |             0 |           0 |         0 |           1 |           0 |            0 |     1 |
-| commons-geometry-euclidean/src/main/java/org/apache/commons/geometry/euclidean/twod/Vector2D.java                      |             0 |           0 |         0 |           1 |           0 |            0 |     1 |
-| commons-geometry-euclidean/src/main/java/org/apache/commons/geometry/euclidean/threed/Vector3D.java                    |             0 |           0 |         0 |           1 |           0 |            0 |     1 |
-| commons-geometry-euclidean/src/main/java/org/apache/commons/geometry/euclidean/oned/Vector1D.java                      |             0 |           0 |         0 |           1 |           0 |            0 |     1 |
+| Class name                   |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                                                   |
+|:-----------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:-----------------------------------------------------------------------------------------------------------------------|
+| Matrices.java                |              1 |             0 |           0 |      0 |           1 |           0 |            0 | commons-geometry-euclidean/src/main/java/org/apache/commons/geometry/euclidean/internal/Matrices.java                  |
+| QuaternionRotation.java      |              1 |             0 |           0 |      0 |           1 |           0 |            0 | commons-geometry-euclidean/src/main/java/org/apache/commons/geometry/euclidean/threed/rotation/QuaternionRotation.java |
+| AffineTransformMatrix3D.java |              1 |             0 |           0 |      0 |           1 |           0 |            0 | commons-geometry-euclidean/src/main/java/org/apache/commons/geometry/euclidean/threed/AffineTransformMatrix3D.java     |
+| Vector2D.java                |              1 |             0 |           0 |      0 |           1 |           0 |            0 | commons-geometry-euclidean/src/main/java/org/apache/commons/geometry/euclidean/twod/Vector2D.java                      |
+| Vector3D.java                |              1 |             0 |           0 |      0 |           1 |           0 |            0 | commons-geometry-euclidean/src/main/java/org/apache/commons/geometry/euclidean/threed/Vector3D.java                    |
+| Vector1D.java                |              1 |             0 |           0 |      0 |           1 |           0 |            0 | commons-geometry-euclidean/src/main/java/org/apache/commons/geometry/euclidean/oned/Vector1D.java                      |
 
 ## Project: _apache/commons-numbers_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/commons-numbers.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/commons-numbers) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=commons-numbers) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/commons-numbers.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| component                                                                                     |   inheritance |   exception |   vmsmell |   interface |   threading |   complexity |   sum |
-|:----------------------------------------------------------------------------------------------|--------------:|------------:|----------:|------------:|------------:|-------------:|------:|
-| commons-numbers-arrays/src/main/java/org/apache/commons/numbers/arrays/LinearCombination.java |             0 |           0 |         0 |           1 |           0 |            0 |     1 |
+| Class name             |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                          |
+|:-----------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:----------------------------------------------------------------------------------------------|
+| LinearCombination.java |              1 |             0 |           0 |      0 |           1 |           0 |            0 | commons-numbers-arrays/src/main/java/org/apache/commons/numbers/arrays/LinearCombination.java |
 
 ## Project: _apache/commons-rng_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/commons-rng.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/commons-rng) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=commons-rng) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/commons-rng.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| Class name         |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                               |
-|:-------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:-----------------------------------------------------------------------------------|
-| NumberFactory.java |              3 |             0 |           0 |      0 |           3 |           0 |            0 | commons-rng-core/src/main/java/org/apache/commons/rng/core/util/NumberFactory.java |
+| Class name                     |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                                           |
+|:-------------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:---------------------------------------------------------------------------------------------------------------|
+| NumberFactory.java             |              3 |             0 |           0 |      0 |           3 |           0 |            0 | commons-rng-core/src/main/java/org/apache/commons/rng/core/util/NumberFactory.java                             |
+| LargeMeanPoissonSampler.java   |              1 |             0 |           0 |      0 |           1 |           0 |            0 | commons-rng-sampling/src/main/java/org/apache/commons/rng/sampling/distribution/LargeMeanPoissonSampler.java   |
+| PoissonSamplerCache.java       |              1 |             0 |           0 |      0 |           1 |           0 |            0 | commons-rng-sampling/src/main/java/org/apache/commons/rng/sampling/distribution/PoissonSamplerCache.java       |
+| BaseProvider.java              |              1 |             0 |           0 |      0 |           1 |           0 |            0 | commons-rng-core/src/main/java/org/apache/commons/rng/core/BaseProvider.java                                   |
+| AbstractXoShiRo512.java        |              1 |             0 |           0 |      0 |           1 |           0 |            0 | commons-rng-core/src/main/java/org/apache/commons/rng/core/source64/AbstractXoShiRo512.java                    |
+| BoxMullerLogNormalSampler.java |              1 |             0 |           0 |      0 |           1 |           0 |            0 | commons-rng-sampling/src/main/java/org/apache/commons/rng/sampling/distribution/BoxMullerLogNormalSampler.java |
+| BoxMullerGaussianSampler.java  |              1 |             0 |           0 |      0 |           1 |           0 |            0 | commons-rng-sampling/src/main/java/org/apache/commons/rng/sampling/distribution/BoxMullerGaussianSampler.java  |
+| SamplerBase.java               |              1 |             0 |           0 |      0 |           1 |           0 |            0 | commons-rng-sampling/src/main/java/org/apache/commons/rng/sampling/distribution/SamplerBase.java               |
 

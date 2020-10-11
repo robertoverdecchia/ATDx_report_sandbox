@@ -51,25 +51,27 @@ Introduction, meaning of dimensions, other?
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_aai-esr-server.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/aai-esr-server) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_aai-esr-server) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_aai-esr-server.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| component                                                                            |   inheritance |   exception |   vmsmell |   interface |   threading |   complexity |   sum |
-|:-------------------------------------------------------------------------------------|--------------:|------------:|----------:|------------:|------------:|-------------:|------:|
-| esr-mgr/src/main/java/org/onap/aai/esr/externalservice/aai/RelationshipProvider.java |             0 |           1 |         0 |           0 |           0 |            0 |     1 |
-| esr-mgr/src/main/java/org/onap/aai/esr/externalservice/aai/EmsRegisterProvider.java  |             0 |           1 |         0 |           0 |           0 |            0 |     1 |
-| esr-mgr/src/main/java/org/onap/aai/esr/externalservice/aai/VnfmRegisterProvider.java |             0 |           1 |         0 |           0 |           0 |            0 |     1 |
-| esr-mgr/src/main/java/org/onap/aai/esr/externalservice/aai/PnfRegisterProvider.java  |             0 |           1 |         0 |           0 |           0 |            0 |     1 |
-| esr-mgr/src/main/java/org/onap/aai/esr/externalservice/aai/VimRegisterProvider.java  |             0 |           1 |         0 |           0 |           0 |            0 |     1 |
-| esr-mgr/src/main/java/org/onap/aai/esr/externalservice/aai/NfvoRegisterProvider.java |             0 |           1 |         0 |           0 |           0 |            0 |     1 |
+| Class name                |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                 |
+|:--------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:-------------------------------------------------------------------------------------|
+| RelationshipProvider.java |              1 |             0 |           1 |      0 |           0 |           0 |            0 | esr-mgr/src/main/java/org/onap/aai/esr/externalservice/aai/RelationshipProvider.java |
+| EmsRegisterProvider.java  |              1 |             0 |           1 |      0 |           0 |           0 |            0 | esr-mgr/src/main/java/org/onap/aai/esr/externalservice/aai/EmsRegisterProvider.java  |
+| VnfmRegisterProvider.java |              1 |             0 |           1 |      0 |           0 |           0 |            0 | esr-mgr/src/main/java/org/onap/aai/esr/externalservice/aai/VnfmRegisterProvider.java |
+| PnfRegisterProvider.java  |              1 |             0 |           1 |      0 |           0 |           0 |            0 | esr-mgr/src/main/java/org/onap/aai/esr/externalservice/aai/PnfRegisterProvider.java  |
+| VimRegisterProvider.java  |              1 |             0 |           1 |      0 |           0 |           0 |            0 | esr-mgr/src/main/java/org/onap/aai/esr/externalservice/aai/VimRegisterProvider.java  |
+| NfvoRegisterProvider.java |              1 |             0 |           1 |      0 |           0 |           0 |            0 | esr-mgr/src/main/java/org/onap/aai/esr/externalservice/aai/NfvoRegisterProvider.java |
 
 ## Project: _onap/aai-event-client_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_aai-event-client.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/aai-event-client) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_aai-event-client) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_aai-event-client.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| Class name               |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                |
-|:-------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:------------------------------------------------------------------------------------|
-| EventPublisher.java      |              9 |             0 |           9 |      0 |           0 |           0 |            0 | event-client-api/src/main/java/org/onap/aai/event/api/EventPublisher.java           |
-| EventConsumer.java       |              6 |             0 |           6 |      0 |           0 |           0 |            0 | event-client-api/src/main/java/org/onap/aai/event/api/EventConsumer.java            |
-| DMaaPEventPublisher.java |              3 |             0 |           1 |      0 |           2 |           0 |            0 | event-client-dmaap/src/main/java/org/onap/aai/event/client/DMaaPEventPublisher.java |
-| DMaaPEventConsumer.java  |              3 |             0 |           0 |      0 |           3 |           0 |            0 | event-client-dmaap/src/main/java/org/onap/aai/event/client/DMaaPEventConsumer.java  |
+| Class name                 |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                     |
+|:---------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:-----------------------------------------------------------------------------------------|
+| EventPublisher.java        |              9 |             0 |           9 |      0 |           0 |           0 |            0 | event-client-api/src/main/java/org/onap/aai/event/api/EventPublisher.java                |
+| EventConsumer.java         |              6 |             0 |           6 |      0 |           0 |           0 |            0 | event-client-api/src/main/java/org/onap/aai/event/api/EventConsumer.java                 |
+| DMaaPEventPublisher.java   |              3 |             0 |           1 |      0 |           2 |           0 |            0 | event-client-dmaap/src/main/java/org/onap/aai/event/client/DMaaPEventPublisher.java      |
+| DMaaPEventConsumer.java    |              3 |             0 |           0 |      0 |           3 |           0 |            0 | event-client-dmaap/src/main/java/org/onap/aai/event/client/DMaaPEventConsumer.java       |
+| RabbitMqUtils.java         |              2 |             0 |           1 |      0 |           1 |           0 |            0 | event-client-rabbitmq/src/main/java/org/onap/aai/event/client/RabbitMqUtils.java         |
+| RabbitMqEventConsumer.java |              1 |             1 |           0 |      0 |           0 |           0 |            0 | event-client-rabbitmq/src/main/java/org/onap/aai/event/client/RabbitMqEventConsumer.java |
 
 ## Project: _onap/aai-sparky-be_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_aai-sparky-be.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/aai-sparky-be) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_aai-sparky-be) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_aai-sparky-be.json)</p>
@@ -117,6 +119,10 @@ Introduction, meaning of dimensions, other?
 | SpringServiceImpl.java       |              5 |             0 |           5 |      0 |           0 |           0 |            0 | ms/neng/src/main/java/org/onap/ccsdk/apps/ms/neng/core/service/SpringServiceImpl.java              |
 | VlantagApiService.java       |              4 |             0 |           4 |      0 |           0 |           0 |            0 | ms/vlantag-api/src/main/java/org/onap/ccsdk/apps/ms/vlantagapi/core/service/VlantagApiService.java |
 | PolicyParameters.java        |              3 |             0 |           3 |      0 |           0 |           0 |            0 | ms/neng/src/main/java/org/onap/ccsdk/apps/ms/neng/core/policy/PolicyParameters.java                |
+| RestService.java             |              2 |             0 |           2 |      0 |           0 |           0 |            0 | ms/neng/src/main/java/org/onap/ccsdk/apps/ms/neng/core/service/rs/RestService.java                 |
+| SequenceGenerator.java       |              2 |             0 |           2 |      0 |           0 |           0 |            0 | ms/neng/src/main/java/org/onap/ccsdk/apps/ms/neng/core/seq/SequenceGenerator.java                  |
+| DbNameValidator.java         |              2 |             0 |           2 |      0 |           0 |           0 |            0 | ms/neng/src/main/java/org/onap/ccsdk/apps/ms/neng/core/validator/DbNameValidator.java              |
+| AaiServiceImpl.java          |              1 |             0 |           1 |      0 |           0 |           0 |            0 | ms/neng/src/main/java/org/onap/ccsdk/apps/ms/neng/service/extinf/impl/AaiServiceImpl.java          |
 
 ## Project: _onap/ccsdk-dashboard_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_ccsdk-dashboard.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/ccsdk-dashboard) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_ccsdk-dashboard) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_ccsdk-dashboard.json)</p>

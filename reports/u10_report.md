@@ -21,6 +21,7 @@ Introduction, meaning of dimensions, other?
 |:---------------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:---------------------------------------------------------------------------------------------------------------|
 | GenerateAdapterMetadataMojo.java |              3 |             0 |           3 |      0 |           0 |           0 |            0 | sling-maven-plugin/src/main/java/org/apache/sling/maven/bundlesupport/GenerateAdapterMetadataMojo.java         |
 | WebDavPutDeployMethod.java       |              3 |             0 |           3 |      0 |           0 |           0 |            0 | sling-maven-plugin/src/main/java/org/apache/sling/maven/bundlesupport/deploy/method/WebDavPutDeployMethod.java |
+| AbstractBundleInstallMojo.java   |              1 |             0 |           0 |      0 |           1 |           0 |            0 | sling-maven-plugin/src/main/java/org/apache/sling/maven/bundlesupport/AbstractBundleInstallMojo.java           |
 
 ## Project: _apache/sling-org-apache-sling-api_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-api.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-api) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-api) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/apache_sling-org-apache-sling-api.json)</p>
@@ -34,23 +35,42 @@ Introduction, meaning of dimensions, other?
 | ResourceChange.java      |              4 |             0 |           0 |      0 |           4 |           0 |            0 | src/main/java/org/apache/sling/api/resource/observation/ResourceChange.java      |
 | CompositeValueMap.java   |              3 |             2 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/api/wrappers/CompositeValueMap.java               |
 | NonExistingResource.java |              3 |             3 |           0 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/api/resource/NonExistingResource.java             |
+| ResourceMetadata.java    |              2 |             1 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/api/resource/ResourceMetadata.java                |
+| ResourceProvider.java    |              2 |             0 |           0 |      0 |           2 |           0 |            0 | src/main/java/org/apache/sling/api/resource/ResourceProvider.java                |
+| RuntimeDTO.java          |              2 |             0 |           0 |      0 |           2 |           0 |            0 | src/main/java/org/apache/sling/api/resource/runtime/dto/RuntimeDTO.java          |
+| ValueMapDecorator.java   |              2 |             2 |           0 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/api/wrappers/ValueMapDecorator.java               |
 
 ## Project: _apache/sling-org-apache-sling-feature-io_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-feature-io.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-feature-io) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-feature-io) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/apache_sling-org-apache-sling-feature-io.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| Class name            |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                            |
-|:----------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:----------------------------------------------------------------|
-| ConfiguratorUtil.java |              3 |             0 |           2 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/feature/io/ConfiguratorUtil.java |
+| Class name                   |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                           |
+|:-----------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:-------------------------------------------------------------------------------|
+| ConfiguratorUtil.java        |              3 |             0 |           2 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/feature/io/ConfiguratorUtil.java                |
+| ConfigurationJSONWriter.java |              1 |             0 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/feature/io/json/ConfigurationJSONWriter.java    |
+| ArtifactManagerConfig.java   |              1 |             0 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/feature/io/artifacts/ArtifactManagerConfig.java |
+| ArchiveWriter.java           |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/feature/io/archive/ArchiveWriter.java           |
+| IOUtils.java                 |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/feature/io/IOUtils.java                         |
+| JSONConstants.java           |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/feature/io/json/JSONConstants.java              |
+| CloseShieldWriter.java       |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/feature/io/CloseShieldWriter.java               |
+| ManifestUtils.java           |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/feature/io/json/ManifestUtils.java              |
 
 ## Project: _apache/sling-org-apache-sling-feature_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-feature.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-feature) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-feature) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/apache_sling-org-apache-sling-feature.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| Class name            |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                            |
-|:----------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:----------------------------------------------------------------|
-| ConfiguratorUtil.java |              3 |             0 |           2 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/feature/io/ConfiguratorUtil.java |
-| Extension.java        |              3 |             0 |           0 |      0 |           3 |           0 |            0 | src/main/java/org/apache/sling/feature/Extension.java           |
+| Class name                 |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                           |
+|:---------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:-------------------------------------------------------------------------------|
+| ConfiguratorUtil.java      |              3 |             0 |           2 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/feature/io/ConfiguratorUtil.java                |
+| Extension.java             |              3 |             0 |           0 |      0 |           3 |           0 |            0 | src/main/java/org/apache/sling/feature/Extension.java                          |
+| FeatureBuilder.java        |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/feature/builder/FeatureBuilder.java             |
+| JSONConstants.java         |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/feature/io/json/JSONConstants.java              |
+| IOUtils.java               |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/feature/io/IOUtils.java                         |
+| CloseShieldWriter.java     |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/feature/io/CloseShieldWriter.java               |
+| ArtifactManagerConfig.java |              1 |             0 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/feature/io/artifacts/ArtifactManagerConfig.java |
+| Configuration.java         |              1 |             1 |           0 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/feature/Configuration.java                      |
+| BuilderUtil.java           |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/feature/builder/BuilderUtil.java                |
+| BuilderContext.java        |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/feature/builder/BuilderContext.java             |
 
 ## Project: _apache/sling-org-apache-sling-i18n_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-i18n.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-i18n) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-i18n) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/apache_sling-org-apache-sling-i18n.json)</p>
@@ -59,27 +79,35 @@ Introduction, meaning of dimensions, other?
 | Class name                     |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                    |
 |:-------------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:------------------------------------------------------------------------|
 | JcrResourceBundleProvider.java |              3 |             0 |           1 |      0 |           2 |           0 |            0 | src/main/java/org/apache/sling/i18n/impl/JcrResourceBundleProvider.java |
+| JcrResourceBundle.java         |              1 |             1 |           0 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/i18n/impl/JcrResourceBundle.java         |
+| LocaleResolver.java            |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/i18n/LocaleResolver.java                 |
 
 ## Project: _apache/sling-org-apache-sling-installer-core_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-installer-core.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-installer-core) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-installer-core) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/apache_sling-org-apache-sling-installer-core.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| Class name             |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                      |
-|:-----------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:--------------------------------------------------------------------------|
-| OsgiInstallerImpl.java |              5 |             0 |           0 |      0 |           5 |           0 |            0 | src/main/java/org/apache/sling/installer/core/impl/OsgiInstallerImpl.java |
-| Util.java              |              4 |             0 |           0 |      0 |           4 |           0 |            0 | src/main/java/org/apache/sling/installer/core/impl/Util.java              |
+| Class name                  |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                           |
+|:----------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:-------------------------------------------------------------------------------|
+| OsgiInstallerImpl.java      |              5 |             0 |           0 |      0 |           5 |           0 |            0 | src/main/java/org/apache/sling/installer/core/impl/OsgiInstallerImpl.java      |
+| Util.java                   |              4 |             0 |           0 |      0 |           4 |           0 |            0 | src/main/java/org/apache/sling/installer/core/impl/Util.java                   |
+| RegisteredResourceImpl.java |              2 |             0 |           1 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/installer/core/impl/RegisteredResourceImpl.java |
+| InstallationContext.java    |              2 |             0 |           0 |      0 |           2 |           0 |            0 | src/main/java/org/apache/sling/installer/api/tasks/InstallationContext.java    |
+| Activator.java              |              1 |             0 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/installer/core/impl/Activator.java              |
+| InternalResource.java       |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/installer/core/impl/InternalResource.java       |
+| FileDataStore.java          |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/installer/core/impl/FileDataStore.java          |
+| BundleUtil.java             |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/installer/core/impl/tasks/BundleUtil.java       |
 
 ## Project: _apache/sling-org-apache-sling-installer-provider-jcr_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-installer-provider-jcr.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-installer-provider-jcr) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-installer-provider-jcr) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/apache_sling-org-apache-sling-installer-provider-jcr.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| component                                                                         |   inheritance |   exception |   vmsmell |   interface |   threading |   complexity |   sum |
-|:----------------------------------------------------------------------------------|--------------:|------------:|----------:|------------:|------------:|-------------:|------:|
-| src/main/java/org/apache/sling/installer/provider/jcr/impl/JcrInstaller.java      |             0 |           1 |         0 |           0 |           0 |            0 |     1 |
-| src/main/java/org/apache/sling/installer/provider/jcr/impl/FileNodeConverter.java |             0 |           1 |         0 |           0 |           0 |            0 |     1 |
-| src/main/java/org/apache/sling/installer/provider/jcr/impl/JcrUtil.java           |             0 |           0 |         0 |           1 |           0 |            0 |     1 |
-| src/main/java/org/apache/sling/installer/provider/jcr/impl/WatchedFolder.java     |             0 |           1 |         0 |           0 |           0 |            0 |     1 |
-| src/main/java/org/apache/sling/installer/provider/jcr/impl/FolderNameFilter.java  |             1 |           0 |         0 |           0 |           0 |            0 |     1 |
+| Class name             |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                              |
+|:-----------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:----------------------------------------------------------------------------------|
+| JcrInstaller.java      |              1 |             0 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/installer/provider/jcr/impl/JcrInstaller.java      |
+| FileNodeConverter.java |              1 |             0 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/installer/provider/jcr/impl/FileNodeConverter.java |
+| JcrUtil.java           |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/installer/provider/jcr/impl/JcrUtil.java           |
+| WatchedFolder.java     |              1 |             0 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/installer/provider/jcr/impl/WatchedFolder.java     |
+| FolderNameFilter.java  |              1 |             1 |           0 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/installer/provider/jcr/impl/FolderNameFilter.java  |
 
 ## Project: _apache/sling-org-apache-sling-jcr-jackrabbit-accessmanager_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-jcr-jackrabbit-accessmanager.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-jcr-jackrabbit-accessmanager) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-jcr-jackrabbit-accessmanager) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/apache_sling-org-apache-sling-jcr-jackrabbit-accessmanager.json)</p>
@@ -88,13 +116,24 @@ Introduction, meaning of dimensions, other?
 | Class name                     |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                            |
 |:-------------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:------------------------------------------------------------------------------------------------|
 | AbstractAccessPostServlet.java |              5 |             0 |           0 |      0 |           5 |           0 |            0 | src/main/java/org/apache/sling/jcr/jackrabbit/accessmanager/post/AbstractAccessPostServlet.java |
+| ModifyAceServlet.java          |              2 |             1 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/jcr/jackrabbit/accessmanager/post/ModifyAceServlet.java          |
+| ModifyAce.java                 |              2 |             0 |           0 |      0 |           2 |           0 |            0 | src/main/java/org/apache/sling/jcr/jackrabbit/accessmanager/ModifyAce.java                      |
+| DeleteAcesServlet.java         |              1 |             1 |           0 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/jcr/jackrabbit/accessmanager/post/DeleteAcesServlet.java         |
 
 ## Project: _apache/sling-org-apache-sling-jcr-jackrabbit-usermanager_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-jcr-jackrabbit-usermanager.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-jcr-jackrabbit-usermanager) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-jcr-jackrabbit-usermanager) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/apache_sling-org-apache-sling-jcr-jackrabbit-usermanager.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| Class name                          |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                           |
-|:------------------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:-----------------------------------------------------------------------------------------------|
-| AbstractPostServlet.java            |              5 |             0 |           0 |      0 |           5 |           0 |            0 | src/main/java/org/apache/sling/jackrabbit/usermanager/impl/post/AbstractPostServlet.java       |
-| AuthorizablePrivilegesInfoImpl.java |              4 |             0 |           4 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/jackrabbit/usermanager/impl/AuthorizablePrivilegesInfoImpl.java |
+| Class name                          |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                                  |
+|:------------------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:------------------------------------------------------------------------------------------------------|
+| AbstractPostServlet.java            |              5 |             0 |           0 |      0 |           5 |           0 |            0 | src/main/java/org/apache/sling/jackrabbit/usermanager/impl/post/AbstractPostServlet.java              |
+| AuthorizablePrivilegesInfoImpl.java |              4 |             0 |           4 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/jackrabbit/usermanager/impl/AuthorizablePrivilegesInfoImpl.java        |
+| AuthorizableValueMap.java           |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/jackrabbit/usermanager/impl/resource/AuthorizableValueMap.java         |
+| DeleteAuthorizableServlet.java      |              2 |             2 |           0 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/jackrabbit/usermanager/impl/post/DeleteAuthorizableServlet.java        |
+| CreateGroupServlet.java             |              1 |             1 |           0 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/jackrabbit/usermanager/impl/post/CreateGroupServlet.java               |
+| ChangeUserPasswordServlet.java      |              1 |             1 |           0 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/jackrabbit/usermanager/impl/post/ChangeUserPasswordServlet.java        |
+| CreateUserServlet.java              |              1 |             1 |           0 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/jackrabbit/usermanager/impl/post/CreateUserServlet.java                |
+| UpdateUserServlet.java              |              1 |             1 |           0 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/jackrabbit/usermanager/impl/post/UpdateUserServlet.java                |
+| UpdateGroupServlet.java             |              1 |             1 |           0 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/jackrabbit/usermanager/impl/post/UpdateGroupServlet.java               |
+| AuthorizableResourceProvider.java   |              1 |             1 |           0 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/jackrabbit/usermanager/impl/resource/AuthorizableResourceProvider.java |
 

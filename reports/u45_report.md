@@ -35,12 +35,20 @@ Introduction, meaning of dimensions, other?
 |:------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:----------------------------------------------------------------------|
 | DriverResource.java     |              8 |             0 |           8 |      0 |           0 |           0 |            0 | sfc-driver/src/main/java/org/onap/sfc/resources/DriverResource.java   |
 | SdnServiceConsumer.java |              3 |             0 |           2 |      0 |           1 |           0 |            0 | sfc-driver/src/main/java/org/onap/sfc/service/SdnServiceConsumer.java |
+| N2sReqWrapper.java      |              1 |             0 |           0 |      0 |           1 |           0 |            0 | sfc-driver/src/main/java/org/onap/sfc/wrapper/N2sReqWrapper.java      |
+| ConfigInfo.java         |              1 |             0 |           0 |      0 |           1 |           0 |            0 | sfc-driver/src/main/java/org/onap/sfc/service/ConfigInfo.java         |
+| SfcDriverUtil.java      |              1 |             0 |           0 |      0 |           1 |           0 |            0 | sfc-driver/src/main/java/org/onap/sfc/utils/SfcDriverUtil.java        |
 
 ## Project: _onap/vfc-nfvo-resmanagement_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_vfc-nfvo-resmanagement.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/vfc-nfvo-resmanagement) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_vfc-nfvo-resmanagement) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_vfc-nfvo-resmanagement.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| Class name            |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                                                    |
-|:----------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:------------------------------------------------------------------------------------------------------------------------|
-| ServiceException.java |              3 |             0 |           3 |      0 |           0 |           0 |            0 | ResmanagementService/service/src/main/java/org/onap/vfc/nfvo/resmanagement/common/util/restclient/ServiceException.java |
+| Class name                |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                                                       |
+|:--------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:---------------------------------------------------------------------------------------------------------------------------|
+| ServiceException.java     |              3 |             0 |           3 |      0 |           0 |           0 |            0 | ResmanagementService/service/src/main/java/org/onap/vfc/nfvo/resmanagement/common/util/restclient/ServiceException.java    |
+| SitesRoa.java             |              2 |             0 |           2 |      0 |           0 |           0 |            0 | ResmanagementService/service/src/main/java/org/onap/vfc/nfvo/resmanagement/service/rest/SitesRoa.java                      |
+| LocationBusinessImpl.java |              1 |             0 |           1 |      0 |           0 |           0 |            0 | ResmanagementService/service/src/main/java/org/onap/vfc/nfvo/resmanagement/service/business/impl/LocationBusinessImpl.java |
+| NsRoa.java                |              1 |             0 |           1 |      0 |           0 |           0 |            0 | ResmanagementService/service/src/main/java/org/onap/vfc/nfvo/resmanagement/service/rest/NsRoa.java                         |
+| VnfRoa.java               |              1 |             0 |           1 |      0 |           0 |           0 |            0 | ResmanagementService/service/src/main/java/org/onap/vfc/nfvo/resmanagement/service/rest/VnfRoa.java                        |
+| VmServiceImpl.java        |              1 |             0 |           1 |      0 |           0 |           0 |            0 | ResmanagementService/service/src/main/java/org/onap/vfc/nfvo/resmanagement/service/group/impl/VmServiceImpl.java           |
 

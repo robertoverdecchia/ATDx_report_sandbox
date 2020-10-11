@@ -39,6 +39,12 @@ Introduction, meaning of dimensions, other?
 | AaiUiSvcPolicyUtil.java                |              5 |             0 |           4 |      0 |           1 |           0 |            0 | src/main/java/org/onap/aai/datarouter/util/AaiUiSvcPolicyUtil.java                  |
 | POAAuditException.java                 |              3 |             0 |           3 |      0 |           0 |           0 |            0 | src/main/java/org/onap/aai/datarouter/exception/POAAuditException.java              |
 | SearchServiceAgent.java                |              3 |             0 |           3 |      0 |           0 |           0 |            0 | src/main/java/org/onap/aai/datarouter/util/SearchServiceAgent.java                  |
+| ChameleonErrorProcessor.java           |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/onap/aai/datarouter/query/ChameleonErrorProcessor.java            |
+| GapEventTransformer.java               |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/onap/aai/datarouter/policy/GapEventTransformer.java               |
+| EntityEventPolicy.java                 |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/onap/aai/datarouter/policy/EntityEventPolicy.java                 |
+| SpikeEntityEventPolicy.java            |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/onap/aai/datarouter/policy/SpikeEntityEventPolicy.java            |
+| AuditService.java                      |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/onap/aai/datarouter/service/AuditService.java                     |
+| AaiEventEntity.java                    |              1 |             0 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/onap/aai/datarouter/entity/AaiEventEntity.java                    |
 
 ## Project: _onap/aai-graphadmin_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_aai-graphadmin.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/aai-graphadmin) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_aai-graphadmin) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_aai-graphadmin.json)</p>
@@ -61,20 +67,27 @@ Introduction, meaning of dimensions, other?
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_aai-resources.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/aai-resources) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_aai-resources) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_aai-resources.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| Class name             |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                          |
-|:-----------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:------------------------------------------------------------------------------|
-| DataImportTasks.java   |              4 |             0 |           3 |      0 |           0 |           1 |            0 | aai-resources/src/main/java/org/onap/aai/TenantIsolation/DataImportTasks.java |
-| BulkConsumer.java      |              3 |             0 |           3 |      0 |           0 |           0 |            0 | aai-resources/src/main/java/org/onap/aai/rest/BulkConsumer.java               |
-| IncreaseNodesTool.java |              3 |             0 |           2 |      0 |           1 |           0 |            0 | aai-resources/src/main/java/org/onap/aai/IncreaseNodesTool.java               |
+| Class name                |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                          |
+|:--------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:------------------------------------------------------------------------------|
+| DataImportTasks.java      |              4 |             0 |           3 |      0 |           0 |           1 |            0 | aai-resources/src/main/java/org/onap/aai/TenantIsolation/DataImportTasks.java |
+| BulkConsumer.java         |              3 |             0 |           3 |      0 |           0 |           0 |            0 | aai-resources/src/main/java/org/onap/aai/rest/BulkConsumer.java               |
+| IncreaseNodesTool.java    |              3 |             0 |           2 |      0 |           1 |           0 |            0 | aai-resources/src/main/java/org/onap/aai/IncreaseNodesTool.java               |
+| LegacyMoxyConsumer.java   |              2 |             0 |           0 |      0 |           2 |           0 |            0 | aai-resources/src/main/java/org/onap/aai/rest/LegacyMoxyConsumer.java         |
+| AuthorizationService.java |              2 |             0 |           2 |      0 |           0 |           0 |            0 | aai-resources/src/main/java/org/onap/aai/service/AuthorizationService.java    |
+| LogFormatTools.java       |              1 |             0 |           0 |      0 |           1 |           0 |            0 | aai-resources/src/main/java/org/onap/aai/rest/util/LogFormatTools.java        |
+| Command.java              |              1 |             0 |           1 |      0 |           0 |           0 |            0 | aai-resources/src/main/java/org/onap/aai/dbgen/tags/Command.java              |
+| PositiveNumValidator.java |              1 |             0 |           1 |      0 |           0 |           0 |            0 | aai-resources/src/main/java/org/onap/aai/util/PositiveNumValidator.java       |
+| ResourcesApp.java         |              1 |             0 |           1 |      0 |           0 |           0 |            0 | aai-resources/src/main/java/org/onap/aai/ResourcesApp.java                    |
 
 ## Project: _onap/aai-router-core_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_aai-router-core.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/aai-router-core) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_aai-router-core) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_aai-router-core.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| component                                                      |   inheritance |   exception |   vmsmell |   interface |   threading |   complexity |   sum |
-|:---------------------------------------------------------------|--------------:|------------:|----------:|------------:|------------:|-------------:|------:|
-| src/main/java/org/onap/aai/rest/RestClientEndpoint.java        |             1 |           0 |         0 |           0 |           0 |            0 |     1 |
-| src/main/java/org/onap/aai/event/AbstractEventBusEndpoint.java |             0 |           1 |         0 |           0 |           0 |            0 |     1 |
+| Class name                        |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                |
+|:----------------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:--------------------------------------------------------------------|
+| SchemaIngestPropertiesReader.java |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/onap/aai/schema/SchemaIngestPropertiesReader.java |
+| RestClientEndpoint.java           |              1 |             1 |           0 |      0 |           0 |           0 |            0 | src/main/java/org/onap/aai/rest/RestClientEndpoint.java             |
+| AbstractEventBusEndpoint.java     |              1 |             0 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/onap/aai/event/AbstractEventBusEndpoint.java      |
 
 ## Project: _onap/sdc_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_sdc.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/sdc) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_sdc) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_sdc.json)</p>
