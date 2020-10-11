@@ -33,7 +33,4 @@ Introduction, meaning of dimensions, other?
 |:-----------------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:----------------------------------------------------------------------------------------------------------|
 | ResourcePropertySourceFactory.java |              2 |             2 |           0 |      0 |           0 |           0 |            0 | metamodel/src/main/java/org/apache/tamaya/metamodel/internal/factories/ResourcePropertySourceFactory.java |
 | ConfiguredSystemProperties.java    |              2 |             2 |           0 |      0 |           0 |           0 |            0 | configured-sysprops/src/main/java/org/apache/tamaya/sysprops/ConfiguredSystemProperties.java              |
-| HJSONPropertySource.java           |              1 |             1 |           0 |      0 |           0 |           0 |            0 | hjson/src/main/java/org/apache/tamaya/hjson/HJSONPropertySource.java                                      |
-| JavaConfigSource.java              |              1 |             1 |           0 |      0 |           0 |           0 |            0 | configjsr/src/main/java/org/apache/tamaya/jsr382/JavaConfigSource.java                                    |
-| BaseRemotePropertySource.java      |              1 |             1 |           0 |      0 |           0 |           0 |            0 | remote/src/main/java/org/apache/tamaya/remote/BaseRemotePropertySource.java                               |
 

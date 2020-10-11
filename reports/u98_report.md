@@ -37,12 +37,6 @@ Introduction, meaning of dimensions, other?
 | DistributionPublisher.java |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/distribution/journal/impl/publisher/DistributionPublisher.java |
 | PubQueueCache.java         |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/distribution/journal/impl/queue/impl/PubQueueCache.java        |
 | JMXRegistration.java       |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/distribution/journal/impl/shared/JMXRegistration.java          |
-| PackageRepo.java           |              1 |             0 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/distribution/journal/impl/publisher/PackageRepo.java           |
-| BookKeeper.java            |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/distribution/journal/impl/subscriber/BookKeeper.java           |
-| LimitPoller.java           |              1 |             0 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/distribution/journal/impl/shared/LimitPoller.java              |
-| PackageMessageFactory.java |              1 |             0 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/distribution/journal/impl/publisher/PackageMessageFactory.java |
-| Announcer.java             |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/distribution/journal/impl/subscriber/Announcer.java            |
-| PubQueueCacheService.java  |              1 |             0 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/distribution/journal/impl/queue/impl/PubQueueCacheService.java |
 
 ## Project: _apache/sling-whiteboard_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-whiteboard.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-whiteboard) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-whiteboard) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/apache_sling-whiteboard.json)</p>
@@ -57,6 +51,4 @@ Introduction, meaning of dimensions, other?
 | ModelPersistor.java             |              4 |             0 |           4 |      0 |           0 |           0 |            0 | SlingModelPersist/src/main/java/org/apache/sling/models/persistor/ModelPersistor.java          |
 | TokenStore.java                 |              3 |             0 |           3 |      0 |           0 |           0 |            0 | saml-handler/src/main/java/org/apache/sling/auth/saml2/TokenStore.java                         |
 | Saml2UserMgtServiceImpl.java    |              2 |             0 |           0 |      0 |           2 |           0 |            0 | saml-handler/src/main/java/org/apache/sling/auth/saml2/impl/Saml2UserMgtServiceImpl.java       |
-| Activator.java                  |              1 |             0 |           1 |      0 |           0 |           0 |            0 | saml-handler/src/main/java/org/apache/sling/auth/saml2/Activator.java                          |
-| Helpers.java                    |              1 |             0 |           0 |      0 |           1 |           0 |            0 | saml-handler/src/main/java/org/apache/sling/auth/saml2/Helpers.java                            |
 

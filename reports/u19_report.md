@@ -68,48 +68,30 @@ Introduction, meaning of dimensions, other?
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_sdc-dcae-d-dt-be-main.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/sdc-dcae-d-dt-be-main) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_sdc-dcae-d-dt-be-main) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_sdc-dcae-d-dt-be-main.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| Class name                           |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                            |
-|:-------------------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:------------------------------------------------------------------------------------------------|
-| ServiceBusinessLogic.java            |              2 |             0 |           2 |      0 |           0 |           0 |            0 | dcaedt_be/src/main/java/org/onap/sdc/dcae/composition/impl/ServiceBusinessLogic.java            |
-| CompositionEngine.java               |              2 |             0 |           2 |      0 |           0 |           0 |            0 | dcaedt_be/src/main/java/org/onap/sdc/dcae/composition/CompositionEngine.java                    |
-| PolicyException.java                 |              1 |             0 |           1 |      0 |           0 |           0 |            0 | dcaedt_catalog/asdc/src/main/java/org/onap/sdc/dcae/errormng/PolicyException.java               |
-| ServiceException.java                |              1 |             0 |           1 |      0 |           0 |           0 |            0 | dcaedt_catalog/asdc/src/main/java/org/onap/sdc/dcae/errormng/ServiceException.java              |
-| Normalizers.java                     |              1 |             0 |           0 |      0 |           1 |           0 |            0 | dcaedt_catalog/asdc/src/main/java/org/onap/sdc/dcae/utils/Normalizers.java                      |
-| ActionTranslator.java                |              1 |             0 |           0 |      0 |           1 |           0 |            0 | dcaedt_be/src/main/java/org/onap/sdc/dcae/rule/editor/translators/ActionTranslator.java         |
-| AbstractSdncException.java           |              1 |             0 |           1 |      0 |           0 |           0 |            0 | dcaedt_catalog/asdc/src/main/java/org/onap/sdc/dcae/errormng/AbstractSdncException.java         |
-| VfcmtBusinessLogic.java              |              1 |             0 |           1 |      0 |           0 |           0 |            0 | dcaedt_be/src/main/java/org/onap/sdc/dcae/composition/impl/VfcmtBusinessLogic.java              |
-| BlueprintController.java             |              1 |             0 |           0 |      0 |           1 |           0 |            0 | dcaedt_be/src/main/java/org/onap/sdc/dcae/composition/controller/BlueprintController.java       |
-| CompositionCatalogBusinessLogic.java |              1 |             0 |           1 |      0 |           0 |           0 |            0 | dcaedt_be/src/main/java/org/onap/sdc/dcae/composition/impl/CompositionCatalogBusinessLogic.java |
+| Class name                |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                 |
+|:--------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:-------------------------------------------------------------------------------------|
+| ServiceBusinessLogic.java |              2 |             0 |           2 |      0 |           0 |           0 |            0 | dcaedt_be/src/main/java/org/onap/sdc/dcae/composition/impl/ServiceBusinessLogic.java |
+| CompositionEngine.java    |              2 |             0 |           2 |      0 |           0 |           0 |            0 | dcaedt_be/src/main/java/org/onap/sdc/dcae/composition/CompositionEngine.java         |
 
 ## Project: _onap/sdc-dcae-d-dt-be-property_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_sdc-dcae-d-dt-be-property.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/sdc-dcae-d-dt-be-property) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_sdc-dcae-d-dt-be-property) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_sdc-dcae-d-dt-be-property.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| Class name                   |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                        |
-|:-----------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:--------------------------------------------------------------------------------------------|
-| OnapLogConfiguration.java    |             28 |             0 |           0 |      0 |          28 |           0 |            0 | src/main/java/org/onap/sdc/common/onaplog/OnapLogConfiguration.java                         |
-| DcaeBeConstants.java         |              3 |             0 |           0 |      0 |           3 |           0 |            0 | src/main/java/org/onap/sdc/dcae/composition/util/DcaeBeConstants.java                       |
-| RequirementDeserializer.java |              1 |             0 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/onap/sdc/dcae/composition/model/deserializer/RequirementDeserializer.java |
-| ValueDeserializer.java       |              1 |             0 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/onap/sdc/dcae/composition/model/deserializer/ValueDeserializer.java       |
-| ApplyFilterRequest.java      |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/onap/sdc/dcae/composition/restmodels/ruleeditor/ApplyFilterRequest.java   |
-| DcaeFeConstants.java         |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/onap/sdc/dcae/composition/util/DcaeFeConstants.java                       |
+| Class name                |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                  |
+|:--------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:----------------------------------------------------------------------|
+| OnapLogConfiguration.java |             28 |             0 |           0 |      0 |          28 |           0 |            0 | src/main/java/org/onap/sdc/common/onaplog/OnapLogConfiguration.java   |
+| DcaeBeConstants.java      |              3 |             0 |           0 |      0 |           3 |           0 |            0 | src/main/java/org/onap/sdc/dcae/composition/util/DcaeBeConstants.java |
 
 ## Project: _onap/sdc-sdc-be-common_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_sdc-sdc-be-common.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/sdc-sdc-be-common) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_sdc-sdc-be-common) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_sdc-sdc-be-common.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| Class name                     |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                                 |
-|:-------------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:-----------------------------------------------------------------------------------------------------|
-| Logger.java                    |             21 |             0 |           0 |      0 |          21 |           0 |            0 | security-util-lib/src/main/java/org/onap/sdc/security/logging/wrappers/Logger.java                   |
-| LoggerError.java               |              2 |             2 |           0 |      0 |           0 |           0 |            0 | security-util-lib/src/main/java/org/onap/sdc/security/logging/elements/LoggerError.java              |
-| FilterServletOutputStream.java |              2 |             2 |           0 |      0 |           0 |           0 |            0 | security-util-lib/src/main/java/org/onap/sdc/security/filters/FilterServletOutputStream.java         |
-| SecurityLogsUtils.java         |              2 |             0 |           0 |      0 |           2 |           0 |            0 | security-util-lib/src/main/java/org/onap/sdc/security/utils/SecurityLogsUtils.java                   |
-| RepresentationUtils.java       |              1 |             0 |           0 |      0 |           1 |           0 |            0 | security-util-lib/src/main/java/org/onap/sdc/security/RepresentationUtils.java                       |
-| AuthenticationCookieUtils.java |              1 |             0 |           0 |      0 |           1 |           0 |            0 | security-util-lib/src/main/java/org/onap/sdc/security/AuthenticationCookieUtils.java                 |
-| CipherUtil.java                |              1 |             0 |           0 |      0 |           1 |           0 |            0 | security-util-lib/src/main/java/org/onap/sdc/security/CipherUtil.java                                |
-| RestrictionAccessFilter.java   |              1 |             1 |           0 |      0 |           0 |           0 |            0 | security-util-lib/src/main/java/org/onap/sdc/security/filters/RestrictionAccessFilter.java           |
-| RestUtils.java                 |              1 |             0 |           0 |      0 |           1 |           0 |            0 | security-util-lib/src/main/java/org/onap/sdc/security/utils/RestUtils.java                           |
-| SynchronizationState.java      |              1 |             1 |           0 |      0 |           0 |           0 |            0 | versioning-lib/src/main/java/org/onap/sdc/common/versioning/services/types/SynchronizationState.java |
+| Class name                     |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                         |
+|:-------------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:---------------------------------------------------------------------------------------------|
+| Logger.java                    |             21 |             0 |           0 |      0 |          21 |           0 |            0 | security-util-lib/src/main/java/org/onap/sdc/security/logging/wrappers/Logger.java           |
+| LoggerError.java               |              2 |             2 |           0 |      0 |           0 |           0 |            0 | security-util-lib/src/main/java/org/onap/sdc/security/logging/elements/LoggerError.java      |
+| FilterServletOutputStream.java |              2 |             2 |           0 |      0 |           0 |           0 |            0 | security-util-lib/src/main/java/org/onap/sdc/security/filters/FilterServletOutputStream.java |
+| SecurityLogsUtils.java         |              2 |             0 |           0 |      0 |           2 |           0 |            0 | security-util-lib/src/main/java/org/onap/sdc/security/utils/SecurityLogsUtils.java           |
 
 ## Project: _onap/sdc-sdc-distribution-client_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_sdc-sdc-distribution-client.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/sdc-sdc-distribution-client) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_sdc-sdc-distribution-client) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_sdc-sdc-distribution-client.json)</p>
@@ -133,17 +115,12 @@ Introduction, meaning of dimensions, other?
 | ArtifactTypeDef.java   |              2 |             2 |           0 |      0 |           0 |           0 |            0 | jtosca/src/main/java/org/onap/sdc/toscaparser/api/elements/ArtifactTypeDef.java   |
 | GroupType.java         |              2 |             2 |           0 |      0 |           0 |           0 |            0 | jtosca/src/main/java/org/onap/sdc/toscaparser/api/elements/GroupType.java         |
 | PolicyType.java        |              2 |             2 |           0 |      0 |           0 |           0 |            0 | jtosca/src/main/java/org/onap/sdc/toscaparser/api/elements/PolicyType.java        |
-| SdcToscaUtility.java   |              1 |             0 |           0 |      0 |           1 |           0 |            0 | sdc-tosca/src/main/java/org/onap/sdc/tosca/parser/utils/SdcToscaUtility.java      |
-| GeneralUtility.java    |              1 |             0 |           0 |      0 |           1 |           0 |            0 | sdc-tosca/src/main/java/org/onap/sdc/tosca/parser/utils/GeneralUtility.java       |
-| PortSpec.java          |              1 |             0 |           0 |      0 |           1 |           0 |            0 | jtosca/src/main/java/org/onap/sdc/toscaparser/api/elements/PortSpec.java          |
 
 ## Project: _onap/sdc-sdc-workflow-designer_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_sdc-sdc-workflow-designer.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/sdc-sdc-workflow-designer) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_sdc-sdc-workflow-designer) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_sdc-sdc-workflow-designer.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| Class name                       |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                                         |
-|:---------------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:-------------------------------------------------------------------------------------------------------------|
-| JsonUtil.java                    |              2 |             0 |           2 |      0 |           0 |           0 |            0 | sdc-workflow-designer-be/src/main/java/org/onap/sdc/workflow/services/utilities/JsonUtil.java                |
-| ArtifactAssociationService.java  |              1 |             0 |           0 |      0 |           1 |           0 |            0 | sdc-workflow-designer-be/src/main/java/org/onap/sdc/workflow/api/ArtifactAssociationService.java             |
-| WorkflowValidationConstants.java |              1 |             0 |           0 |      0 |           1 |           0 |            0 | sdc-workflow-designer-be/src/main/java/org/onap/sdc/workflow/services/types/WorkflowValidationConstants.java |
+| Class name    |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                          |
+|:--------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:----------------------------------------------------------------------------------------------|
+| JsonUtil.java |              2 |             0 |           2 |      0 |           0 |           0 |            0 | sdc-workflow-designer-be/src/main/java/org/onap/sdc/workflow/services/utilities/JsonUtil.java |
 

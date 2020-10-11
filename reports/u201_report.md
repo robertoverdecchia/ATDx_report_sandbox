@@ -29,8 +29,4 @@ Introduction, meaning of dimensions, other?
 |:---------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:---------------------------------------------------------------------------------|
 | ValidationException.java   |              3 |             1 |           2 |      0 |           0 |           0 |            0 | csarvalidation/src/main/java/org/onap/validation/csar/ValidationException.java   |
 | ValidatorSchemaLoader.java |              2 |             0 |           2 |      0 |           0 |           0 |            0 | csarvalidation/src/main/java/org/onap/validation/csar/ValidatorSchemaLoader.java |
-| VTPValidateCSARBase.java   |              1 |             0 |           1 |      0 |           0 |           0 |            0 | csarvalidation/src/main/java/org/onap/cvc/csar/cc/VTPValidateCSARBase.java       |
-| CsarUtil.java              |              1 |             0 |           0 |      0 |           1 |           0 |            0 | csarvalidation/src/main/java/org/onap/validation/csar/CsarUtil.java              |
-| ManifestFileSplitter.java  |              1 |             0 |           0 |      0 |           0 |           0 |            1 | csarvalidation/src/main/java/org/onap/cvc/csar/parser/ManifestFileSplitter.java  |
-| CsarValidator.java         |              1 |             0 |           0 |      0 |           1 |           0 |            0 | csarvalidation/src/main/java/org/onap/validation/csar/CsarValidator.java         |
 

@@ -42,10 +42,6 @@ Introduction, meaning of dimensions, other?
 | ScheduledTaskConfig.java    |              2 |             0 |           0 |      0 |           1 |           1 |            0 | src/main/java/org/onap/aai/cacher/service/tasks/ScheduledTaskConfig.java     |
 | JerseyConfiguration.java    |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/onap/aai/cacher/web/JerseyConfiguration.java               |
 | AAIParentEventConsumer.java |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/onap/aai/cacher/dmaap/consumer/AAIParentEventConsumer.java |
-| AAIDmaapEventProcessor.java |              1 |             0 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/onap/aai/cacher/dmaap/consumer/AAIDmaapEventProcessor.java |
-| DmaapProcessor.java         |              1 |             0 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/onap/aai/cacher/dmaap/consumer/DmaapProcessor.java         |
-| Application.java            |              1 |             0 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/onap/aai/cacher/Application.java                           |
-| ClientConsumer.java         |              1 |             0 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/onap/aai/cacher/dmaap/consumer/ClientConsumer.java         |
 
 ## Project: _onap/aai-data-router_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_aai-data-router.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/aai-data-router) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_aai-data-router) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_aai-data-router.json)</p>
@@ -62,20 +58,18 @@ Introduction, meaning of dimensions, other?
 | EntityEventPolicy.java                 |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/onap/aai/datarouter/policy/EntityEventPolicy.java                 |
 | SpikeEntityEventPolicy.java            |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/onap/aai/datarouter/policy/SpikeEntityEventPolicy.java            |
 | AuditService.java                      |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/onap/aai/datarouter/service/AuditService.java                     |
-| AaiEventEntity.java                    |              1 |             0 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/onap/aai/datarouter/entity/AaiEventEntity.java                    |
 
 ## Project: _onap/aai-event-client_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_aai-event-client.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/aai-event-client) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_aai-event-client) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_aai-event-client.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| Class name                 |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                     |
-|:---------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:-----------------------------------------------------------------------------------------|
-| EventPublisher.java        |              9 |             0 |           9 |      0 |           0 |           0 |            0 | event-client-api/src/main/java/org/onap/aai/event/api/EventPublisher.java                |
-| EventConsumer.java         |              6 |             0 |           6 |      0 |           0 |           0 |            0 | event-client-api/src/main/java/org/onap/aai/event/api/EventConsumer.java                 |
-| DMaaPEventPublisher.java   |              3 |             0 |           1 |      0 |           2 |           0 |            0 | event-client-dmaap/src/main/java/org/onap/aai/event/client/DMaaPEventPublisher.java      |
-| DMaaPEventConsumer.java    |              3 |             0 |           0 |      0 |           3 |           0 |            0 | event-client-dmaap/src/main/java/org/onap/aai/event/client/DMaaPEventConsumer.java       |
-| RabbitMqUtils.java         |              2 |             0 |           1 |      0 |           1 |           0 |            0 | event-client-rabbitmq/src/main/java/org/onap/aai/event/client/RabbitMqUtils.java         |
-| RabbitMqEventConsumer.java |              1 |             1 |           0 |      0 |           0 |           0 |            0 | event-client-rabbitmq/src/main/java/org/onap/aai/event/client/RabbitMqEventConsumer.java |
+| Class name               |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                |
+|:-------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:------------------------------------------------------------------------------------|
+| EventPublisher.java      |              9 |             0 |           9 |      0 |           0 |           0 |            0 | event-client-api/src/main/java/org/onap/aai/event/api/EventPublisher.java           |
+| EventConsumer.java       |              6 |             0 |           6 |      0 |           0 |           0 |            0 | event-client-api/src/main/java/org/onap/aai/event/api/EventConsumer.java            |
+| DMaaPEventPublisher.java |              3 |             0 |           1 |      0 |           2 |           0 |            0 | event-client-dmaap/src/main/java/org/onap/aai/event/client/DMaaPEventPublisher.java |
+| DMaaPEventConsumer.java  |              3 |             0 |           0 |      0 |           3 |           0 |            0 | event-client-dmaap/src/main/java/org/onap/aai/event/client/DMaaPEventConsumer.java  |
+| RabbitMqUtils.java       |              2 |             0 |           1 |      0 |           1 |           0 |            0 | event-client-rabbitmq/src/main/java/org/onap/aai/event/client/RabbitMqUtils.java    |
 
 ## Project: _onap/aai-graphadmin_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_aai-graphadmin.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/aai-graphadmin) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_aai-graphadmin) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_aai-graphadmin.json)</p>
@@ -105,10 +99,6 @@ Introduction, meaning of dimensions, other?
 | IncreaseNodesTool.java    |              3 |             0 |           2 |      0 |           1 |           0 |            0 | aai-resources/src/main/java/org/onap/aai/IncreaseNodesTool.java               |
 | LegacyMoxyConsumer.java   |              2 |             0 |           0 |      0 |           2 |           0 |            0 | aai-resources/src/main/java/org/onap/aai/rest/LegacyMoxyConsumer.java         |
 | AuthorizationService.java |              2 |             0 |           2 |      0 |           0 |           0 |            0 | aai-resources/src/main/java/org/onap/aai/service/AuthorizationService.java    |
-| LogFormatTools.java       |              1 |             0 |           0 |      0 |           1 |           0 |            0 | aai-resources/src/main/java/org/onap/aai/rest/util/LogFormatTools.java        |
-| Command.java              |              1 |             0 |           1 |      0 |           0 |           0 |            0 | aai-resources/src/main/java/org/onap/aai/dbgen/tags/Command.java              |
-| PositiveNumValidator.java |              1 |             0 |           1 |      0 |           0 |           0 |            0 | aai-resources/src/main/java/org/onap/aai/util/PositiveNumValidator.java       |
-| ResourcesApp.java         |              1 |             0 |           1 |      0 |           0 |           0 |            0 | aai-resources/src/main/java/org/onap/aai/ResourcesApp.java                    |
 
 ## Project: _onap/aai-router-core_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_aai-router-core.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/aai-router-core) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_aai-router-core) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_aai-router-core.json)</p>
@@ -117,8 +107,6 @@ Introduction, meaning of dimensions, other?
 | Class name                        |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                |
 |:----------------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:--------------------------------------------------------------------|
 | SchemaIngestPropertiesReader.java |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/onap/aai/schema/SchemaIngestPropertiesReader.java |
-| RestClientEndpoint.java           |              1 |             1 |           0 |      0 |           0 |           0 |            0 | src/main/java/org/onap/aai/rest/RestClientEndpoint.java             |
-| AbstractEventBusEndpoint.java     |              1 |             0 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/onap/aai/event/AbstractEventBusEndpoint.java      |
 
 ## Project: _onap/aai-schema-service_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_aai-schema-service.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/aai-schema-service) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_aai-schema-service) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_aai-schema-service.json)</p>
@@ -135,7 +123,6 @@ Introduction, meaning of dimensions, other?
 | AuthorizationService.java |              2 |             0 |           2 |      0 |           0 |           0 |            0 | aai-schema-service/src/main/java/org/onap/aai/schemaservice/service/AuthorizationService.java |
 | GenerateXsd.java          |              2 |             0 |           1 |      0 |           1 |           0 |            0 | aai-schema-gen/src/main/java/org/onap/aai/schemagen/GenerateXsd.java                          |
 | OxmFileProcessor.java     |              2 |             0 |           2 |      0 |           0 |           0 |            0 | aai-schema-gen/src/main/java/org/onap/aai/schemagen/genxsd/OxmFileProcessor.java              |
-| SpringContextAware.java   |              1 |             0 |           1 |      0 |           0 |           0 |            0 | aai-schema-gen/src/main/java/org/onap/aai/schemagen/SpringContextAware.java                   |
 
 ## Project: _onap/aai-search-data-service_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_aai-search-data-service.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/aai-search-data-service) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_aai-search-data-service) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_aai-search-data-service.json)</p>

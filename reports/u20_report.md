@@ -68,27 +68,17 @@ Introduction, meaning of dimensions, other?
 |:--------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:-----------------------------------------------------------------|
 | DBFieldHandler.java |              7 |             0 |           7 |      0 |           0 |           0 |            0 | src/main/java/org/onap/dmaap/dbcapi/database/DBFieldHandler.java |
 | AafLurService.java  |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/onap/dmaap/dbcapi/aaf/AafLurService.java       |
-| DatabaseClass.java  |              1 |             0 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/onap/dmaap/dbcapi/database/DatabaseClass.java  |
-| ConnWrapper.java    |              1 |             0 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/onap/dmaap/dbcapi/database/ConnWrapper.java    |
-| TableHandler.java   |              1 |             0 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/onap/dmaap/dbcapi/database/TableHandler.java   |
-| ApiService.java     |              1 |             0 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/onap/dmaap/dbcapi/service/ApiService.java      |
-| Main.java           |              1 |             0 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/onap/dmaap/dbcapi/server/Main.java             |
-| AafObject.java      |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/onap/dmaap/dbcapi/aaf/AafObject.java           |
-| DBSingleton.java    |              1 |             0 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/onap/dmaap/dbcapi/database/DBSingleton.java    |
 
 ## Project: _onap/dmaap-messagerouter-messageservice_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_dmaap-messagerouter-messageservice.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/dmaap-messagerouter-messageservice) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_dmaap-messagerouter-messageservice) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_dmaap-messagerouter-messageservice.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| Class name                    |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                            |
-|:------------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:----------------------------------------------------------------|
-| MirrorMaker.java              |              5 |             0 |           0 |      0 |           5 |           0 |            0 | src/main/java/org/onap/dmaap/mmagent/MirrorMaker.java           |
-| MMRestService.java            |              4 |             0 |           4 |      0 |           0 |           0 |            0 | src/main/java/org/onap/dmaap/service/MMRestService.java         |
-| TopicRestService.java         |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/onap/dmaap/service/TopicRestService.java      |
-| ApiKeysRestService.java       |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/onap/dmaap/service/ApiKeysRestService.java    |
-| ServiceUtil.java              |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/onap/dmaap/service/ServiceUtil.java           |
-| ServicePropertiesMapBean.java |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/onap/dmaap/util/ServicePropertiesMapBean.java |
-| CreateMirrorMaker.java        |              1 |             0 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/onap/dmaap/mmagent/CreateMirrorMaker.java     |
+| Class name              |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                         |
+|:------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:-------------------------------------------------------------|
+| MirrorMaker.java        |              5 |             0 |           0 |      0 |           5 |           0 |            0 | src/main/java/org/onap/dmaap/mmagent/MirrorMaker.java        |
+| MMRestService.java      |              4 |             0 |           4 |      0 |           0 |           0 |            0 | src/main/java/org/onap/dmaap/service/MMRestService.java      |
+| TopicRestService.java   |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/onap/dmaap/service/TopicRestService.java   |
+| ApiKeysRestService.java |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/onap/dmaap/service/ApiKeysRestService.java |
 
 ## Project: _onap/logging-analytics_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_logging-analytics.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/logging-analytics) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_logging-analytics) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_logging-analytics.json)</p>
@@ -98,11 +88,6 @@ Introduction, meaning of dimensions, other?
 |:-----------------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:---------------------------------------------------------------------------------------------------------------------------|
 | Constants.java                     |              4 |             0 |           0 |      0 |           4 |           0 |            0 | reference/logging-filter/logging-filter-base/src/main/java/org/onap/logging/filter/base/Constants.java                     |
 | FilteredMetricLogClientFilter.java |              4 |             4 |           0 |      0 |           0 |           0 |            0 | reference/logging-filter/logging-filter-base/src/main/java/org/onap/logging/filter/base/FilteredMetricLogClientFilter.java |
-| AbstractMDCSetupAspect.java        |              1 |             0 |           1 |      0 |           0 |           0 |            0 | reference/logging-filter/logging-filter-base/src/main/java/org/onap/logging/filter/base/AbstractMDCSetupAspect.java        |
-| ScheduledTaskException.java        |              1 |             0 |           1 |      0 |           0 |           0 |            0 | reference/logging-filter/logging-filter-base/src/main/java/org/onap/logging/filter/base/ScheduledTaskException.java        |
-| SLF4JRefApplication.java           |              1 |             0 |           1 |      0 |           0 |           0 |            0 | reference/logging-slf4j-demo/src/main/java/org/onap/logging/ref/slf4j/demo/SLF4JRefApplication.java                        |
-| SpringClientPayloadFilter.java     |              1 |             0 |           1 |      0 |           0 |           0 |            0 | reference/logging-filter/logging-filter-spring/src/main/java/org/onap/logging/filter/spring/SpringClientPayloadFilter.java |
-| PayloadLoggingClientFilter.java    |              1 |             0 |           1 |      0 |           0 |           0 |            0 | reference/logging-filter/logging-filter-base/src/main/java/org/onap/logging/filter/base/PayloadLoggingClientFilter.java    |
 
 ## Project: _onap/multicloud-framework_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_multicloud-framework-artifactbroker.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/multicloud-framework) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_multicloud-framework-artifactbroker) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_multicloud-framework-artifactbroker.json)</p>

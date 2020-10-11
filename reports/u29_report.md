@@ -44,7 +44,6 @@ Introduction, meaning of dimensions, other?
 | EntityEventPolicy.java                 |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/onap/aai/datarouter/policy/EntityEventPolicy.java                 |
 | SpikeEntityEventPolicy.java            |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/onap/aai/datarouter/policy/SpikeEntityEventPolicy.java            |
 | AuditService.java                      |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/onap/aai/datarouter/service/AuditService.java                     |
-| AaiEventEntity.java                    |              1 |             0 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/onap/aai/datarouter/entity/AaiEventEntity.java                    |
 
 ## Project: _onap/aai-graphadmin_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_aai-graphadmin.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/aai-graphadmin) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_aai-graphadmin) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_aai-graphadmin.json)</p>
@@ -74,10 +73,6 @@ Introduction, meaning of dimensions, other?
 | IncreaseNodesTool.java    |              3 |             0 |           2 |      0 |           1 |           0 |            0 | aai-resources/src/main/java/org/onap/aai/IncreaseNodesTool.java               |
 | LegacyMoxyConsumer.java   |              2 |             0 |           0 |      0 |           2 |           0 |            0 | aai-resources/src/main/java/org/onap/aai/rest/LegacyMoxyConsumer.java         |
 | AuthorizationService.java |              2 |             0 |           2 |      0 |           0 |           0 |            0 | aai-resources/src/main/java/org/onap/aai/service/AuthorizationService.java    |
-| LogFormatTools.java       |              1 |             0 |           0 |      0 |           1 |           0 |            0 | aai-resources/src/main/java/org/onap/aai/rest/util/LogFormatTools.java        |
-| Command.java              |              1 |             0 |           1 |      0 |           0 |           0 |            0 | aai-resources/src/main/java/org/onap/aai/dbgen/tags/Command.java              |
-| PositiveNumValidator.java |              1 |             0 |           1 |      0 |           0 |           0 |            0 | aai-resources/src/main/java/org/onap/aai/util/PositiveNumValidator.java       |
-| ResourcesApp.java         |              1 |             0 |           1 |      0 |           0 |           0 |            0 | aai-resources/src/main/java/org/onap/aai/ResourcesApp.java                    |
 
 ## Project: _onap/aai-router-core_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_aai-router-core.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/aai-router-core) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_aai-router-core) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_aai-router-core.json)</p>
@@ -86,8 +81,6 @@ Introduction, meaning of dimensions, other?
 | Class name                        |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                |
 |:----------------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:--------------------------------------------------------------------|
 | SchemaIngestPropertiesReader.java |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/onap/aai/schema/SchemaIngestPropertiesReader.java |
-| RestClientEndpoint.java           |              1 |             1 |           0 |      0 |           0 |           0 |            0 | src/main/java/org/onap/aai/rest/RestClientEndpoint.java             |
-| AbstractEventBusEndpoint.java     |              1 |             0 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/onap/aai/event/AbstractEventBusEndpoint.java      |
 
 ## Project: _onap/sdc_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_sdc.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/sdc) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_sdc) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_sdc.json)</p>

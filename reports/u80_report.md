@@ -25,7 +25,6 @@ Introduction, meaning of dimensions, other?
 | EntityEventPolicy.java                 |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/onap/aai/datarouter/policy/EntityEventPolicy.java                 |
 | SpikeEntityEventPolicy.java            |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/onap/aai/datarouter/policy/SpikeEntityEventPolicy.java            |
 | AuditService.java                      |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/onap/aai/datarouter/service/AuditService.java                     |
-| AaiEventEntity.java                    |              1 |             0 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/onap/aai/datarouter/entity/AaiEventEntity.java                    |
 
 ## Project: _onap/aai-search-data-service_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_aai-search-data-service.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/aai-search-data-service) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_aai-search-data-service) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_aai-search-data-service.json)</p>
@@ -56,14 +55,9 @@ Introduction, meaning of dimensions, other?
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_aai-spike.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/aai-spike) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_aai-spike) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_aai-spike.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| Class name                 |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                               |
-|:---------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:-------------------------------------------------------------------|
-| RelationshipSchema.java    |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/onap/aai/spike/schema/RelationshipSchema.java    |
-| OXMModelLoader.java        |              2 |             0 |           1 |      0 |           1 |           0 |            0 | src/main/java/org/onap/aai/spike/schema/OXMModelLoader.java        |
-| EdgeRulesLoader.java       |              2 |             0 |           1 |      0 |           1 |           0 |            0 | src/main/java/org/onap/aai/spike/schema/EdgeRulesLoader.java       |
-| SpikeConstants.java        |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/onap/aai/spike/util/SpikeConstants.java          |
-| SpikeProperties.java       |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/onap/aai/spike/util/SpikeProperties.java         |
-| GraphEventTransformer.java |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/onap/aai/spike/schema/GraphEventTransformer.java |
-| SpikeService.java          |              1 |             0 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/onap/aai/spike/service/SpikeService.java         |
-| OffsetManager.java         |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/onap/aai/spike/event/incoming/OffsetManager.java |
+| Class name              |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                            |
+|:------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:----------------------------------------------------------------|
+| RelationshipSchema.java |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/onap/aai/spike/schema/RelationshipSchema.java |
+| OXMModelLoader.java     |              2 |             0 |           1 |      0 |           1 |           0 |            0 | src/main/java/org/onap/aai/spike/schema/OXMModelLoader.java     |
+| EdgeRulesLoader.java    |              2 |             0 |           1 |      0 |           1 |           0 |            0 | src/main/java/org/onap/aai/spike/schema/EdgeRulesLoader.java    |
 

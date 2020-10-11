@@ -38,6 +38,4 @@ Introduction, meaning of dimensions, other?
 | ModelPersistor.java             |              4 |             0 |           4 |      0 |           0 |           0 |            0 | SlingModelPersist/src/main/java/org/apache/sling/models/persistor/ModelPersistor.java          |
 | TokenStore.java                 |              3 |             0 |           3 |      0 |           0 |           0 |            0 | saml-handler/src/main/java/org/apache/sling/auth/saml2/TokenStore.java                         |
 | Saml2UserMgtServiceImpl.java    |              2 |             0 |           0 |      0 |           2 |           0 |            0 | saml-handler/src/main/java/org/apache/sling/auth/saml2/impl/Saml2UserMgtServiceImpl.java       |
-| Activator.java                  |              1 |             0 |           1 |      0 |           0 |           0 |            0 | saml-handler/src/main/java/org/apache/sling/auth/saml2/Activator.java                          |
-| Helpers.java                    |              1 |             0 |           0 |      0 |           1 |           0 |            0 | saml-handler/src/main/java/org/apache/sling/auth/saml2/Helpers.java                            |
 

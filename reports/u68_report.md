@@ -39,10 +39,6 @@ Introduction, meaning of dimensions, other?
 | ScheduledTaskConfig.java    |              2 |             0 |           0 |      0 |           1 |           1 |            0 | src/main/java/org/onap/aai/cacher/service/tasks/ScheduledTaskConfig.java     |
 | JerseyConfiguration.java    |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/onap/aai/cacher/web/JerseyConfiguration.java               |
 | AAIParentEventConsumer.java |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/onap/aai/cacher/dmaap/consumer/AAIParentEventConsumer.java |
-| AAIDmaapEventProcessor.java |              1 |             0 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/onap/aai/cacher/dmaap/consumer/AAIDmaapEventProcessor.java |
-| DmaapProcessor.java         |              1 |             0 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/onap/aai/cacher/dmaap/consumer/DmaapProcessor.java         |
-| Application.java            |              1 |             0 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/onap/aai/cacher/Application.java                           |
-| ClientConsumer.java         |              1 |             0 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/onap/aai/cacher/dmaap/consumer/ClientConsumer.java         |
 
 ## Project: _onap/aai-sparky-be_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_aai-sparky-be.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/aai-sparky-be) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_aai-sparky-be) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_aai-sparky-be.json)</p>

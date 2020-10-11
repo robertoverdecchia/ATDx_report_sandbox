@@ -33,71 +33,52 @@ Introduction, meaning of dimensions, other?
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-caconfig-impl.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-caconfig-impl) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-caconfig-impl) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/apache_sling-org-apache-sling-caconfig-impl.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| Class name                            |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                                 |
-|:--------------------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:-----------------------------------------------------------------------------------------------------|
-| ConfigurationResourceWrapper.java     |              8 |             8 |           0 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/caconfig/impl/ConfigurationResourceWrapper.java                       |
-| ConfigurationDataImpl.java            |              2 |             0 |           0 |      0 |           2 |           0 |            0 | src/main/java/org/apache/sling/caconfig/management/impl/ConfigurationDataImpl.java                   |
-| ConfigurationBuilderImpl.java         |              2 |             0 |           0 |      0 |           2 |           0 |            0 | src/main/java/org/apache/sling/caconfig/impl/ConfigurationBuilderImpl.java                           |
-| ConfigurationManager.java             |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/caconfig/management/ConfigurationManager.java                         |
-| ContextPathStrategyMultiplexer.java   |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/caconfig/management/ContextPathStrategyMultiplexer.java               |
-| OverrideStringParser.java             |              1 |             0 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/caconfig/impl/override/OverrideStringParser.java                      |
-| CAConfigInventoryPrinter.java         |              1 |             0 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/caconfig/management/impl/console/CAConfigInventoryPrinter.java        |
-| ConfigurationOverrideMultiplexer.java |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/caconfig/management/multiplexer/ConfigurationOverrideMultiplexer.java |
-| ValueInfoImpl.java                    |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/caconfig/management/impl/ValueInfoImpl.java                           |
+| Class name                        |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                               |
+|:----------------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:-----------------------------------------------------------------------------------|
+| ConfigurationResourceWrapper.java |              8 |             8 |           0 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/caconfig/impl/ConfigurationResourceWrapper.java     |
+| ConfigurationDataImpl.java        |              2 |             0 |           0 |      0 |           2 |           0 |            0 | src/main/java/org/apache/sling/caconfig/management/impl/ConfigurationDataImpl.java |
+| ConfigurationBuilderImpl.java     |              2 |             0 |           0 |      0 |           2 |           0 |            0 | src/main/java/org/apache/sling/caconfig/impl/ConfigurationBuilderImpl.java         |
 
 ## Project: _apache/sling-org-apache-sling-servlet-helpers_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-servlet-helpers.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-servlet-helpers) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-servlet-helpers) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/apache_sling-org-apache-sling-servlet-helpers.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| Class name                        |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                            |
-|:----------------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:--------------------------------------------------------------------------------|
-| MockSlingHttpServletRequest.java  |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/servlethelpers/MockSlingHttpServletRequest.java  |
-| ResponseBodySupport.java          |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/servlethelpers/ResponseBodySupport.java          |
-| AdaptableUtil.java                |              2 |             0 |           1 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/servlethelpers/AdaptableUtil.java                |
-| MockSlingHttpServletResponse.java |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/servlethelpers/MockSlingHttpServletResponse.java |
-| MockRequestPathInfo.java          |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/servlethelpers/MockRequestPathInfo.java          |
+| Class name                       |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                           |
+|:---------------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:-------------------------------------------------------------------------------|
+| MockSlingHttpServletRequest.java |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/servlethelpers/MockSlingHttpServletRequest.java |
+| ResponseBodySupport.java         |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/servlethelpers/ResponseBodySupport.java         |
+| AdaptableUtil.java               |              2 |             0 |           1 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/servlethelpers/AdaptableUtil.java               |
 
 ## Project: _apache/sling-org-apache-sling-testing-jcr-mock_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-testing-jcr-mock.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-testing-jcr-mock) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-testing-jcr-mock) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/apache_sling-org-apache-sling-testing-jcr-mock.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| Class name        |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                              |
-|:------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:------------------------------------------------------------------|
-| MockQuery.java    |              3 |             0 |           3 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/testing/mock/jcr/MockQuery.java    |
-| MockJcr.java      |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/testing/mock/jcr/MockJcr.java      |
-| MockRow.java      |              1 |             0 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/testing/mock/jcr/MockRow.java      |
-| MockProperty.java |              1 |             0 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/testing/mock/jcr/MockProperty.java |
-| MockNode.java     |              1 |             0 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/testing/mock/jcr/MockNode.java     |
-| ResourceUtil.java |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/testing/mock/jcr/ResourceUtil.java |
+| Class name     |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                           |
+|:---------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:---------------------------------------------------------------|
+| MockQuery.java |              3 |             0 |           3 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/testing/mock/jcr/MockQuery.java |
+| MockJcr.java   |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/testing/mock/jcr/MockJcr.java   |
 
 ## Project: _apache/sling-org-apache-sling-testing-osgi-mock_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-testing-osgi-mock.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-testing-osgi-mock) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-testing-osgi-mock) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/apache_sling-org-apache-sling-testing-osgi-mock.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| Class name             |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                               |
-|:-----------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:-----------------------------------------------------------------------------------|
-| OsgiServiceUtil.java   |             12 |             0 |          12 |      0 |           0 |           0 |            0 | core/src/main/java/org/apache/sling/testing/mock/osgi/OsgiServiceUtil.java         |
-| OsgiMetadataUtil.java  |              9 |             0 |           9 |      0 |           0 |           0 |            0 | core/src/main/java/org/apache/sling/testing/mock/osgi/OsgiMetadataUtil.java        |
-| MockBundleContext.java |              8 |             0 |           8 |      0 |           0 |           0 |            0 | core/src/main/java/org/apache/sling/testing/mock/osgi/MockBundleContext.java       |
-| ContextPlugins.java    |              4 |             0 |           4 |      0 |           0 |           0 |            0 | core/src/main/java/org/apache/sling/testing/mock/osgi/context/ContextPlugins.java  |
-| ContextPlugin.java     |              4 |             0 |           4 |      0 |           0 |           0 |            0 | core/src/main/java/org/apache/sling/testing/mock/osgi/context/ContextPlugin.java   |
-| MockBundle.java        |              2 |             0 |           2 |      0 |           0 |           0 |            0 | core/src/main/java/org/apache/sling/testing/mock/osgi/MockBundle.java              |
-| MockOsgi.java          |              2 |             0 |           2 |      0 |           0 |           0 |            0 | core/src/main/java/org/apache/sling/testing/mock/osgi/MockOsgi.java                |
-| ContextCallback.java   |              1 |             0 |           1 |      0 |           0 |           0 |            0 | core/src/main/java/org/apache/sling/testing/mock/osgi/context/ContextCallback.java |
-| OsgiContextImpl.java   |              1 |             0 |           1 |      0 |           0 |           0 |            0 | core/src/main/java/org/apache/sling/testing/mock/osgi/context/OsgiContextImpl.java |
-| MapMergeUtil.java      |              1 |             0 |           1 |      0 |           0 |           0 |            0 | core/src/main/java/org/apache/sling/testing/mock/osgi/MapMergeUtil.java            |
+| Class name             |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                              |
+|:-----------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:----------------------------------------------------------------------------------|
+| OsgiServiceUtil.java   |             12 |             0 |          12 |      0 |           0 |           0 |            0 | core/src/main/java/org/apache/sling/testing/mock/osgi/OsgiServiceUtil.java        |
+| OsgiMetadataUtil.java  |              9 |             0 |           9 |      0 |           0 |           0 |            0 | core/src/main/java/org/apache/sling/testing/mock/osgi/OsgiMetadataUtil.java       |
+| MockBundleContext.java |              8 |             0 |           8 |      0 |           0 |           0 |            0 | core/src/main/java/org/apache/sling/testing/mock/osgi/MockBundleContext.java      |
+| ContextPlugins.java    |              4 |             0 |           4 |      0 |           0 |           0 |            0 | core/src/main/java/org/apache/sling/testing/mock/osgi/context/ContextPlugins.java |
+| ContextPlugin.java     |              4 |             0 |           4 |      0 |           0 |           0 |            0 | core/src/main/java/org/apache/sling/testing/mock/osgi/context/ContextPlugin.java  |
+| MockBundle.java        |              2 |             0 |           2 |      0 |           0 |           0 |            0 | core/src/main/java/org/apache/sling/testing/mock/osgi/MockBundle.java             |
+| MockOsgi.java          |              2 |             0 |           2 |      0 |           0 |           0 |            0 | core/src/main/java/org/apache/sling/testing/mock/osgi/MockOsgi.java               |
 
 ## Project: _apache/sling-org-apache-sling-testing-resourceresolver-mock_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-testing-resourceresolver-mock.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-testing-resourceresolver-mock) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-testing-resourceresolver-mock) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/apache_sling-org-apache-sling-testing-resourceresolver-mock.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| Class name                       |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                     |
-|:---------------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:-----------------------------------------------------------------------------------------|
-| MockHelper.java                  |              2 |             0 |           0 |      0 |           2 |           0 |            0 | src/main/java/org/apache/sling/testing/resourceresolver/MockHelper.java                  |
-| ResourceTypeUtil.java            |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/testing/resourceresolver/ResourceTypeUtil.java            |
-| MockResourceResolver.java        |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/testing/resourceresolver/MockResourceResolver.java        |
-| MockValueMap.java                |              1 |             0 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/testing/resourceresolver/MockValueMap.java                |
-| MockResourceResolverFactory.java |              1 |             0 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/testing/resourceresolver/MockResourceResolverFactory.java |
+| Class name      |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                    |
+|:----------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:------------------------------------------------------------------------|
+| MockHelper.java |              2 |             0 |           0 |      0 |           2 |           0 |            0 | src/main/java/org/apache/sling/testing/resourceresolver/MockHelper.java |
 
 ## Project: _apache/sling-org-apache-sling-testing-sling-mock_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-testing-sling-mock.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-testing-sling-mock) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-testing-sling-mock) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/apache_sling-org-apache-sling-testing-sling-mock.json)</p>

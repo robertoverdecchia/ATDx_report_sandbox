@@ -19,19 +19,14 @@ Introduction, meaning of dimensions, other?
 | StatusLog.java     |              4 |             0 |           0 |      0 |           4 |           0 |            0 | datarouter-node/src/main/java/org/onap/dmaap/datarouter/node/StatusLog.java                   |
 | RLEBitSet.java     |              2 |             2 |           0 |      0 |           0 |           0 |            0 | datarouter-prov/src/main/java/org/onap/dmaap/datarouter/provisioning/utils/RLEBitSet.java     |
 | LOGJSONObject.java |              2 |             2 |           0 |      0 |           0 |           0 |            0 | datarouter-prov/src/main/java/org/onap/dmaap/datarouter/provisioning/utils/LOGJSONObject.java |
-| NodeConfig.java    |              1 |             0 |           0 |      0 |           1 |           0 |            0 | datarouter-node/src/main/java/org/onap/dmaap/datarouter/node/NodeConfig.java                  |
 
 ## Project: _onap/externalapi-nbi_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_externalapi-nbi.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/externalapi-nbi) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_externalapi-nbi) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_externalapi-nbi.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| Class name                           |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                       |
-|:-------------------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:-------------------------------------------------------------------------------------------|
-| MongoConfig.java                     |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/onap/nbi/configuration/MongoConfig.java                                  |
-| ExecutionTaskProcessorScheduler.java |              1 |             0 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/onap/nbi/apis/serviceorder/workflow/ExecutionTaskProcessorScheduler.java |
-| EventFactory.java                    |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/onap/nbi/apis/hub/service/EventFactory.java                              |
-| E2EServiceUtils.java                 |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/onap/nbi/apis/serviceorder/utils/E2EServiceUtils.java                    |
-| MacroServiceUtils.java               |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/onap/nbi/apis/serviceorder/utils/MacroServiceUtils.java                  |
+| Class name       |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                      |
+|:-----------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:----------------------------------------------------------|
+| MongoConfig.java |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/onap/nbi/configuration/MongoConfig.java |
 
 ## Project: _onap/music_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_music.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/music) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_music) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_music.json)</p>
