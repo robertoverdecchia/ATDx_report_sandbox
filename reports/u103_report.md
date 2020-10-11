@@ -11,7 +11,7 @@ Introduction, meaning of dimensions, other?
 
 # Project report summaries
 ## Project: _onap/dmaap-datarouter_
-|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_dmaap-datarouter.jpg/>|<p style="text-align:left">[Project on Github](https://github.com/onap/dmaap-datarouter) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_dmaap-datarouter) <br> [Complete issue report (JSON)](./json/onap_dmaap-datarouter.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_dmaap-datarouter.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/dmaap-datarouter) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_dmaap-datarouter) <br> [Complete issue report (JSON)](./json/onap_dmaap-datarouter.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | Class name     |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                        |
@@ -19,7 +19,7 @@ Introduction, meaning of dimensions, other?
 | StatusLog.java |              4 |             0 |           0 |      0 |           4 |           0 |            0 | datarouter-node/src/main/java/org/onap/dmaap/datarouter/node/StatusLog.java |
 
 ## Project: _onap/externalapi-nbi_
-|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_externalapi-nbi.jpg/>|<p style="text-align:left">[Project on Github](https://github.com/onap/externalapi-nbi) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_externalapi-nbi) <br> [Complete issue report (JSON)](./json/onap_externalapi-nbi.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_externalapi-nbi.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/externalapi-nbi) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_externalapi-nbi) <br> [Complete issue report (JSON)](./json/onap_externalapi-nbi.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | component                                                                                  |   inheritance |   exception |   vmsmell |   interface |   threading |   complexity |   sum |
@@ -30,7 +30,7 @@ Introduction, meaning of dimensions, other?
 | src/main/java/org/onap/nbi/apis/serviceorder/utils/MacroServiceUtils.java                  |             0 |           0 |         0 |           1 |           0 |            0 |     1 |
 
 ## Project: _onap/music_
-|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_music.jpg/>|<p style="text-align:left">[Project on Github](https://github.com/onap/music) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_music) <br> [Complete issue report (JSON)](./json/onap_music.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_music.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/music) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_music) <br> [Complete issue report (JSON)](./json/onap_music.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | Class name                  |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                           |

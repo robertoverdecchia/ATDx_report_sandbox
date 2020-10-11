@@ -11,7 +11,7 @@ Introduction, meaning of dimensions, other?
 
 # Project report summaries
 ## Project: _apache/sling-org-apache-sling-feature-io_
-|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-feature-io.jpg/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-feature-io) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-feature-io) <br> [Complete issue report (JSON)](./json/apache_sling-org-apache-sling-feature-io.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-feature-io.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-feature-io) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-feature-io) <br> [Complete issue report (JSON)](./json/apache_sling-org-apache-sling-feature-io.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | Class name            |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                            |
@@ -19,7 +19,7 @@ Introduction, meaning of dimensions, other?
 | ConfiguratorUtil.java |              3 |             0 |           2 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/feature/io/ConfiguratorUtil.java |
 
 ## Project: _apache/sling-org-apache-sling-installer-core_
-|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-installer-core.jpg/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-installer-core) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-installer-core) <br> [Complete issue report (JSON)](./json/apache_sling-org-apache-sling-installer-core.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-installer-core.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-installer-core) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-installer-core) <br> [Complete issue report (JSON)](./json/apache_sling-org-apache-sling-installer-core.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | Class name             |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                      |
@@ -28,7 +28,7 @@ Introduction, meaning of dimensions, other?
 | Util.java              |              4 |             0 |           0 |      0 |           4 |           0 |            0 | src/main/java/org/apache/sling/installer/core/impl/Util.java              |
 
 ## Project: _apache/sling-org-apache-sling-installer-provider-jcr_
-|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-installer-provider-jcr.jpg/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-installer-provider-jcr) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-installer-provider-jcr) <br> [Complete issue report (JSON)](./json/apache_sling-org-apache-sling-installer-provider-jcr.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-installer-provider-jcr.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-installer-provider-jcr) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-installer-provider-jcr) <br> [Complete issue report (JSON)](./json/apache_sling-org-apache-sling-installer-provider-jcr.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | component                                                                         |   inheritance |   exception |   vmsmell |   interface |   threading |   complexity |   sum |

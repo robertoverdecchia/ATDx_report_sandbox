@@ -11,7 +11,7 @@ Introduction, meaning of dimensions, other?
 
 # Project report summaries
 ## Project: _apache/incubator-ratis_
-|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_incubator-ratis.jpg/>|<p style="text-align:left">[Project on Github](https://github.com/apache/incubator-ratis) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_incubator-ratis) <br> [Complete issue report (JSON)](./json/apache_incubator-ratis.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_incubator-ratis.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/incubator-ratis) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_incubator-ratis) <br> [Complete issue report (JSON)](./json/apache_incubator-ratis.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | Class name            |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                    |
@@ -27,7 +27,7 @@ Introduction, meaning of dimensions, other?
 | LogAppender.java      |              3 |             0 |           3 |      0 |           0 |           0 |            0 | ratis-server/src/main/java/org/apache/ratis/server/impl/LogAppender.java                |
 
 ## Project: _apache/isis_
-|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_isis.jpg/>|<p style="text-align:left">[Project on Github](https://github.com/apache/isis) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_isis) <br> [Complete issue report (JSON)](./json/apache_isis.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_isis.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/isis) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_isis) <br> [Complete issue report (JSON)](./json/apache_isis.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | Class name                         |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                                                                      |
@@ -44,7 +44,7 @@ Introduction, meaning of dimensions, other?
 | DomainEventHelper.java             |              7 |             0 |           6 |      0 |           1 |           0 |            0 | core/metamodel/src/main/java/org/apache/isis/core/metamodel/facets/DomainEventHelper.java                                                 |
 
 ## Project: _apache/servicecomb-toolkit_
-|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/servicecomb-toolkit.jpg/>|<p style="text-align:left">[Project on Github](https://github.com/apache/servicecomb-toolkit) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=servicecomb-toolkit) <br> [Complete issue report (JSON)](./json/servicecomb-toolkit.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/servicecomb-toolkit.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/servicecomb-toolkit) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=servicecomb-toolkit) <br> [Complete issue report (JSON)](./json/servicecomb-toolkit.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | Class name                     |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                                                  |

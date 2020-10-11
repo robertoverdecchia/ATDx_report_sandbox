@@ -11,7 +11,7 @@ Introduction, meaning of dimensions, other?
 
 # Project report summaries
 ## Project: _apache/sling-org-apache-sling-distribution-core_
-|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-distribution-core.jpg/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-distribution-core) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-distribution-core) <br> [Complete issue report (JSON)](./json/apache_sling-org-apache-sling-distribution-core.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-distribution-core.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-distribution-core) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-distribution-core) <br> [Complete issue report (JSON)](./json/apache_sling-org-apache-sling-distribution-core.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | Class name                                 |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                                           |
@@ -26,7 +26,7 @@ Introduction, meaning of dimensions, other?
 | RepositoryDistributionPackageImporter.java |              3 |             0 |           3 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/distribution/packaging/impl/importer/RepositoryDistributionPackageImporter.java |
 
 ## Project: _apache/sling-org-apache-sling-distribution-journal_
-|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-distribution-journal.jpg/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-distribution-journal) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-distribution-journal) <br> [Complete issue report (JSON)](./json/apache_sling-org-apache-sling-distribution-journal.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-distribution-journal.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-distribution-journal) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-distribution-journal) <br> [Complete issue report (JSON)](./json/apache_sling-org-apache-sling-distribution-journal.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | Class name      |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                |
@@ -34,7 +34,7 @@ Introduction, meaning of dimensions, other?
 | LocalStore.java |              3 |             0 |           3 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/distribution/journal/impl/subscriber/LocalStore.java |
 
 ## Project: _apache/sling-org-apache-sling-resource-filter_
-|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-resource-filter.jpg/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-resource-filter) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-resource-filter) <br> [Complete issue report (JSON)](./json/apache_sling-org-apache-sling-resource-filter.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-resource-filter.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-resource-filter) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-resource-filter) <br> [Complete issue report (JSON)](./json/apache_sling-org-apache-sling-resource-filter.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | Class name            |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                             |

@@ -9,7 +9,7 @@ Introduction, meaning of dimensions, other?
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_multicloud-framework-artifactbroker.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/onap/multicloud-framework) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_multicloud-framework-artifactbroker) <br> [Complete issue report (JSON)](./json/onap_multicloud-framework-artifactbroker.json)</p>|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_so.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/onap/so) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_so) <br> [Complete issue report (JSON)](./json/onap_so.json)</p>
 # Project report summaries
 ## Project: _onap/multicloud-framework_
-|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_multicloud-framework-artifactbroker.jpg/>|<p style="text-align:left">[Project on Github](https://github.com/onap/multicloud-framework) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_multicloud-framework-artifactbroker) <br> [Complete issue report (JSON)](./json/onap_multicloud-framework-artifactbroker.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_multicloud-framework-artifactbroker.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/multicloud-framework) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_multicloud-framework-artifactbroker) <br> [Complete issue report (JSON)](./json/onap_multicloud-framework-artifactbroker.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | component                                                            |   inheritance |   exception |   vmsmell |   interface |   threading |   complexity |   sum |
@@ -17,7 +17,7 @@ Introduction, meaning of dimensions, other?
 | model/src/main/java/org/onap/policy/distribution/model/GsonUtil.java |             0 |           0 |         0 |           1 |           0 |            0 |     1 |
 
 ## Project: _onap/so_
-|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_so.jpg/>|<p style="text-align:left">[Project on Github](https://github.com/onap/so) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_so) <br> [Complete issue report (JSON)](./json/onap_so.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_so.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/so) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_so) <br> [Complete issue report (JSON)](./json/onap_so.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | Class name                          |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                                       |

@@ -14,7 +14,7 @@ Introduction, meaning of dimensions, other?
 
 # Project report summaries
 ## Project: _apache/sling-org-apache-sling-api_
-|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-api.jpg/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-api) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-api) <br> [Complete issue report (JSON)](./json/apache_sling-org-apache-sling-api.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-api.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-api) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-api) <br> [Complete issue report (JSON)](./json/apache_sling-org-apache-sling-api.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | Class name               |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                             |
@@ -27,7 +27,7 @@ Introduction, meaning of dimensions, other?
 | NonExistingResource.java |              3 |             3 |           0 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/api/resource/NonExistingResource.java             |
 
 ## Project: _apache/sling-org-apache-sling-jcr-contentloader_
-|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-jcr-contentloader.jpg/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-jcr-contentloader) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-jcr-contentloader) <br> [Complete issue report (JSON)](./json/apache_sling-org-apache-sling-jcr-contentloader.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-jcr-contentloader.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-jcr-contentloader) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-jcr-contentloader) <br> [Complete issue report (JSON)](./json/apache_sling-org-apache-sling-jcr-contentloader.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | Class name     |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                             |
@@ -36,7 +36,7 @@ Introduction, meaning of dimensions, other?
 | PathEntry.java |              3 |             3 |           0 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/jcr/contentloader/internal/PathEntry.java         |
 
 ## Project: _apache/sling-org-apache-sling-jcr-jackrabbit-accessmanager_
-|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-jcr-jackrabbit-accessmanager.jpg/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-jcr-jackrabbit-accessmanager) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-jcr-jackrabbit-accessmanager) <br> [Complete issue report (JSON)](./json/apache_sling-org-apache-sling-jcr-jackrabbit-accessmanager.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-jcr-jackrabbit-accessmanager.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-jcr-jackrabbit-accessmanager) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-jcr-jackrabbit-accessmanager) <br> [Complete issue report (JSON)](./json/apache_sling-org-apache-sling-jcr-jackrabbit-accessmanager.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | Class name                     |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                            |
@@ -44,7 +44,7 @@ Introduction, meaning of dimensions, other?
 | AbstractAccessPostServlet.java |              5 |             0 |           0 |      0 |           5 |           0 |            0 | src/main/java/org/apache/sling/jcr/jackrabbit/accessmanager/post/AbstractAccessPostServlet.java |
 
 ## Project: _apache/sling-org-apache-sling-jcr-jackrabbit-usermanager_
-|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-jcr-jackrabbit-usermanager.jpg/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-jcr-jackrabbit-usermanager) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-jcr-jackrabbit-usermanager) <br> [Complete issue report (JSON)](./json/apache_sling-org-apache-sling-jcr-jackrabbit-usermanager.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-jcr-jackrabbit-usermanager.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-jcr-jackrabbit-usermanager) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-jcr-jackrabbit-usermanager) <br> [Complete issue report (JSON)](./json/apache_sling-org-apache-sling-jcr-jackrabbit-usermanager.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | Class name                          |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                           |
@@ -53,7 +53,7 @@ Introduction, meaning of dimensions, other?
 | AuthorizablePrivilegesInfoImpl.java |              4 |             0 |           4 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/jackrabbit/usermanager/impl/AuthorizablePrivilegesInfoImpl.java |
 
 ## Project: _apache/sling-org-apache-sling-launchpad-integration-tests_
-|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-launchpad-integration-tests.jpg/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-launchpad-integration-tests) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-launchpad-integration-tests) <br> [Complete issue report (JSON)](./json/apache_sling-org-apache-sling-launchpad-integration-tests.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-launchpad-integration-tests.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-launchpad-integration-tests) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-launchpad-integration-tests) <br> [Complete issue report (JSON)](./json/apache_sling-org-apache-sling-launchpad-integration-tests.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | Class name                          |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                                              |
@@ -70,7 +70,7 @@ Introduction, meaning of dimensions, other?
 | JspScriptingTest.java               |              6 |             0 |           6 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/launchpad/webapp/integrationtest/JspScriptingTest.java                             |
 
 ## Project: _apache/sling-org-apache-sling-scripting-core_
-|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-scripting-core.jpg/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-scripting-core) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-scripting-core) <br> [Complete issue report (JSON)](./json/apache_sling-org-apache-sling-scripting-core.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-scripting-core.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-scripting-core) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-scripting-core) <br> [Complete issue report (JSON)](./json/apache_sling-org-apache-sling-scripting-core.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | component                                                                                    |   inheritance |   exception |   vmsmell |   interface |   threading |   complexity |   sum |
@@ -81,7 +81,7 @@ Introduction, meaning of dimensions, other?
 | src/main/java/org/apache/sling/scripting/core/impl/BindingsValuesProvidersByContextImpl.java |             0 |           0 |         0 |           0 |           0 |            0 |     0 |
 
 ## Project: _apache/sling-org-apache-sling-scripting-javascript_
-|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-scripting-javascript.jpg/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-scripting-javascript) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-scripting-javascript) <br> [Complete issue report (JSON)](./json/apache_sling-org-apache-sling-scripting-javascript.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-scripting-javascript.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-scripting-javascript) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-scripting-javascript) <br> [Complete issue report (JSON)](./json/apache_sling-org-apache-sling-scripting-javascript.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | Class name              |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                |
@@ -91,7 +91,7 @@ Introduction, meaning of dimensions, other?
 | ScriptableResource.java |              3 |             0 |           0 |      0 |           3 |           0 |            0 | src/main/java/org/apache/sling/scripting/javascript/wrapper/ScriptableResource.java |
 
 ## Project: _apache/sling-org-apache-sling-servlets-resolver_
-|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-servlets-resolver.jpg/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-servlets-resolver) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-servlets-resolver) <br> [Complete issue report (JSON)](./json/apache_sling-org-apache-sling-servlets-resolver.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-servlets-resolver.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-servlets-resolver) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-servlets-resolver) <br> [Complete issue report (JSON)](./json/apache_sling-org-apache-sling-servlets-resolver.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | component                                                                                                     |   inheritance |   exception |   vmsmell |   interface |   threading |   complexity |   sum |
@@ -102,7 +102,7 @@ Introduction, meaning of dimensions, other?
 | src/main/java/org/apache/sling/servlets/resolver/internal/helper/ResourceCollector.java                       |             0 |           0 |         0 |           1 |           0 |            0 |     1 |
 
 ## Project: _apache/sling-org-apache-sling-testing-clients_
-|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-testing-clients.jpg/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-testing-clients) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-testing-clients) <br> [Complete issue report (JSON)](./json/apache_sling-org-apache-sling-testing-clients.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-testing-clients.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-testing-clients) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-testing-clients) <br> [Complete issue report (JSON)](./json/apache_sling-org-apache-sling-testing-clients.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | Class name               |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                       |

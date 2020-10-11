@@ -11,7 +11,7 @@ Introduction, meaning of dimensions, other?
 
 # Project report summaries
 ## Project: _apache/incubator-tamaya-extensions_
-|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_incubator-tamaya-extensions.jpg/>|<p style="text-align:left">[Project on Github](https://github.com/apache/incubator-tamaya-extensions) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_incubator-tamaya-extensions) <br> [Complete issue report (JSON)](./json/apache_incubator-tamaya-extensions.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_incubator-tamaya-extensions.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/incubator-tamaya-extensions) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_incubator-tamaya-extensions) <br> [Complete issue report (JSON)](./json/apache_incubator-tamaya-extensions.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | Class name               |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                                  |
@@ -24,7 +24,7 @@ Introduction, meaning of dimensions, other?
 | BackupCommands.java      |              3 |             0 |           3 |      0 |           0 |           0 |            0 | modules/osgi/common/src/main/java/org/apache/tamaya/osgi/commands/BackupCommands.java                 |
 
 ## Project: _apache/incubator-tamaya-sandbox_
-|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_incubator-tamaya-sandbox.jpg/>|<p style="text-align:left">[Project on Github](https://github.com/apache/incubator-tamaya-sandbox) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_incubator-tamaya-sandbox) <br> [Complete issue report (JSON)](./json/apache_incubator-tamaya-sandbox.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_incubator-tamaya-sandbox.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/incubator-tamaya-sandbox) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_incubator-tamaya-sandbox) <br> [Complete issue report (JSON)](./json/apache_incubator-tamaya-sandbox.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | component                                                                   |   inheritance |   exception |   vmsmell |   interface |   threading |   complexity |   sum |
@@ -34,7 +34,7 @@ Introduction, meaning of dimensions, other?
 | remote/src/main/java/org/apache/tamaya/remote/BaseRemotePropertySource.java |             1 |           0 |         0 |           0 |           0 |            0 |     1 |
 
 ## Project: _apache/incubator-tamaya_
-|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_incubator-tamaya.jpg/>|<p style="text-align:left">[Project on Github](https://github.com/apache/incubator-tamaya) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_incubator-tamaya) <br> [Complete issue report (JSON)](./json/apache_incubator-tamaya.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_incubator-tamaya.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/incubator-tamaya) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_incubator-tamaya) <br> [Complete issue report (JSON)](./json/apache_incubator-tamaya.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | Class name       |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                      |

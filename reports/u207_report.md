@@ -9,7 +9,7 @@ Introduction, meaning of dimensions, other?
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache-dolphinscheduler.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/apache/incubator-dolphinscheduler) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache-dolphinscheduler) <br> [Complete issue report (JSON)](./json/apache-dolphinscheduler.json)</p>|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_isis.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/apache/isis) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_isis) <br> [Complete issue report (JSON)](./json/apache_isis.json)</p>
 # Project report summaries
 ## Project: _apache/incubator-dolphinscheduler_
-|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache-dolphinscheduler.jpg/>|<p style="text-align:left">[Project on Github](https://github.com/apache/incubator-dolphinscheduler) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache-dolphinscheduler) <br> [Complete issue report (JSON)](./json/apache-dolphinscheduler.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache-dolphinscheduler.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/incubator-dolphinscheduler) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache-dolphinscheduler) <br> [Complete issue report (JSON)](./json/apache-dolphinscheduler.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | Class name                    |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                                            |
@@ -26,7 +26,7 @@ Introduction, meaning of dimensions, other?
 | ProcessDefinitionService.java |              6 |             0 |           5 |      0 |           1 |           0 |            0 | dolphinscheduler-api/src/main/java/org/apache/dolphinscheduler/api/service/ProcessDefinitionService.java        |
 
 ## Project: _apache/isis_
-|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_isis.jpg/>|<p style="text-align:left">[Project on Github](https://github.com/apache/isis) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_isis) <br> [Complete issue report (JSON)](./json/apache_isis.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_isis.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/isis) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_isis) <br> [Complete issue report (JSON)](./json/apache_isis.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | Class name                         |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                                                                      |

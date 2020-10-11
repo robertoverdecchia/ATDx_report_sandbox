@@ -14,7 +14,7 @@ Introduction, meaning of dimensions, other?
 
 # Project report summaries
 ## Project: _onap/aai-aai-common_
-|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_aai-aai-common.jpg/>|<p style="text-align:left">[Project on Github](https://github.com/onap/aai-aai-common) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_aai-aai-common) <br> [Complete issue report (JSON)](./json/onap_aai-aai-common.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_aai-aai-common.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/aai-aai-common) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_aai-aai-common) <br> [Complete issue report (JSON)](./json/onap_aai-aai-common.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | Class name              |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                   |
@@ -31,7 +31,7 @@ Introduction, meaning of dimensions, other?
 | Constants.java          |              4 |             0 |           0 |      0 |           4 |           0 |            0 | aai-els-onap-logging/src/main/java/org/onap/logging/filter/base/Constants.java         |
 
 ## Project: _onap/aai-cacher_
-|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_aai-cacher.jpg/>|<p style="text-align:left">[Project on Github](https://github.com/onap/aai-cacher) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_aai-cacher) <br> [Complete issue report (JSON)](./json/onap_aai-cacher.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_aai-cacher.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/aai-cacher) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_aai-cacher) <br> [Complete issue report (JSON)](./json/onap_aai-cacher.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | Class name      |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                   |
@@ -40,7 +40,7 @@ Introduction, meaning of dimensions, other?
 | RestClient.java |              3 |             0 |           3 |      0 |           0 |           0 |            0 | src/main/java/org/onap/aai/cacher/util/RestClient.java |
 
 ## Project: _onap/aai-data-router_
-|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_aai-data-router.jpg/>|<p style="text-align:left">[Project on Github](https://github.com/onap/aai-data-router) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_aai-data-router) <br> [Complete issue report (JSON)](./json/onap_aai-data-router.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_aai-data-router.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/aai-data-router) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_aai-data-router) <br> [Complete issue report (JSON)](./json/onap_aai-data-router.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | Class name                             |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                |
@@ -51,7 +51,7 @@ Introduction, meaning of dimensions, other?
 | SearchServiceAgent.java                |              3 |             0 |           3 |      0 |           0 |           0 |            0 | src/main/java/org/onap/aai/datarouter/util/SearchServiceAgent.java                  |
 
 ## Project: _onap/aai-esr-server_
-|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_aai-esr-server.jpg/>|<p style="text-align:left">[Project on Github](https://github.com/onap/aai-esr-server) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_aai-esr-server) <br> [Complete issue report (JSON)](./json/onap_aai-esr-server.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_aai-esr-server.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/aai-esr-server) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_aai-esr-server) <br> [Complete issue report (JSON)](./json/onap_aai-esr-server.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | component                                                                            |   inheritance |   exception |   vmsmell |   interface |   threading |   complexity |   sum |
@@ -64,7 +64,7 @@ Introduction, meaning of dimensions, other?
 | esr-mgr/src/main/java/org/onap/aai/esr/externalservice/aai/NfvoRegisterProvider.java |             0 |           1 |         0 |           0 |           0 |            0 |     1 |
 
 ## Project: _onap/aai-event-client_
-|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_aai-event-client.jpg/>|<p style="text-align:left">[Project on Github](https://github.com/onap/aai-event-client) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_aai-event-client) <br> [Complete issue report (JSON)](./json/onap_aai-event-client.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_aai-event-client.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/aai-event-client) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_aai-event-client) <br> [Complete issue report (JSON)](./json/onap_aai-event-client.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | Class name               |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                |
@@ -75,7 +75,7 @@ Introduction, meaning of dimensions, other?
 | DMaaPEventConsumer.java  |              3 |             0 |           0 |      0 |           3 |           0 |            0 | event-client-dmaap/src/main/java/org/onap/aai/event/client/DMaaPEventConsumer.java  |
 
 ## Project: _onap/aai-gizmo_
-|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_aai-gizmo.jpg/>|<p style="text-align:left">[Project on Github](https://github.com/onap/aai-gizmo) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_aai-gizmo) <br> [Complete issue report (JSON)](./json/onap_aai-gizmo.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_aai-gizmo.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/aai-gizmo) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_aai-gizmo) <br> [Complete issue report (JSON)](./json/onap_aai-gizmo.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | Class name               |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                        |
@@ -85,7 +85,7 @@ Introduction, meaning of dimensions, other?
 | ChampBulkPayload.java    |              4 |             0 |           0 |      0 |           4 |           0 |            0 | src/main/java/org/onap/crud/dao/champ/ChampBulkPayload.java |
 
 ## Project: _onap/aai-graphadmin_
-|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_aai-graphadmin.jpg/>|<p style="text-align:left">[Project on Github](https://github.com/onap/aai-graphadmin) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_aai-graphadmin) <br> [Complete issue report (JSON)](./json/onap_aai-graphadmin.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_aai-graphadmin.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/aai-graphadmin) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_aai-graphadmin) <br> [Complete issue report (JSON)](./json/onap_aai-graphadmin.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | Class name                             |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                           |
@@ -102,7 +102,7 @@ Introduction, meaning of dimensions, other?
 | DataGroomingTasks.java                 |              3 |             0 |           2 |      0 |           0 |           1 |            0 | src/main/java/org/onap/aai/datagrooming/DataGroomingTasks.java                 |
 
 ## Project: _onap/aai-resources_
-|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_aai-resources.jpg/>|<p style="text-align:left">[Project on Github](https://github.com/onap/aai-resources) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_aai-resources) <br> [Complete issue report (JSON)](./json/onap_aai-resources.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_aai-resources.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/aai-resources) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_aai-resources) <br> [Complete issue report (JSON)](./json/onap_aai-resources.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | Class name             |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                          |
@@ -112,7 +112,7 @@ Introduction, meaning of dimensions, other?
 | IncreaseNodesTool.java |              3 |             0 |           2 |      0 |           1 |           0 |            0 | aai-resources/src/main/java/org/onap/aai/IncreaseNodesTool.java               |
 
 ## Project: _onap/aai-router-core_
-|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_aai-router-core.jpg/>|<p style="text-align:left">[Project on Github](https://github.com/onap/aai-router-core) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_aai-router-core) <br> [Complete issue report (JSON)](./json/onap_aai-router-core.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_aai-router-core.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/aai-router-core) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_aai-router-core) <br> [Complete issue report (JSON)](./json/onap_aai-router-core.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | component                                                      |   inheritance |   exception |   vmsmell |   interface |   threading |   complexity |   sum |

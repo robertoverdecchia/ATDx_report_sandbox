@@ -9,7 +9,7 @@ Introduction, meaning of dimensions, other?
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/commons-compress.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/apache/commons-compress) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=commons-compress) <br> [Complete issue report (JSON)](./json/commons-compress.json)</p>|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/cxf.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/apache/cxf) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=cxf) <br> [Complete issue report (JSON)](./json/cxf.json)</p>
 # Project report summaries
 ## Project: _apache/commons-compress_
-|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/commons-compress.jpg/>|<p style="text-align:left">[Project on Github](https://github.com/apache/commons-compress) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=commons-compress) <br> [Complete issue report (JSON)](./json/commons-compress.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/commons-compress.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/commons-compress) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=commons-compress) <br> [Complete issue report (JSON)](./json/commons-compress.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | Class name                       |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                         |
@@ -24,7 +24,7 @@ Introduction, meaning of dimensions, other?
 | Expander.java                    |              3 |             0 |           0 |      0 |           3 |           0 |            0 | src/main/java/org/apache/commons/compress/archivers/examples/Expander.java                   |
 
 ## Project: _apache/cxf_
-|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/cxf.jpg/>|<p style="text-align:left">[Project on Github](https://github.com/apache/cxf) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=cxf) <br> [Complete issue report (JSON)](./json/cxf.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/cxf.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/cxf) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=cxf) <br> [Complete issue report (JSON)](./json/cxf.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | Class name                    |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                                                        |

@@ -11,7 +11,7 @@ Introduction, meaning of dimensions, other?
 
 # Project report summaries
 ## Project: _onap/msb-apigateway_
-|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_msb-apigateway.jpg/>|<p style="text-align:left">[Project on Github](https://github.com/onap/msb-apigateway) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_msb-apigateway) <br> [Complete issue report (JSON)](./json/onap_msb-apigateway.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_msb-apigateway.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/msb-apigateway) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_msb-apigateway) <br> [Complete issue report (JSON)](./json/onap_msb-apigateway.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | Class name           |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                                      |
@@ -28,7 +28,7 @@ Introduction, meaning of dimensions, other?
 | JedisUtil.java       |              3 |             0 |           2 |      0 |           1 |           0 |            0 | apiroute/apiroute-service/src/main/java/org/onap/msb/apiroute/wrapper/util/JedisUtil.java                 |
 
 ## Project: _onap/msb-discovery_
-|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_msb-discovery.jpg/>|<p style="text-align:left">[Project on Github](https://github.com/onap/msb-discovery) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_msb-discovery) <br> [Complete issue report (JSON)](./json/onap_msb-discovery.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_msb-discovery.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/msb-discovery) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_msb-discovery) <br> [Complete issue report (JSON)](./json/onap_msb-discovery.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | Class name                |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                                 |
@@ -40,7 +40,7 @@ Introduction, meaning of dimensions, other?
 | ConsulServiceWrapper.java |              3 |             0 |           3 |      0 |           0 |           0 |            0 | sdclient/discovery-service/src/main/java/org/onap/msb/sdclient/wrapper/ConsulServiceWrapper.java     |
 
 ## Project: _onap/msb-java-sdk_
-|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_msb-java-sdk.jpg/>|<p style="text-align:left">[Project on Github](https://github.com/onap/msb-java-sdk) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_msb-java-sdk) <br> [Complete issue report (JSON)](./json/onap_msb-java-sdk.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_msb-java-sdk.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/msb-java-sdk) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_msb-java-sdk) <br> [Complete issue report (JSON)](./json/onap_msb-java-sdk.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | Class name                |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                |

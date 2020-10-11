@@ -9,7 +9,7 @@ Introduction, meaning of dimensions, other?
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/servicecomb-pack.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/apache/servicecomb-pack) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=servicecomb-pack) <br> [Complete issue report (JSON)](./json/servicecomb-pack.json)</p>|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/servicecomb-toolkit.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/apache/servicecomb-toolkit) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=servicecomb-toolkit) <br> [Complete issue report (JSON)](./json/servicecomb-toolkit.json)</p>
 # Project report summaries
 ## Project: _apache/servicecomb-pack_
-|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/servicecomb-pack.jpg/>|<p style="text-align:left">[Project on Github](https://github.com/apache/servicecomb-pack) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=servicecomb-pack) <br> [Complete issue report (JSON)](./json/servicecomb-pack.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/servicecomb-pack.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/servicecomb-pack) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=servicecomb-pack) <br> [Complete issue report (JSON)](./json/servicecomb-pack.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | Class name                 |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                                      |
@@ -18,7 +18,7 @@ Introduction, meaning of dimensions, other?
 | TransactionRepository.java |              4 |             0 |           4 |      0 |           0 |           0 |            0 | alpha/alpha-fsm/src/main/java/org/apache/servicecomb/pack/alpha/fsm/repository/TransactionRepository.java |
 
 ## Project: _apache/servicecomb-toolkit_
-|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/servicecomb-toolkit.jpg/>|<p style="text-align:left">[Project on Github](https://github.com/apache/servicecomb-toolkit) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=servicecomb-toolkit) <br> [Complete issue report (JSON)](./json/servicecomb-toolkit.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/servicecomb-toolkit.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/servicecomb-toolkit) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=servicecomb-toolkit) <br> [Complete issue report (JSON)](./json/servicecomb-toolkit.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | Class name                     |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                                                  |
