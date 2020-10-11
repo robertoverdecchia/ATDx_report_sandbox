@@ -11,7 +11,7 @@ Introduction, meaning of dimensions, other?
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-scripting-jsp.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-scripting-jsp) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-scripting-jsp) <br> [Complete issue report (JSON)](./json/apache_sling-org-apache-sling-scripting-jsp.json)</p>|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/jspwiki-builder.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/apache/jspwiki) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=jspwiki-builder) <br> [Complete issue report (JSON)](./json/jspwiki-builder.json)</p>
 # Project report summaries
 ## Project: _apache/sling-org-apache-sling-discovery-impl_
-|https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-discovery-impl.jpg|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-discovery-impl) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-discovery-impl) <br> [Complete issue report (JSON)](./json/apache_sling-org-apache-sling-discovery-impl.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-discovery-impl.jpg/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-discovery-impl) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-discovery-impl) <br> [Complete issue report (JSON)](./json/apache_sling-org-apache-sling-discovery-impl.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | Class name                |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                    |
@@ -20,7 +20,7 @@ Introduction, meaning of dimensions, other?
 | View.java                 |              3 |             0 |           3 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/discovery/impl/common/View.java          |
 
 ## Project: _apache/sling-org-apache-sling-feature_
-|https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-feature.jpg|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-feature) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-feature) <br> [Complete issue report (JSON)](./json/apache_sling-org-apache-sling-feature.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-feature.jpg/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-feature) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-feature) <br> [Complete issue report (JSON)](./json/apache_sling-org-apache-sling-feature.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | Class name            |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                            |
@@ -29,7 +29,7 @@ Introduction, meaning of dimensions, other?
 | Extension.java        |              3 |             0 |           0 |      0 |           3 |           0 |            0 | src/main/java/org/apache/sling/feature/Extension.java           |
 
 ## Project: _apache/sling-org-apache-sling-scripting-esx_
-|https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-scripting-esx.jpg|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-scripting-esx) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-scripting-esx) <br> [Complete issue report (JSON)](./json/apache_sling-org-apache-sling-scripting-esx.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-scripting-esx.jpg/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-scripting-esx) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-scripting-esx) <br> [Complete issue report (JSON)](./json/apache_sling-org-apache-sling-scripting-esx.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | Class name        |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                           |
@@ -37,7 +37,7 @@ Introduction, meaning of dimensions, other?
 | ModuleScript.java |              4 |             0 |           0 |      0 |           4 |           0 |            0 | src/main/java/org/apache/sling/scripting/esx/ModuleScript.java |
 
 ## Project: _apache/sling-org-apache-sling-scripting-jsp_
-|https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-scripting-jsp.jpg|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-scripting-jsp) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-scripting-jsp) <br> [Complete issue report (JSON)](./json/apache_sling-org-apache-sling-scripting-jsp.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-scripting-jsp.jpg/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-scripting-jsp) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-scripting-jsp) <br> [Complete issue report (JSON)](./json/apache_sling-org-apache-sling-scripting-jsp.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | Class name               |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                   |
@@ -54,7 +54,7 @@ Introduction, meaning of dimensions, other?
 | Compiler.java            |             10 |             0 |          10 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/scripting/jsp/jasper/compiler/Compiler.java             |
 
 ## Project: _apache/jspwiki_
-|https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/jspwiki-builder.jpg|<p style="text-align:left">[Project on Github](https://github.com/apache/jspwiki) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=jspwiki-builder) <br> [Complete issue report (JSON)](./json/jspwiki-builder.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/jspwiki-builder.jpg/>|<p style="text-align:left">[Project on Github](https://github.com/apache/jspwiki) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=jspwiki-builder) <br> [Complete issue report (JSON)](./json/jspwiki-builder.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | Class name                       |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                           |

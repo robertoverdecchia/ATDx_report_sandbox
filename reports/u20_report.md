@@ -14,7 +14,7 @@ Introduction, meaning of dimensions, other?
 
 # Project report summaries
 ## Project: _onap/aaf-authz_
-|https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_aaf-authz.jpg|<p style="text-align:left">[Project on Github](https://github.com/onap/aaf-authz) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_aaf-authz) <br> [Complete issue report (JSON)](./json/onap_aaf-authz.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_aaf-authz.jpg/>|<p style="text-align:left">[Project on Github](https://github.com/onap/aaf-authz) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_aaf-authz) <br> [Complete issue report (JSON)](./json/onap_aaf-authz.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | Class name         |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                       |
@@ -31,7 +31,7 @@ Introduction, meaning of dimensions, other?
 | AAF_CM.java        |              7 |             0 |           1 |      0 |           6 |           0 |            0 | auth/auth-certman/src/main/java/org/onap/aaf/auth/cm/AAF_CM.java           |
 
 ## Project: _onap/aai-esr-server_
-|https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_aai-esr-server.jpg|<p style="text-align:left">[Project on Github](https://github.com/onap/aai-esr-server) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_aai-esr-server) <br> [Complete issue report (JSON)](./json/onap_aai-esr-server.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_aai-esr-server.jpg/>|<p style="text-align:left">[Project on Github](https://github.com/onap/aai-esr-server) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_aai-esr-server) <br> [Complete issue report (JSON)](./json/onap_aai-esr-server.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | component                                                                            |   inheritance |   exception |   vmsmell |   interface |   threading |   complexity |   sum |
@@ -44,7 +44,7 @@ Introduction, meaning of dimensions, other?
 | esr-mgr/src/main/java/org/onap/aai/esr/externalservice/aai/NfvoRegisterProvider.java |             0 |           1 |         0 |           0 |           0 |            0 |     1 |
 
 ## Project: _onap/appc_
-|https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_appc.jpg|<p style="text-align:left">[Project on Github](https://github.com/onap/appc) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_appc) <br> [Complete issue report (JSON)](./json/onap_appc.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_appc.jpg/>|<p style="text-align:left">[Project on Github](https://github.com/onap/appc) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_appc) <br> [Complete issue report (JSON)](./json/onap_appc.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | Class name                  |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                                                               |
@@ -61,7 +61,7 @@ Introduction, meaning of dimensions, other?
 | ArtifactHandlerNode.java    |              5 |             0 |           5 |      0 |           0 |           0 |            0 | appc-inbound/appc-artifact-handler/provider/src/main/java/org/onap/appc/artifact/handler/node/ArtifactHandlerNode.java             |
 
 ## Project: _onap/dmaap-dbcapi_
-|https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_dmaap-dbcapi.jpg|<p style="text-align:left">[Project on Github](https://github.com/onap/dmaap-dbcapi) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_dmaap-dbcapi) <br> [Complete issue report (JSON)](./json/onap_dmaap-dbcapi.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_dmaap-dbcapi.jpg/>|<p style="text-align:left">[Project on Github](https://github.com/onap/dmaap-dbcapi) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_dmaap-dbcapi) <br> [Complete issue report (JSON)](./json/onap_dmaap-dbcapi.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | Class name          |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                             |
@@ -69,7 +69,7 @@ Introduction, meaning of dimensions, other?
 | DBFieldHandler.java |              7 |             0 |           7 |      0 |           0 |           0 |            0 | src/main/java/org/onap/dmaap/dbcapi/database/DBFieldHandler.java |
 
 ## Project: _onap/dmaap-messagerouter-messageservice_
-|https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_dmaap-messagerouter-messageservice.jpg|<p style="text-align:left">[Project on Github](https://github.com/onap/dmaap-messagerouter-messageservice) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_dmaap-messagerouter-messageservice) <br> [Complete issue report (JSON)](./json/onap_dmaap-messagerouter-messageservice.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_dmaap-messagerouter-messageservice.jpg/>|<p style="text-align:left">[Project on Github](https://github.com/onap/dmaap-messagerouter-messageservice) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_dmaap-messagerouter-messageservice) <br> [Complete issue report (JSON)](./json/onap_dmaap-messagerouter-messageservice.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | Class name         |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                    |
@@ -78,7 +78,7 @@ Introduction, meaning of dimensions, other?
 | MMRestService.java |              4 |             0 |           4 |      0 |           0 |           0 |            0 | src/main/java/org/onap/dmaap/service/MMRestService.java |
 
 ## Project: _onap/logging-analytics_
-|https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_logging-analytics.jpg|<p style="text-align:left">[Project on Github](https://github.com/onap/logging-analytics) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_logging-analytics) <br> [Complete issue report (JSON)](./json/onap_logging-analytics.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_logging-analytics.jpg/>|<p style="text-align:left">[Project on Github](https://github.com/onap/logging-analytics) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_logging-analytics) <br> [Complete issue report (JSON)](./json/onap_logging-analytics.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | Class name                         |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                                                       |
@@ -87,7 +87,7 @@ Introduction, meaning of dimensions, other?
 | FilteredMetricLogClientFilter.java |              4 |             4 |           0 |      0 |           0 |           0 |            0 | reference/logging-filter/logging-filter-base/src/main/java/org/onap/logging/filter/base/FilteredMetricLogClientFilter.java |
 
 ## Project: _onap/multicloud-framework_
-|https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_multicloud-framework-artifactbroker.jpg|<p style="text-align:left">[Project on Github](https://github.com/onap/multicloud-framework) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_multicloud-framework-artifactbroker) <br> [Complete issue report (JSON)](./json/onap_multicloud-framework-artifactbroker.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_multicloud-framework-artifactbroker.jpg/>|<p style="text-align:left">[Project on Github](https://github.com/onap/multicloud-framework) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_multicloud-framework-artifactbroker) <br> [Complete issue report (JSON)](./json/onap_multicloud-framework-artifactbroker.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | component                                                            |   inheritance |   exception |   vmsmell |   interface |   threading |   complexity |   sum |
@@ -95,7 +95,7 @@ Introduction, meaning of dimensions, other?
 | model/src/main/java/org/onap/policy/distribution/model/GsonUtil.java |             0 |           0 |         0 |           1 |           0 |            0 |     1 |
 
 ## Project: _onap/portal_
-|https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_portal.jpg|<p style="text-align:left">[Project on Github](https://github.com/onap/portal) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_portal) <br> [Complete issue report (JSON)](./json/onap_portal.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_portal.jpg/>|<p style="text-align:left">[Project on Github](https://github.com/onap/portal) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_portal) <br> [Complete issue report (JSON)](./json/onap_portal.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | Class name                         |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                                         |
@@ -112,7 +112,7 @@ Introduction, meaning of dimensions, other?
 | SchedulerController.java           |              6 |             0 |           5 |      0 |           0 |           1 |            0 | ecomp-portal-BE-common/src/main/java/org/onap/portalapp/portal/controller/SchedulerController.java           |
 
 ## Project: _onap/sdc_
-|https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_sdc.jpg|<p style="text-align:left">[Project on Github](https://github.com/onap/sdc) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_sdc) <br> [Complete issue report (JSON)](./json/onap_sdc.json)</p>
+|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_sdc.jpg/>|<p style="text-align:left">[Project on Github](https://github.com/onap/sdc) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_sdc) <br> [Complete issue report (JSON)](./json/onap_sdc.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
 | Class name                         |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                                      |
