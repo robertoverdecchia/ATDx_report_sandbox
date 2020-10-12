@@ -1,9 +1,19 @@
-
 # ATDx Report Summary
+Following the overview of the ATDx analysis of your projects.
 
-Introduction, meaning of dimensions, other?
+In short, the ATDx analysis is based on software metrics aggregation, and statistical severity evaluation of the aggregated values across a portfolio of software projects.
 
-## ATDx of your projects
+ATDx provides an overview of the project Architectural Technical Debt (ATD) in 6 distinct dimensions:
+* **Inheritance**: flaws concerning inheritance mechanisms between classes, such as overrides and inheritance of methods or fields
+* **Exception**: flaws regarding the Java throwable class “Exception” and its subclasses
+* **JVMS**: potential misuse of the Java Virtual Machine, e.g., the incorrect usage of the specific Java class “Serializable”
+* **Threading**: flaws arising from the implementation of multiple execution threads, which could potentially lead to concurrency problems
+* **Interface**: flaws related to the usage of Java interfaces
+* **Complexity**: flaws derived from prominent complexity measures, such as McCabe’s cyclomatic complexity
+
+For each project, an overview of the ATDx values is presented, followed by the top classes of the project contributing to the ATDx values.
+
+Note that if numerous classes with 1 violation are reported, this might point to a widespread problematics (only a maximum of 10 classes are provided per project). Similarly, empty rows may indicate that only few classes are affected by ATDx violations.
 |||
 |-|-|
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_portal.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/onap/portal) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_portal) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_portal.json)</p>|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_vid.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/onap/vid) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_vid) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_vid.json)</p>
@@ -12,7 +22,7 @@ Introduction, meaning of dimensions, other?
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_portal.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/portal) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_portal) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_portal.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| Class name                         |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                                         |
+| Class name                         |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified class name                                                                                   |
 |:-----------------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:-------------------------------------------------------------------------------------------------------------|
 | ExternalAccessRolesService.java    |             37 |             0 |          37 |      0 |           0 |           0 |            0 | ecomp-portal-BE-common/src/main/java/org/onap/portalapp/portal/service/ExternalAccessRolesService.java       |
 | RolesController.java               |             28 |             0 |          28 |      0 |           0 |           0 |            0 | ecomp-portal-BE-common/src/main/java/org/onap/portalapp/portal/controller/RolesController.java               |
@@ -29,7 +39,7 @@ Introduction, meaning of dimensions, other?
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_vid.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/vid) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_vid) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_vid.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| Class name                       |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                      |
+| Class name                       |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified class name                                                                |
 |:---------------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:------------------------------------------------------------------------------------------|
 | ServiceRelationships.java        |             11 |             0 |           0 |      0 |          11 |           0 |            0 | vid-app-common/src/main/java/org/onap/vid/aai/model/ServiceRelationships.java             |
 | AsyncRequestStatus.java          |             11 |             0 |           0 |      0 |          11 |           0 |            0 | vid-app-common/src/main/java/org/onap/vid/mso/rest/AsyncRequestStatus.java                |

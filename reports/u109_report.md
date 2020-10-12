@@ -1,9 +1,19 @@
-
 # ATDx Report Summary
+Following the overview of the ATDx analysis of your projects.
 
-Introduction, meaning of dimensions, other?
+In short, the ATDx analysis is based on software metrics aggregation, and statistical severity evaluation of the aggregated values across a portfolio of software projects.
 
-## ATDx of your projects
+ATDx provides an overview of the project Architectural Technical Debt (ATD) in 6 distinct dimensions:
+* **Inheritance**: flaws concerning inheritance mechanisms between classes, such as overrides and inheritance of methods or fields
+* **Exception**: flaws regarding the Java throwable class “Exception” and its subclasses
+* **JVMS**: potential misuse of the Java Virtual Machine, e.g., the incorrect usage of the specific Java class “Serializable”
+* **Threading**: flaws arising from the implementation of multiple execution threads, which could potentially lead to concurrency problems
+* **Interface**: flaws related to the usage of Java interfaces
+* **Complexity**: flaws derived from prominent complexity measures, such as McCabe’s cyclomatic complexity
+
+For each project, an overview of the ATDx values is presented, followed by the top classes of the project contributing to the ATDx values.
+
+Note that if numerous classes with 1 violation are reported, this might point to a widespread problematics (only a maximum of 10 classes are provided per project). Similarly, empty rows may indicate that only few classes are affected by ATDx violations.
 ||||
 |-|-|-|
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_so-libs.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/onap/so-libs) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_so-libs) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_so-libs.json)</p>|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_so.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/onap/so) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_so) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_so.json)</p>|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_usecase-ui-server.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/onap/usecase-ui-server) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_usecase-ui-server) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_usecase-ui-server.json)</p>
@@ -14,18 +24,24 @@ Introduction, meaning of dimensions, other?
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_so-libs.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/so-libs) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_so-libs) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_so-libs.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| Class name                      |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                            |
-|:--------------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:------------------------------------------------------------------------------------------------|
-| Network.java                    |              6 |             0 |           0 |      0 |           6 |           0 |            0 | quantum-model/src/main/java/com/woorea/openstack/quantum/model/Network.java                     |
-| SecurityGroupsExtension.java    |              5 |             0 |           0 |      0 |           5 |           0 |            0 | nova-client/src/main/java/com/woorea/openstack/nova/api/extensions/SecurityGroupsExtension.java |
-| SecurityGroupRuleForCreate.java |              4 |             0 |           0 |      0 |           4 |           0 |            0 | nova-model/src/main/java/com/woorea/openstack/nova/model/SecurityGroupRuleForCreate.java        |
-| SubnetForCreate.java            |              3 |             0 |           0 |      0 |           3 |           0 |            0 | quantum-model/src/main/java/com/woorea/openstack/quantum/model/SubnetForCreate.java             |
+| Class name                      | Total issues   | Inheritance   | Exception   | JVMS   | Interface   | Threading   | Complexity   | Fully qualified class name                                                                                       |
+|:--------------------------------|:---------------|:--------------|:------------|:-------|:------------|:------------|:-------------|:-----------------------------------------------------------------------------------------------------------------|
+| Network.java                    | 6              | 0             | 0           | 0      | 6           | 0           | 0            | quantum-model/src/main/java/com/woorea/openstack/quantum/model/Network.java                                      |
+| SecurityGroupsExtension.java    | 5              | 0             | 0           | 0      | 5           | 0           | 0            | nova-client/src/main/java/com/woorea/openstack/nova/api/extensions/SecurityGroupsExtension.java                  |
+| SecurityGroupRuleForCreate.java | 4              | 0             | 0           | 0      | 4           | 0           | 0            | nova-model/src/main/java/com/woorea/openstack/nova/model/SecurityGroupRuleForCreate.java                         |
+| SubnetForCreate.java            | 3              | 0             | 0           | 0      | 3           | 0           | 0            | quantum-model/src/main/java/com/woorea/openstack/quantum/model/SubnetForCreate.java                              |
+| AbsOpenStackCmd.java            | 1              | 0             | 1           | 0      | 0           | 0           | 0            | quantum-client/src/main/java/com/woorea/openstack/quantum/api/query/AbsOpenStackCmd.java                         |
+| KeystoneUtils.java              | 1              | 0             | 1           | 0      | 0           | 0           | 0            | keystone-client/src/main/java/com/woorea/openstack/keystone/utils/KeystoneUtils.java                             |
+| HttpClientConnector.java        | 1              | 0             | 1           | 0      | 0           | 0           | 0            | openstack-client-connectors/http-connector/src/main/java/com/woorea/openstack/connector/HttpClientConnector.java |
+| PortForCreate.java              | 1              | 0             | 0           | 0      | 1           | 0           | 0            | quantum-model/src/main/java/com/woorea/openstack/quantum/model/PortForCreate.java                                |
+| NetworkForCreate.java           | 1              | 0             | 0           | 0      | 1           | 0           | 0            | quantum-model/src/main/java/com/woorea/openstack/quantum/model/NetworkForCreate.java                             |
+| -                               | -              | -             | -           | -      | -           | -           | -            | -                                                                                                                |
 
 ## Project: _onap/so_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_so.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/so) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_so) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_so.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| Class name                          |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                                       |
+| Class name                          |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified class name                                                                                 |
 |:------------------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:-----------------------------------------------------------------------------------------------------------|
 | BBInputSetup.java                   |             20 |             0 |          16 |      0 |           4 |           0 |            0 | bpmn/MSOCommonBPMN/src/main/java/org/onap/so/bpmn/servicedecomposition/tasks/BBInputSetup.java             |
 | NetworkAdapterResources.java        |             12 |             0 |          10 |      0 |           2 |           0 |            0 | bpmn/so-bpmn-tasks/src/main/java/org/onap/so/client/orchestration/NetworkAdapterResources.java             |
@@ -42,7 +58,7 @@ Introduction, meaning of dimensions, other?
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_usecase-ui-server.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/usecase-ui-server) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_usecase-ui-server) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_usecase-ui-server.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| Class name                         |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                                |
+| Class name                         |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified class name                                                                          |
 |:-----------------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:----------------------------------------------------------------------------------------------------|
 | ResourceMgtServiceConvert.java     |              5 |             0 |           5 |      0 |           0 |           0 |            0 | server/src/main/java/org/onap/usecaseui/server/service/nsmf/impl/ResourceMgtServiceConvert.java     |
 | ResourceMonitorServiceConvert.java |              4 |             0 |           4 |      0 |           0 |           0 |            0 | server/src/main/java/org/onap/usecaseui/server/service/nsmf/impl/ResourceMonitorServiceConvert.java |
@@ -51,4 +67,7 @@ Introduction, meaning of dimensions, other?
 | CommonConstant.java                |              2 |             0 |           0 |      0 |           2 |           0 |            0 | server/src/main/java/org/onap/usecaseui/server/constant/CommonConstant.java                         |
 | Constant.java                      |              2 |             0 |           0 |      0 |           2 |           0 |            0 | server/src/main/java/org/onap/usecaseui/server/constant/Constant.java                               |
 | SotnServiceLcmController.java      |              2 |             0 |           2 |      0 |           0 |           0 |            0 | server/src/main/java/org/onap/usecaseui/server/controller/lcm/SotnServiceLcmController.java         |
+| UuiServerApplication.java          |              1 |             0 |           0 |      0 |           1 |           0 |            0 | server/src/main/java/org/onap/usecaseui/server/UuiServerApplication.java                            |
+| AlarmsHeader.java                  |              1 |             0 |           0 |      0 |           1 |           0 |            0 | server/src/main/java/org/onap/usecaseui/server/bean/AlarmsHeader.java                               |
+| ServiceTemplateInput.java          |              1 |             0 |           0 |      0 |           1 |           0 |            0 | server/src/main/java/org/onap/usecaseui/server/bean/lcm/ServiceTemplateInput.java                   |
 

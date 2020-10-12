@@ -1,9 +1,19 @@
-
 # ATDx Report Summary
+Following the overview of the ATDx analysis of your projects.
 
-Introduction, meaning of dimensions, other?
+In short, the ATDx analysis is based on software metrics aggregation, and statistical severity evaluation of the aggregated values across a portfolio of software projects.
 
-## ATDx of your projects
+ATDx provides an overview of the project Architectural Technical Debt (ATD) in 6 distinct dimensions:
+* **Inheritance**: flaws concerning inheritance mechanisms between classes, such as overrides and inheritance of methods or fields
+* **Exception**: flaws regarding the Java throwable class “Exception” and its subclasses
+* **JVMS**: potential misuse of the Java Virtual Machine, e.g., the incorrect usage of the specific Java class “Serializable”
+* **Threading**: flaws arising from the implementation of multiple execution threads, which could potentially lead to concurrency problems
+* **Interface**: flaws related to the usage of Java interfaces
+* **Complexity**: flaws derived from prominent complexity measures, such as McCabe’s cyclomatic complexity
+
+For each project, an overview of the ATDx values is presented, followed by the top classes of the project contributing to the ATDx values.
+
+Note that if numerous classes with 1 violation are reported, this might point to a widespread problematics (only a maximum of 10 classes are provided per project). Similarly, empty rows may indicate that only few classes are affected by ATDx violations.
 ||||
 |-|-|-|
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_ccsdk-apps.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/onap/ccsdk-apps) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_ccsdk-apps) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_ccsdk-apps.json)</p>|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_ccsdk-dashboard.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/onap/ccsdk-dashboard) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_ccsdk-dashboard) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_ccsdk-dashboard.json)</p>|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_ccsdk-features.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/onap/ccsdk-features) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_ccsdk-features) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_ccsdk-features.json)</p>
@@ -17,7 +27,7 @@ Introduction, meaning of dimensions, other?
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_ccsdk-apps.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/ccsdk-apps) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_ccsdk-apps) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_ccsdk-apps.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| Class name                   |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                               |
+| Class name                   |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified class name                                                                         |
 |:-----------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:---------------------------------------------------------------------------------------------------|
 | SpringService.java           |              5 |             0 |           5 |      0 |           0 |           0 |            0 | ms/neng/src/main/java/org/onap/ccsdk/apps/ms/neng/core/service/SpringService.java                  |
 | PolicyFinderServiceImpl.java |              5 |             0 |           5 |      0 |           0 |           0 |            0 | ms/neng/src/main/java/org/onap/ccsdk/apps/ms/neng/service/extinf/impl/PolicyFinderServiceImpl.java |
@@ -28,12 +38,13 @@ Introduction, meaning of dimensions, other?
 | RestService.java             |              2 |             0 |           2 |      0 |           0 |           0 |            0 | ms/neng/src/main/java/org/onap/ccsdk/apps/ms/neng/core/service/rs/RestService.java                 |
 | SequenceGenerator.java       |              2 |             0 |           2 |      0 |           0 |           0 |            0 | ms/neng/src/main/java/org/onap/ccsdk/apps/ms/neng/core/seq/SequenceGenerator.java                  |
 | DbNameValidator.java         |              2 |             0 |           2 |      0 |           0 |           0 |            0 | ms/neng/src/main/java/org/onap/ccsdk/apps/ms/neng/core/validator/DbNameValidator.java              |
+| AaiServiceImpl.java          |              1 |             0 |           1 |      0 |           0 |           0 |            0 | ms/neng/src/main/java/org/onap/ccsdk/apps/ms/neng/service/extinf/impl/AaiServiceImpl.java          |
 
 ## Project: _onap/ccsdk-dashboard_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_ccsdk-dashboard.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/ccsdk-dashboard) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_ccsdk-dashboard) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_ccsdk-dashboard.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| Class name                         |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                                  |
+| Class name                         |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified class name                                                                            |
 |:-----------------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:------------------------------------------------------------------------------------------------------|
 | CommonApiController.java           |             22 |             0 |          22 |      0 |           0 |           0 |            0 | ccsdk-app-common/src/main/java/org/onap/ccsdk/dashboard/controller/CommonApiController.java           |
 | CloudifyController.java            |             19 |             0 |          19 |      0 |           0 |           0 |            0 | ccsdk-app-common/src/main/java/org/onap/ccsdk/dashboard/controller/CloudifyController.java            |
@@ -50,7 +61,7 @@ Introduction, meaning of dimensions, other?
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_ccsdk-features.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/ccsdk-features) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_ccsdk-features) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_ccsdk-features.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| Class name          |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                                                     |
+| Class name          |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified class name                                                                                               |
 |:--------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:-------------------------------------------------------------------------------------------------------------------------|
 | Program.java        |             12 |             0 |          12 |      0 |           0 |           0 |            0 | sdnr/wt/data-provider/setup/src/main/java/org/onap/ccsdk/features/sdnr/wt/dataprovider/setup/Program.java                |
 | MessageDaoImpl.java |              8 |             0 |           8 |      0 |           0 |           0 |            0 | lib/doorman/src/main/java/org/onap/ccsdk/features/lib/doorman/dao/MessageDaoImpl.java                                    |
@@ -67,7 +78,7 @@ Introduction, meaning of dimensions, other?
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_ccsdk-sli-adaptors.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/ccsdk-sli-adaptors) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_ccsdk-sli-adaptors) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_ccsdk-sli-adaptors.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| Class name                  |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                                       |
+| Class name                  |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified class name                                                                                 |
 |:----------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:-----------------------------------------------------------------------------------------------------------|
 | ResourceRequest.java        |             23 |             0 |           0 |      0 |          23 |           0 |            0 | resource-assignment/provider/src/main/java/org/onap/ccsdk/sli/adaptors/ra/comp/ResourceRequest.java        |
 | ResourceRule.java           |             11 |             0 |           0 |      0 |          11 |           0 |            0 | resource-assignment/provider/src/main/java/org/onap/ccsdk/sli/adaptors/ra/rule/data/ResourceRule.java      |
@@ -84,7 +95,7 @@ Introduction, meaning of dimensions, other?
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_ccsdk-sli-core.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/ccsdk-sli-core) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_ccsdk-sli-core) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_ccsdk-sli-core.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| Class name               |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                             |
+| Class name               |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified class name                                                                       |
 |:-------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:-------------------------------------------------------------------------------------------------|
 | MdsalHelper.java         |              6 |             0 |           0 |      0 |           6 |           0 |            0 | sli/provider/src/main/java/org/onap/ccsdk/sli/core/sli/provider/MdsalHelper.java                 |
 | MessageWriter.java       |              3 |             0 |           0 |      0 |           2 |           1 |            0 | sli/common/src/main/java/org/onap/ccsdk/sli/core/sli/MessageWriter.java                          |
@@ -101,39 +112,67 @@ Introduction, meaning of dimensions, other?
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_ccsdk-sli-northbound.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/ccsdk-sli-northbound) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_ccsdk-sli-northbound) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_ccsdk-sli-northbound.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| Class name                     |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                    |
-|:-------------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:----------------------------------------------------------------------------------------|
-| LcmRpcInvocationException.java |              2 |             0 |           2 |      0 |           0 |           0 |            0 | lcm/provider/src/main/java/org/onap/ccsdk/sli/northbound/LcmRpcInvocationException.java |
+| Class name                     | Total issues   | Inheritance   | Exception   | JVMS   | Interface   | Threading   | Complexity   | Fully qualified class name                                                                |
+|:-------------------------------|:---------------|:--------------|:------------|:-------|:------------|:------------|:-------------|:------------------------------------------------------------------------------------------|
+| LcmRpcInvocationException.java | 2              | 0             | 2           | 0      | 0           | 0           | 0            | lcm/provider/src/main/java/org/onap/ccsdk/sli/northbound/LcmRpcInvocationException.java   |
+| SdncGroupModel.java            | 1              | 0             | 1           | 0      | 0           | 0           | 0            | ueb-listener/src/main/java/org/onap/ccsdk/sli/northbound/uebclient/SdncGroupModel.java    |
+| SdncOdlConnection.java         | 1              | 0             | 1           | 0      | 0           | 0           | 0            | ueb-listener/src/main/java/org/onap/ccsdk/sli/northbound/uebclient/SdncOdlConnection.java |
+| -                              | -              | -             | -           | -      | -           | -           | -            | -                                                                                         |
+| -                              | -              | -             | -           | -      | -           | -           | -            | -                                                                                         |
+| -                              | -              | -             | -           | -      | -           | -           | -            | -                                                                                         |
+| -                              | -              | -             | -           | -      | -           | -           | -            | -                                                                                         |
+| -                              | -              | -             | -           | -      | -           | -           | -            | -                                                                                         |
+| -                              | -              | -             | -           | -      | -           | -           | -            | -                                                                                         |
+| -                              | -              | -             | -           | -      | -           | -           | -            | -                                                                                         |
 
 ## Project: _onap/ccsdk-sli-plugins_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_ccsdk-sli-plugins.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/ccsdk-sli-plugins) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_ccsdk-sli-plugins) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_ccsdk-sli-plugins.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| Class name              |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                                     |
-|:------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:---------------------------------------------------------------------------------------------------------|
-| Parameters.java         |             31 |             0 |           0 |      0 |          31 |           0 |            0 | restapi-call-node/provider/src/main/java/org/onap/ccsdk/sli/plugins/restapicall/Parameters.java          |
-| RestapiCallNode.java    |             17 |             0 |           0 |      0 |          17 |           0 |            0 | restapi-call-node/provider/src/main/java/org/onap/ccsdk/sli/plugins/restapicall/RestapiCallNode.java     |
-| Parameters.java         |             15 |             0 |           0 |      0 |          15 |           0 |            0 | sshapi-call-node/provider/src/main/java/org/onap/ccsdk/sli/plugins/sshapicall/model/Parameters.java      |
-| HttpResponse.java       |              5 |             0 |           0 |      0 |           5 |           0 |            0 | restapi-call-node/provider/src/main/java/org/onap/ccsdk/sli/plugins/restapicall/HttpResponse.java        |
-| Parameters.java         |              4 |             0 |           0 |      0 |           4 |           0 |            0 | properties-node/provider/src/main/java/org/onap/ccsdk/sli/plugins/prop/Parameters.java                   |
-| GrToolkitProvider.java  |              3 |             0 |           0 |      0 |           3 |           0 |            0 | grToolkit/provider/src/main/java/org/onap/ccsdk/sli/plugins/grtoolkit/GrToolkitProvider.java             |
-| ConnectionResponse.java |              2 |             0 |           0 |      0 |           2 |           0 |            0 | grToolkit/provider/src/main/java/org/onap/ccsdk/sli/plugins/grtoolkit/connection/ConnectionResponse.java |
-| ParseParam.java         |              2 |             0 |           2 |      0 |           0 |           0 |            0 | sshapi-call-node/provider/src/main/java/org/onap/ccsdk/sli/plugins/sshapicall/model/ParseParam.java      |
+| Class name              |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified class name                                                                                         |
+|:------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:-------------------------------------------------------------------------------------------------------------------|
+| Parameters.java         |             31 |             0 |           0 |      0 |          31 |           0 |            0 | restapi-call-node/provider/src/main/java/org/onap/ccsdk/sli/plugins/restapicall/Parameters.java                    |
+| RestapiCallNode.java    |             17 |             0 |           0 |      0 |          17 |           0 |            0 | restapi-call-node/provider/src/main/java/org/onap/ccsdk/sli/plugins/restapicall/RestapiCallNode.java               |
+| Parameters.java         |             15 |             0 |           0 |      0 |          15 |           0 |            0 | sshapi-call-node/provider/src/main/java/org/onap/ccsdk/sli/plugins/sshapicall/model/Parameters.java                |
+| HttpResponse.java       |              5 |             0 |           0 |      0 |           5 |           0 |            0 | restapi-call-node/provider/src/main/java/org/onap/ccsdk/sli/plugins/restapicall/HttpResponse.java                  |
+| Parameters.java         |              4 |             0 |           0 |      0 |           4 |           0 |            0 | properties-node/provider/src/main/java/org/onap/ccsdk/sli/plugins/prop/Parameters.java                             |
+| GrToolkitProvider.java  |              3 |             0 |           0 |      0 |           3 |           0 |            0 | grToolkit/provider/src/main/java/org/onap/ccsdk/sli/plugins/grtoolkit/GrToolkitProvider.java                       |
+| ConnectionResponse.java |              2 |             0 |           0 |      0 |           2 |           0 |            0 | grToolkit/provider/src/main/java/org/onap/ccsdk/sli/plugins/grtoolkit/connection/ConnectionResponse.java           |
+| ParseParam.java         |              2 |             0 |           2 |      0 |           0 |           0 |            0 | sshapi-call-node/provider/src/main/java/org/onap/ccsdk/sli/plugins/sshapicall/model/ParseParam.java                |
+| RetryPolicy.java        |              1 |             0 |           1 |      0 |           0 |           0 |            0 | restapi-call-node/provider/src/main/java/org/onap/ccsdk/sli/plugins/restapicall/RetryPolicy.java                   |
+| YangParameters.java     |              1 |             0 |           0 |      0 |           1 |           0 |            0 | restconf-client/provider/src/main/java/org/onap/ccsdk/sli/plugins/yangserializers/dfserializer/YangParameters.java |
 
 ## Project: _onap/sdc-sdc-distribution-client_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_sdc-sdc-distribution-client.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/sdc-sdc-distribution-client) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_sdc-sdc-distribution-client) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_sdc-sdc-distribution-client.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| Class name                             |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                                  |
-|:---------------------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:------------------------------------------------------------------------------------------------------|
-| IDistributionClientDownloadResult.java |              1 |             0 |           0 |      0 |           1 |           0 |            0 | sdc-distribution-client/src/main/java/org/onap/sdc/api/results/IDistributionClientDownloadResult.java |
-| IDistributionClient.java               |              1 |             0 |           0 |      0 |           1 |           0 |            0 | sdc-distribution-client/src/main/java/org/onap/sdc/api/IDistributionClient.java                       |
+| Class name                             | Total issues   | Inheritance   | Exception   | JVMS   | Interface   | Threading   | Complexity   | Fully qualified class name                                                                            |
+|:---------------------------------------|:---------------|:--------------|:------------|:-------|:------------|:------------|:-------------|:------------------------------------------------------------------------------------------------------|
+| IDistributionClientDownloadResult.java | 1              | 0             | 0           | 0      | 1           | 0           | 0            | sdc-distribution-client/src/main/java/org/onap/sdc/api/results/IDistributionClientDownloadResult.java |
+| IDistributionClient.java               | 1              | 0             | 0           | 0      | 1           | 0           | 0            | sdc-distribution-client/src/main/java/org/onap/sdc/api/IDistributionClient.java                       |
+| -                                      | -              | -             | -           | -      | -           | -           | -            | -                                                                                                     |
+| -                                      | -              | -             | -           | -      | -           | -           | -            | -                                                                                                     |
+| -                                      | -              | -             | -           | -      | -           | -           | -            | -                                                                                                     |
+| -                                      | -              | -             | -           | -      | -           | -           | -            | -                                                                                                     |
+| -                                      | -              | -             | -           | -      | -           | -           | -            | -                                                                                                     |
+| -                                      | -              | -             | -           | -      | -           | -           | -            | -                                                                                                     |
+| -                                      | -              | -             | -           | -      | -           | -           | -            | -                                                                                                     |
+| -                                      | -              | -             | -           | -      | -           | -           | -            | -                                                                                                     |
 
 ## Project: _onap/sdnc-apps_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_sdnc-apps.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/sdnc-apps) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_sdnc-apps) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_sdnc-apps.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| Class name    |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                                       |
-|:--------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:-----------------------------------------------------------------------------------------------------------|
-| RestUtil.java |              2 |             0 |           0 |      0 |           2 |           0 |            0 | pomba/service-decomposition/src/main/java/org/onap/sdnc/apps/pomba/servicedecomposition/util/RestUtil.java |
+| Class name       | Total issues   | Inheritance   | Exception   | JVMS   | Interface   | Threading   | Complexity   | Fully qualified class name                                                                                  |
+|:-----------------|:---------------|:--------------|:------------|:-------|:------------|:------------|:-------------|:------------------------------------------------------------------------------------------------------------|
+| RestUtil.java    | 2              | 0             | 0           | 0      | 2           | 0           | 0            | pomba/service-decomposition/src/main/java/org/onap/sdnc/apps/pomba/servicedecomposition/util/RestUtil.java  |
+| RestService.java | 1              | 0             | 0           | 0      | 1           | 0           | 0            | pomba/network-discovery/src/main/java/org/onap/sdnc/apps/pomba/networkdiscovery/service/rs/RestService.java |
+| Application.java | 1              | 0             | 1           | 0      | 0           | 0           | 0            | pomba/service-decomposition/src/main/java/org/onap/sdnc/apps/pomba/servicedecomposition/Application.java    |
+| -                | -              | -             | -           | -      | -           | -           | -            | -                                                                                                           |
+| -                | -              | -             | -           | -      | -           | -           | -            | -                                                                                                           |
+| -                | -              | -             | -           | -      | -           | -           | -            | -                                                                                                           |
+| -                | -              | -             | -           | -      | -           | -           | -            | -                                                                                                           |
+| -                | -              | -             | -           | -      | -           | -           | -            | -                                                                                                           |
+| -                | -              | -             | -           | -      | -           | -           | -            | -                                                                                                           |
+| -                | -              | -             | -           | -      | -           | -           | -            | -                                                                                                           |
 

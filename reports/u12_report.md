@@ -1,9 +1,19 @@
-
 # ATDx Report Summary
+Following the overview of the ATDx analysis of your projects.
 
-Introduction, meaning of dimensions, other?
+In short, the ATDx analysis is based on software metrics aggregation, and statistical severity evaluation of the aggregated values across a portfolio of software projects.
 
-## ATDx of your projects
+ATDx provides an overview of the project Architectural Technical Debt (ATD) in 6 distinct dimensions:
+* **Inheritance**: flaws concerning inheritance mechanisms between classes, such as overrides and inheritance of methods or fields
+* **Exception**: flaws regarding the Java throwable class “Exception” and its subclasses
+* **JVMS**: potential misuse of the Java Virtual Machine, e.g., the incorrect usage of the specific Java class “Serializable”
+* **Threading**: flaws arising from the implementation of multiple execution threads, which could potentially lead to concurrency problems
+* **Interface**: flaws related to the usage of Java interfaces
+* **Complexity**: flaws derived from prominent complexity measures, such as McCabe’s cyclomatic complexity
+
+For each project, an overview of the ATDx values is presented, followed by the top classes of the project contributing to the ATDx values.
+
+Note that if numerous classes with 1 violation are reported, this might point to a widespread problematics (only a maximum of 10 classes are provided per project). Similarly, empty rows may indicate that only few classes are affected by ATDx violations.
 ||||
 |-|-|-|
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-jspc-maven-plugin.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/apache/sling-jspc-maven-plugin) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-jspc-maven-plugin) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/apache_sling-jspc-maven-plugin.json)</p>|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-commons-scheduler.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-commons-scheduler) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-commons-scheduler) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/apache_sling-org-apache-sling-commons-scheduler.json)</p>|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-feature-analyser.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-feature-analyser) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-feature-analyser) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/apache_sling-org-apache-sling-feature-analyser.json)</p>
@@ -17,55 +27,92 @@ Introduction, meaning of dimensions, other?
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-jspc-maven-plugin.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-jspc-maven-plugin) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-jspc-maven-plugin) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/apache_sling-jspc-maven-plugin.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| Class name                 |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                 |
-|:---------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:---------------------------------------------------------------------|
-| JspCServletContext.java    |              4 |             0 |           0 |      0 |           4 |           0 |            0 | src/main/java/org/apache/sling/maven/jspc/JspCServletContext.java    |
-| JspcMojo.java              |              3 |             0 |           2 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/maven/jspc/JspcMojo.java              |
-| JspCTldLocationsCache.java |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/maven/jspc/JspCTldLocationsCache.java |
+| Class name                 | Total issues   | Inheritance   | Exception   | JVMS   | Interface   | Threading   | Complexity   | Fully qualified class name                                           |
+|:---------------------------|:---------------|:--------------|:------------|:-------|:------------|:------------|:-------------|:---------------------------------------------------------------------|
+| JspCServletContext.java    | 4              | 0             | 0           | 0      | 4           | 0           | 0            | src/main/java/org/apache/sling/maven/jspc/JspCServletContext.java    |
+| JspcMojo.java              | 3              | 0             | 2           | 0      | 1           | 0           | 0            | src/main/java/org/apache/sling/maven/jspc/JspcMojo.java              |
+| JspCTldLocationsCache.java | 2              | 0             | 2           | 0      | 0           | 0           | 0            | src/main/java/org/apache/sling/maven/jspc/JspCTldLocationsCache.java |
+| JspCIOProvider.java        | 1              | 0             | 1           | 0      | 0           | 0           | 0            | src/main/java/org/apache/sling/maven/jspc/JspCIOProvider.java        |
+| JspCClassLoaderWriter.java | 1              | 0             | 1           | 0      | 0           | 0           | 0            | src/main/java/org/apache/sling/maven/jspc/JspCClassLoaderWriter.java |
+| -                          | -              | -             | -           | -      | -           | -           | -            | -                                                                    |
+| -                          | -              | -             | -           | -      | -           | -           | -            | -                                                                    |
+| -                          | -              | -             | -           | -      | -           | -           | -            | -                                                                    |
+| -                          | -              | -             | -           | -      | -           | -           | -            | -                                                                    |
+| -                          | -              | -             | -           | -      | -           | -           | -            | -                                                                    |
 
 ## Project: _apache/sling-org-apache-sling-commons-scheduler_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-commons-scheduler.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-commons-scheduler) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-commons-scheduler) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/apache_sling-org-apache-sling-commons-scheduler.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| Class name                   |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                               |
-|:-----------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:-----------------------------------------------------------------------------------|
-| Scheduler.java               |             14 |             0 |           6 |      0 |           8 |           0 |            0 | src/main/java/org/apache/sling/commons/scheduler/Scheduler.java                    |
-| WebConsolePrinter.java       |              9 |             0 |           0 |      0 |           9 |           0 |            0 | src/main/java/org/apache/sling/commons/scheduler/impl/WebConsolePrinter.java       |
-| InternalScheduleOptions.java |              6 |             0 |           0 |      0 |           6 |           0 |            0 | src/main/java/org/apache/sling/commons/scheduler/impl/InternalScheduleOptions.java |
-| QuartzScheduler.java         |              4 |             0 |           2 |      0 |           2 |           0 |            0 | src/main/java/org/apache/sling/commons/scheduler/impl/QuartzScheduler.java         |
+| Class name                   | Total issues   | Inheritance   | Exception   | JVMS   | Interface   | Threading   | Complexity   | Fully qualified class name                                                         |
+|:-----------------------------|:---------------|:--------------|:------------|:-------|:------------|:------------|:-------------|:-----------------------------------------------------------------------------------|
+| Scheduler.java               | 14             | 0             | 6           | 0      | 8           | 0           | 0            | src/main/java/org/apache/sling/commons/scheduler/Scheduler.java                    |
+| WebConsolePrinter.java       | 9              | 0             | 0           | 0      | 9           | 0           | 0            | src/main/java/org/apache/sling/commons/scheduler/impl/WebConsolePrinter.java       |
+| InternalScheduleOptions.java | 6              | 0             | 0           | 0      | 6           | 0           | 0            | src/main/java/org/apache/sling/commons/scheduler/impl/InternalScheduleOptions.java |
+| QuartzScheduler.java         | 4              | 0             | 2           | 0      | 2           | 0           | 0            | src/main/java/org/apache/sling/commons/scheduler/impl/QuartzScheduler.java         |
+| QuartzJobExecutor.java       | 1              | 0             | 0           | 0      | 1           | 0           | 0            | src/main/java/org/apache/sling/commons/scheduler/impl/QuartzJobExecutor.java       |
+| SettingsSupport.java         | 1              | 0             | 1           | 0      | 0           | 0           | 0            | src/main/java/org/apache/sling/commons/scheduler/impl/SettingsSupport.java         |
+| SchedulerServiceFactory.java | 1              | 0             | 1           | 0      | 0           | 0           | 0            | src/main/java/org/apache/sling/commons/scheduler/impl/SchedulerServiceFactory.java |
+| GaugesSupport.java           | 1              | 0             | 1           | 0      | 0           | 0           | 0            | src/main/java/org/apache/sling/commons/scheduler/impl/GaugesSupport.java           |
+| MetricsHelper.java           | 1              | 0             | 0           | 0      | 1           | 0           | 0            | src/main/java/org/apache/sling/commons/scheduler/impl/MetricsHelper.java           |
+| -                            | -              | -             | -           | -      | -           | -           | -            | -                                                                                  |
 
 ## Project: _apache/sling-org-apache-sling-feature-analyser_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-feature-analyser.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-feature-analyser) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-feature-analyser) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/apache_sling-org-apache-sling-feature-analyser.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| Class name                     |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                     |
-|:-------------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:-----------------------------------------------------------------------------------------|
-| CheckBundleExportsImports.java |              6 |             0 |           0 |      0 |           6 |           0 |            0 | src/main/java/org/apache/sling/feature/analyser/task/impl/CheckBundleExportsImports.java |
-| Analyser.java                  |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/feature/analyser/Analyser.java                            |
+| Class name                            | Total issues   | Inheritance   | Exception   | JVMS   | Interface   | Threading   | Complexity   | Fully qualified class name                                                                      |
+|:--------------------------------------|:---------------|:--------------|:------------|:-------|:------------|:------------|:-------------|:------------------------------------------------------------------------------------------------|
+| CheckBundleExportsImports.java        | 6              | 0             | 0           | 0      | 6           | 0           | 0            | src/main/java/org/apache/sling/feature/analyser/task/impl/CheckBundleExportsImports.java        |
+| Analyser.java                         | 2              | 0             | 2           | 0      | 0           | 0           | 0            | src/main/java/org/apache/sling/feature/analyser/Analyser.java                                   |
+| Scanner.java                          | 1              | 0             | 0           | 0      | 1           | 0           | 0            | src/main/java/org/apache/sling/feature/scanner/Scanner.java                                     |
+| AnalyserTask.java                     | 1              | 0             | 1           | 0      | 0           | 0           | 0            | src/main/java/org/apache/sling/feature/analyser/task/AnalyserTask.java                          |
+| BundleDescriptor.java                 | 1              | 0             | 0           | 0      | 1           | 0           | 0            | src/main/java/org/apache/sling/feature/scanner/BundleDescriptor.java                            |
+| CheckContentPackagesDependencies.java | 1              | 0             | 1           | 0      | 0           | 0           | 0            | src/main/java/org/apache/sling/feature/analyser/task/impl/CheckContentPackagesDependencies.java |
+| -                                     | -              | -             | -           | -      | -           | -           | -            | -                                                                                               |
+| -                                     | -              | -             | -           | -      | -           | -           | -            | -                                                                                               |
+| -                                     | -              | -             | -           | -      | -           | -           | -            | -                                                                                               |
+| -                                     | -              | -             | -           | -      | -           | -           | -            | -                                                                                               |
 
 ## Project: _apache/sling-org-apache-sling-feature_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-feature.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-feature) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-feature) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/apache_sling-org-apache-sling-feature.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| Class name            |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                            |
-|:----------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:----------------------------------------------------------------|
-| ConfiguratorUtil.java |              3 |             0 |           2 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/feature/io/ConfiguratorUtil.java |
-| Extension.java        |              3 |             0 |           0 |      0 |           3 |           0 |            0 | src/main/java/org/apache/sling/feature/Extension.java           |
+| Class name                 |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified class name                                                     |
+|:---------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:-------------------------------------------------------------------------------|
+| ConfiguratorUtil.java      |              3 |             0 |           2 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/feature/io/ConfiguratorUtil.java                |
+| Extension.java             |              3 |             0 |           0 |      0 |           3 |           0 |            0 | src/main/java/org/apache/sling/feature/Extension.java                          |
+| FeatureBuilder.java        |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/feature/builder/FeatureBuilder.java             |
+| JSONConstants.java         |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/feature/io/json/JSONConstants.java              |
+| IOUtils.java               |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/feature/io/IOUtils.java                         |
+| CloseShieldWriter.java     |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/feature/io/CloseShieldWriter.java               |
+| ArtifactManagerConfig.java |              1 |             0 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/feature/io/artifacts/ArtifactManagerConfig.java |
+| Configuration.java         |              1 |             1 |           0 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/feature/Configuration.java                      |
+| BuilderUtil.java           |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/feature/builder/BuilderUtil.java                |
+| BuilderContext.java        |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/feature/builder/BuilderContext.java             |
 
 ## Project: _apache/sling-org-apache-sling-scripting-core_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-scripting-core.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-scripting-core) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-scripting-core) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/apache_sling-org-apache-sling-scripting-core.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| Class name        |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                 |
-|:------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:---------------------------------------------------------------------|
-| ServiceCache.java |              2 |             0 |           0 |      0 |           2 |           0 |            0 | src/main/java/org/apache/sling/scripting/core/impl/ServiceCache.java |
-| ScriptHelper.java |              2 |             0 |           1 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/scripting/core/ScriptHelper.java      |
+| Class name                | Total issues   | Inheritance   | Exception   | JVMS   | Interface   | Threading   | Complexity   | Fully qualified class name                                                        |
+|:--------------------------|:---------------|:--------------|:------------|:-------|:------------|:------------|:-------------|:----------------------------------------------------------------------------------|
+| ServiceCache.java         | 2              | 0             | 0           | 0      | 2           | 0           | 0            | src/main/java/org/apache/sling/scripting/core/impl/ServiceCache.java              |
+| ScriptHelper.java         | 2              | 0             | 1           | 0      | 1           | 0           | 0            | src/main/java/org/apache/sling/scripting/core/ScriptHelper.java                   |
+| Script.java               | 1              | 0             | 0           | 0      | 1           | 0           | 0            | src/main/java/org/apache/sling/scripting/core/impl/bundled/Script.java            |
+| PrecompiledScript.java    | 1              | 0             | 0           | 0      | 1           | 0           | 0            | src/main/java/org/apache/sling/scripting/core/impl/bundled/PrecompiledScript.java |
+| InternalScriptHelper.java | 1              | 1             | 0           | 0      | 0           | 0           | 0            | src/main/java/org/apache/sling/scripting/core/impl/InternalScriptHelper.java      |
+| -                         | -              | -             | -           | -      | -           | -           | -            | -                                                                                 |
+| -                         | -              | -             | -           | -      | -           | -           | -            | -                                                                                 |
+| -                         | -              | -             | -           | -      | -           | -           | -            | -                                                                                 |
+| -                         | -              | -             | -           | -      | -           | -           | -            | -                                                                                 |
+| -                         | -              | -             | -           | -      | -           | -           | -            | -                                                                                 |
 
 ## Project: _apache/sling-org-apache-sling-scripting-jsp_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-scripting-jsp.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-scripting-jsp) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-scripting-jsp) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/apache_sling-org-apache-sling-scripting-jsp.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| Class name               |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                   |
+| Class name               |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified class name                                                             |
 |:-------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:---------------------------------------------------------------------------------------|
 | PageDataImpl.java        |             34 |            33 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/apache/sling/scripting/jsp/jasper/compiler/PageDataImpl.java         |
 | Dumper.java              |             22 |            21 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/scripting/jsp/jasper/compiler/Dumper.java               |
@@ -82,29 +129,50 @@ Introduction, meaning of dimensions, other?
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-scripting-sightly-js-provider.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-scripting-sightly-js-provider) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-scripting-sightly-js-provider) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/apache_sling-org-apache-sling-scripting-sightly-js-provider.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| Class name            |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                |
-|:----------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:------------------------------------------------------------------------------------|
-| Variables.java        |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/scripting/sightly/js/impl/Variables.java             |
-| EventLoopInterop.java |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/scripting/sightly/js/impl/loop/EventLoopInterop.java |
-| JsUtils.java          |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/scripting/sightly/js/impl/rhino/JsUtils.java         |
-| Utils.java            |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/scripting/sightly/js/impl/Utils.java                 |
+| Class name            | Total issues   | Inheritance   | Exception   | JVMS   | Interface   | Threading   | Complexity   | Fully qualified class name                                                          |
+|:----------------------|:---------------|:--------------|:------------|:-------|:------------|:------------|:-------------|:------------------------------------------------------------------------------------|
+| Variables.java        | 1              | 0             | 0           | 0      | 1           | 0           | 0            | src/main/java/org/apache/sling/scripting/sightly/js/impl/Variables.java             |
+| EventLoopInterop.java | 1              | 0             | 0           | 0      | 1           | 0           | 0            | src/main/java/org/apache/sling/scripting/sightly/js/impl/loop/EventLoopInterop.java |
+| JsUtils.java          | 1              | 0             | 0           | 0      | 1           | 0           | 0            | src/main/java/org/apache/sling/scripting/sightly/js/impl/rhino/JsUtils.java         |
+| Utils.java            | 1              | 0             | 0           | 0      | 1           | 0           | 0            | src/main/java/org/apache/sling/scripting/sightly/js/impl/Utils.java                 |
+| -                     | -              | -             | -           | -      | -           | -           | -            | -                                                                                   |
+| -                     | -              | -             | -           | -      | -           | -           | -            | -                                                                                   |
+| -                     | -              | -             | -           | -      | -           | -           | -            | -                                                                                   |
+| -                     | -              | -             | -           | -      | -           | -           | -            | -                                                                                   |
+| -                     | -              | -             | -           | -      | -           | -           | -            | -                                                                                   |
+| -                     | -              | -             | -           | -      | -           | -           | -            | -                                                                                   |
 
 ## Project: _apache/sling-org-apache-sling-scripting-sightly_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-scripting-sightly.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-scripting-sightly) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-scripting-sightly) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/apache_sling-org-apache-sling-scripting-sightly.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| Class name              |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                       |
-|:------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:-------------------------------------------------------------------------------------------|
-| ExtensionUtils.java     |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/scripting/sightly/impl/engine/extension/ExtensionUtils.java |
-| BindingsUtils.java      |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/scripting/sightly/impl/utils/BindingsUtils.java             |
-| ScriptUtils.java        |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/scripting/sightly/impl/utils/ScriptUtils.java               |
-| ResourceResolution.java |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/scripting/sightly/engine/ResourceResolution.java            |
+| Class name              | Total issues   | Inheritance   | Exception   | JVMS   | Interface   | Threading   | Complexity   | Fully qualified class name                                                                 |
+|:------------------------|:---------------|:--------------|:------------|:-------|:------------|:------------|:-------------|:-------------------------------------------------------------------------------------------|
+| ExtensionUtils.java     | 1              | 0             | 0           | 0      | 1           | 0           | 0            | src/main/java/org/apache/sling/scripting/sightly/impl/engine/extension/ExtensionUtils.java |
+| BindingsUtils.java      | 1              | 0             | 0           | 0      | 1           | 0           | 0            | src/main/java/org/apache/sling/scripting/sightly/impl/utils/BindingsUtils.java             |
+| ScriptUtils.java        | 1              | 0             | 0           | 0      | 1           | 0           | 0            | src/main/java/org/apache/sling/scripting/sightly/impl/utils/ScriptUtils.java               |
+| ResourceResolution.java | 1              | 0             | 0           | 0      | 1           | 0           | 0            | src/main/java/org/apache/sling/scripting/sightly/engine/ResourceResolution.java            |
+| -                       | -              | -             | -           | -      | -           | -           | -            | -                                                                                          |
+| -                       | -              | -             | -           | -      | -           | -           | -            | -                                                                                          |
+| -                       | -              | -             | -           | -      | -           | -           | -            | -                                                                                          |
+| -                       | -              | -             | -           | -      | -           | -           | -            | -                                                                                          |
+| -                       | -              | -             | -           | -      | -           | -           | -            | -                                                                                          |
+| -                       | -              | -             | -           | -      | -           | -           | -            | -                                                                                          |
 
 ## Project: _apache/sling-org-apache-sling-serviceusermapper_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-serviceusermapper.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-serviceusermapper) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-serviceusermapper) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/apache_sling-org-apache-sling-serviceusermapper.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| Class name   |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                           |
-|:-------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:---------------------------------------------------------------|
-| Mapping.java |              2 |             1 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/apache/sling/serviceusermapping/Mapping.java |
+| Class name                         | Total issues   | Inheritance   | Exception   | JVMS   | Interface   | Threading   | Complexity   | Fully qualified class name                                                                |
+|:-----------------------------------|:---------------|:--------------|:------------|:-------|:------------|:------------|:-------------|:------------------------------------------------------------------------------------------|
+| Mapping.java                       | 2              | 1             | 0           | 0      | 1           | 0           | 0            | src/main/java/org/apache/sling/serviceusermapping/Mapping.java                            |
+| MappingConfigAmendment.java        | 1              | 1             | 0           | 0      | 0           | 0           | 0            | src/main/java/org/apache/sling/serviceusermapping/impl/MappingConfigAmendment.java        |
+| ServiceUserMappedImpl.java         | 1              | 0             | 0           | 0      | 1           | 0           | 0            | src/main/java/org/apache/sling/serviceusermapping/impl/ServiceUserMappedImpl.java         |
+| ServiceUserMappedBundleFilter.java | 1              | 0             | 1           | 0      | 0           | 0           | 0            | src/main/java/org/apache/sling/serviceusermapping/impl/ServiceUserMappedBundleFilter.java |
+| -                                  | -              | -             | -           | -      | -           | -           | -            | -                                                                                         |
+| -                                  | -              | -             | -           | -      | -           | -           | -            | -                                                                                         |
+| -                                  | -              | -             | -           | -      | -           | -           | -            | -                                                                                         |
+| -                                  | -              | -             | -           | -      | -           | -           | -            | -                                                                                         |
+| -                                  | -              | -             | -           | -      | -           | -           | -            | -                                                                                         |
+| -                                  | -              | -             | -           | -      | -           | -           | -            | -                                                                                         |
 

@@ -1,9 +1,19 @@
-
 # ATDx Report Summary
+Following the overview of the ATDx analysis of your projects.
 
-Introduction, meaning of dimensions, other?
+In short, the ATDx analysis is based on software metrics aggregation, and statistical severity evaluation of the aggregated values across a portfolio of software projects.
 
-## ATDx of your projects
+ATDx provides an overview of the project Architectural Technical Debt (ATD) in 6 distinct dimensions:
+* **Inheritance**: flaws concerning inheritance mechanisms between classes, such as overrides and inheritance of methods or fields
+* **Exception**: flaws regarding the Java throwable class “Exception” and its subclasses
+* **JVMS**: potential misuse of the Java Virtual Machine, e.g., the incorrect usage of the specific Java class “Serializable”
+* **Threading**: flaws arising from the implementation of multiple execution threads, which could potentially lead to concurrency problems
+* **Interface**: flaws related to the usage of Java interfaces
+* **Complexity**: flaws derived from prominent complexity measures, such as McCabe’s cyclomatic complexity
+
+For each project, an overview of the ATDx values is presented, followed by the top classes of the project contributing to the ATDx values.
+
+Note that if numerous classes with 1 violation are reported, this might point to a widespread problematics (only a maximum of 10 classes are provided per project). Similarly, empty rows may indicate that only few classes are affected by ATDx violations.
 ||||
 |-|-|-|
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_dcaegen2-analytics-tca-gen2.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/onap/dcaegen2-analytics-tca-gen2) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_dcaegen2-analytics-tca-gen2) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_dcaegen2-analytics-tca-gen2.json)</p>|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_dcaegen2-analytics-tca.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/onap/dcaegen2-analytics-tca) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_dcaegen2-analytics-tca) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_dcaegen2-analytics-tca.json)</p>|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_dcaegen2-collectors-restconf.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/onap/dcaegen2-collectors-restconf) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_dcaegen2-collectors-restconf) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_dcaegen2-collectors-restconf.json)</p>
@@ -17,91 +27,152 @@ Introduction, meaning of dimensions, other?
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_dcaegen2-analytics-tca-gen2.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/dcaegen2-analytics-tca-gen2) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_dcaegen2-analytics-tca-gen2) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_dcaegen2-analytics-tca-gen2.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| Class name              |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                                     |
-|:------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:---------------------------------------------------------------------------------------------------------|
-| BaseAnalyticsTest.java  |              5 |             0 |           3 |      0 |           2 |           0 |            0 | dcae-analytics/dcae-analytics-test/src/main/java/org/onap/dcae/analytics/test/BaseAnalyticsTest.java     |
-| AnalyticsHttpUtils.java |              2 |             0 |           0 |      0 |           2 |           0 |            0 | dcae-analytics/dcae-analytics-web/src/main/java/org/onap/dcae/analytics/web/util/AnalyticsHttpUtils.java |
+| Class name                     |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified class name                                                                                                  |
+|:-------------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:----------------------------------------------------------------------------------------------------------------------------|
+| BaseAnalyticsTest.java         |              5 |             0 |           3 |      0 |           2 |           0 |            0 | dcae-analytics/dcae-analytics-test/src/main/java/org/onap/dcae/analytics/test/BaseAnalyticsTest.java                        |
+| AnalyticsHttpUtils.java        |              2 |             0 |           0 |      0 |           2 |           0 |            0 | dcae-analytics/dcae-analytics-web/src/main/java/org/onap/dcae/analytics/web/util/AnalyticsHttpUtils.java                    |
+| CriticalityMixin.java          |              1 |             0 |           0 |      0 |           1 |           0 |            0 | dcae-analytics/dcae-analytics-model/src/main/java/org/onap/dcae/analytics/model/util/json/mixin/cef/CriticalityMixin.java   |
+| AlertActionMixin.java          |              1 |             0 |           0 |      0 |           1 |           0 |            0 | dcae-analytics/dcae-analytics-model/src/main/java/org/onap/dcae/analytics/model/util/json/mixin/cef/AlertActionMixin.java   |
+| EventSeverityMixin.java        |              1 |             0 |           0 |      0 |           1 |           0 |            0 | dcae-analytics/dcae-analytics-model/src/main/java/org/onap/dcae/analytics/model/util/json/mixin/cef/EventSeverityMixin.java |
+| DomainMixin.java               |              1 |             0 |           0 |      0 |           1 |           0 |            0 | dcae-analytics/dcae-analytics-model/src/main/java/org/onap/dcae/analytics/model/util/json/mixin/cef/DomainMixin.java        |
+| PriorityMixin.java             |              1 |             0 |           0 |      0 |           1 |           0 |            0 | dcae-analytics/dcae-analytics-model/src/main/java/org/onap/dcae/analytics/model/util/json/mixin/cef/PriorityMixin.java      |
+| MrSubscriberPreferences.java   |              1 |             0 |           0 |      0 |           1 |           0 |            0 | dcae-analytics/dcae-analytics-web/src/main/java/org/onap/dcae/analytics/web/dmaap/MrSubscriberPreferences.java              |
+| BaseHttpClientPreferences.java |              1 |             0 |           0 |      0 |           1 |           0 |            0 | dcae-analytics/dcae-analytics-web/src/main/java/org/onap/dcae/analytics/web/http/BaseHttpClientPreferences.java             |
+| TcaModelConstants.java         |              1 |             0 |           0 |      0 |           1 |           0 |            0 | dcae-analytics/dcae-analytics-model/src/main/java/org/onap/dcae/analytics/model/TcaModelConstants.java                      |
 
 ## Project: _onap/dcaegen2-analytics-tca_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_dcaegen2-analytics-tca.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/dcaegen2-analytics-tca) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_dcaegen2-analytics-tca) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_dcaegen2-analytics-tca.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| Class name    |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                  |
-|:--------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:--------------------------------------------------------------------------------------|
-| TCAUtils.java |              3 |             3 |           0 |      0 |           0 |           0 |            0 | dcae-analytics-tca/src/main/java/org/onap/dcae/apod/analytics/tca/utils/TCAUtils.java |
+| Class name                                  | Total issues   | Inheritance   | Exception   | JVMS   | Interface   | Threading   | Complexity   | Fully qualified class name                                                                                                    |
+|:--------------------------------------------|:---------------|:--------------|:------------|:-------|:------------|:------------|:-------------|:------------------------------------------------------------------------------------------------------------------------------|
+| TCAUtils.java                               | 3              | 3             | 0           | 0      | 0           | 0           | 0            | dcae-analytics-tca/src/main/java/org/onap/dcae/apod/analytics/tca/utils/TCAUtils.java                                         |
+| DMaaPSinkConfigMapper.java                  | 1              | 1             | 0           | 0      | 0           | 0           | 0            | dcae-analytics-cdap-plugins/src/main/java/org/onap/dcae/apod/analytics/cdap/plugins/utils/DMaaPSinkConfigMapper.java          |
+| DMaaPSourceConfigMapper.java                | 1              | 1             | 0           | 0      | 0           | 0           | 0            | dcae-analytics-cdap-plugins/src/main/java/org/onap/dcae/apod/analytics/cdap/plugins/utils/DMaaPSourceConfigMapper.java        |
+| AppPreferencesToSubscriberConfigMapper.java | 1              | 1             | 0           | 0      | 0           | 0           | 0            | dcae-analytics-cdap-tca/src/main/java/org/onap/dcae/apod/analytics/cdap/tca/utils/AppPreferencesToSubscriberConfigMapper.java |
+| AppPreferencesToPublisherConfigMapper.java  | 1              | 1             | 0           | 0      | 0           | 0           | 0            | dcae-analytics-cdap-tca/src/main/java/org/onap/dcae/apod/analytics/cdap/tca/utils/AppPreferencesToPublisherConfigMapper.java  |
+| BaseDMaaPMRComponent.java                   | 1              | 0             | 0           | 0      | 1           | 0           | 0            | dcae-analytics-dmaap/src/main/java/org/onap/dcae/apod/analytics/dmaap/service/BaseDMaaPMRComponent.java                       |
+| AbstractMessageProcessor.java               | 1              | 1             | 0           | 0      | 0           | 0           | 0            | dcae-analytics-common/src/main/java/org/onap/dcae/apod/analytics/common/service/processor/AbstractMessageProcessor.java       |
+| -                                           | -              | -             | -           | -      | -           | -           | -            | -                                                                                                                             |
+| -                                           | -              | -             | -           | -      | -           | -           | -            | -                                                                                                                             |
+| -                                           | -              | -             | -           | -      | -           | -           | -            | -                                                                                                                             |
 
 ## Project: _onap/dcaegen2-collectors-restconf_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_dcaegen2-collectors-restconf.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/dcaegen2-collectors-restconf) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_dcaegen2-collectors-restconf) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_dcaegen2-collectors-restconf.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| Class name               |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                        |
-|:-------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:------------------------------------------------------------|
-| Parameters.java          |             27 |             0 |           0 |      0 |          27 |           0 |            0 | src/main/java/org/onap/dcae/common/Parameters.java          |
-| RestapiCallNode.java     |              7 |             0 |           7 |      0 |           0 |           0 |            0 | src/main/java/org/onap/dcae/common/RestapiCallNode.java     |
-| HttpResponse.java        |              4 |             0 |           0 |      0 |           4 |           0 |            0 | src/main/java/org/onap/dcae/common/HttpResponse.java        |
-| RestapiCallNodeUtil.java |              4 |             0 |           4 |      0 |           0 |           0 |            0 | src/main/java/org/onap/dcae/common/RestapiCallNodeUtil.java |
-| JsonParser.java          |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/onap/dcae/common/JsonParser.java          |
-| RestConfCollector.java   |              2 |             0 |           1 |      0 |           1 |           0 |            0 | src/main/java/org/onap/dcae/RestConfCollector.java          |
+| Class name                  |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified class name                                                |
+|:----------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:--------------------------------------------------------------------------|
+| Parameters.java             |             27 |             0 |           0 |      0 |          27 |           0 |            0 | src/main/java/org/onap/dcae/common/Parameters.java                        |
+| RestapiCallNode.java        |              7 |             0 |           7 |      0 |           0 |           0 |            0 | src/main/java/org/onap/dcae/common/RestapiCallNode.java                   |
+| HttpResponse.java           |              4 |             0 |           0 |      0 |           4 |           0 |            0 | src/main/java/org/onap/dcae/common/HttpResponse.java                      |
+| RestapiCallNodeUtil.java    |              4 |             0 |           4 |      0 |           0 |           0 |            0 | src/main/java/org/onap/dcae/common/RestapiCallNodeUtil.java               |
+| JsonParser.java             |              2 |             0 |           2 |      0 |           0 |           0 |            0 | src/main/java/org/onap/dcae/common/JsonParser.java                        |
+| RestConfCollector.java      |              2 |             0 |           1 |      0 |           1 |           0 |            0 | src/main/java/org/onap/dcae/RestConfCollector.java                        |
+| ConfigSource.java           |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/onap/dcae/controller/ConfigSource.java                  |
+| CLIUtils.java               |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/onap/dcae/CLIUtils.java                                 |
+| Constants.java              |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/onap/dcae/common/Constants.java                         |
+| DMaaPPublishersBuilder.java |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/onap/dcae/common/publishing/DMaaPPublishersBuilder.java |
 
 ## Project: _onap/dcaegen2-collectors-ves_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_dcaegen2-collectors-ves.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/dcaegen2-collectors-ves) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_dcaegen2-collectors-ves) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_dcaegen2-collectors-ves.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| Class name                    |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                        |
-|:------------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:----------------------------------------------------------------------------|
-| DMaaPPublishersBuilder.java   |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/onap/dcae/common/publishing/DMaaPPublishersBuilder.java   |
-| DMaaPConfigurationParser.java |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/onap/dcae/common/publishing/DMaaPConfigurationParser.java |
-| ConfigSource.java             |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/onap/dcae/controller/ConfigSource.java                    |
-| VESLogger.java                |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/onap/dcae/common/VESLogger.java                           |
-| CLIUtils.java                 |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/onap/dcae/CLIUtils.java                                   |
-| EnvPropertiesReader.java      |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/onap/dcae/controller/EnvPropertiesReader.java             |
+| Class name                    | Total issues   | Inheritance   | Exception   | JVMS   | Interface   | Threading   | Complexity   | Fully qualified class name                                                  |
+|:------------------------------|:---------------|:--------------|:------------|:-------|:------------|:------------|:-------------|:----------------------------------------------------------------------------|
+| DMaaPPublishersBuilder.java   | 1              | 0             | 0           | 0      | 1           | 0           | 0            | src/main/java/org/onap/dcae/common/publishing/DMaaPPublishersBuilder.java   |
+| DMaaPConfigurationParser.java | 1              | 0             | 0           | 0      | 1           | 0           | 0            | src/main/java/org/onap/dcae/common/publishing/DMaaPConfigurationParser.java |
+| ConfigSource.java             | 1              | 0             | 0           | 0      | 1           | 0           | 0            | src/main/java/org/onap/dcae/controller/ConfigSource.java                    |
+| VESLogger.java                | 1              | 0             | 0           | 0      | 1           | 0           | 0            | src/main/java/org/onap/dcae/common/VESLogger.java                           |
+| CLIUtils.java                 | 1              | 0             | 0           | 0      | 1           | 0           | 0            | src/main/java/org/onap/dcae/CLIUtils.java                                   |
+| EnvPropertiesReader.java      | 1              | 0             | 0           | 0      | 1           | 0           | 0            | src/main/java/org/onap/dcae/controller/EnvPropertiesReader.java             |
+| -                             | -              | -             | -           | -      | -           | -           | -            | -                                                                           |
+| -                             | -              | -             | -           | -      | -           | -           | -            | -                                                                           |
+| -                             | -              | -             | -           | -      | -           | -           | -            | -                                                                           |
+| -                             | -              | -             | -           | -      | -           | -           | -            | -                                                                           |
 
 ## Project: _onap/dcaegen2-platform-inventory-api_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_dcaegen2-platform-inventory-api.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/dcaegen2-platform-inventory-api) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_dcaegen2-platform-inventory-api) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_dcaegen2-platform-inventory-api.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| Class name                           |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                       |
-|:-------------------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:---------------------------------------------------------------------------|
-| DcaeServiceTypesQueryStatement.java  |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/io/swagger/api/impl/DcaeServiceTypesQueryStatement.java      |
-| DCAEServiceTransactionDAO.java       |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/onap/dcae/inventory/daos/DCAEServiceTransactionDAO.java  |
-| DatabusControllerClient.java         |              1 |             0 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/onap/dcae/inventory/clients/DatabusControllerClient.java |
-| DcaeServiceTypeObjectRepository.java |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/io/swagger/api/impl/DcaeServiceTypeObjectRepository.java     |
+| Class name                           | Total issues   | Inheritance   | Exception   | JVMS   | Interface   | Threading   | Complexity   | Fully qualified class name                                                 |
+|:-------------------------------------|:---------------|:--------------|:------------|:-------|:------------|:------------|:-------------|:---------------------------------------------------------------------------|
+| DcaeServiceTypesQueryStatement.java  | 1              | 0             | 0           | 0      | 1           | 0           | 0            | src/main/java/io/swagger/api/impl/DcaeServiceTypesQueryStatement.java      |
+| DCAEServiceTransactionDAO.java       | 1              | 0             | 0           | 0      | 1           | 0           | 0            | src/main/java/org/onap/dcae/inventory/daos/DCAEServiceTransactionDAO.java  |
+| DatabusControllerClient.java         | 1              | 0             | 1           | 0      | 0           | 0           | 0            | src/main/java/org/onap/dcae/inventory/clients/DatabusControllerClient.java |
+| DcaeServiceTypeObjectRepository.java | 1              | 0             | 0           | 0      | 1           | 0           | 0            | src/main/java/io/swagger/api/impl/DcaeServiceTypeObjectRepository.java     |
+| -                                    | -              | -             | -           | -      | -           | -           | -            | -                                                                          |
+| -                                    | -              | -             | -           | -      | -           | -           | -            | -                                                                          |
+| -                                    | -              | -             | -           | -      | -           | -           | -            | -                                                                          |
+| -                                    | -              | -             | -           | -      | -           | -           | -            | -                                                                          |
+| -                                    | -              | -             | -           | -      | -           | -           | -            | -                                                                          |
+| -                                    | -              | -             | -           | -      | -           | -           | -            | -                                                                          |
 
 ## Project: _onap/dcaegen2-services-mapper_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_dcaegen2-services-mapper.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/dcaegen2-services-mapper) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_dcaegen2-services-mapper) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_dcaegen2-services-mapper.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| Class name              |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                         |
-|:------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:---------------------------------------------------------------------------------------------|
-| VesService.java         |              2 |             0 |           1 |      0 |           0 |           1 |            0 | UniversalVesAdapter/src/main/java/org/onap/universalvesadapter/service/VesService.java       |
-| FetchDynamicConfig.java |              2 |             0 |           0 |      0 |           2 |           0 |            0 | UniversalVesAdapter/src/main/java/org/onap/universalvesadapter/utils/FetchDynamicConfig.java |
+| Class name                   | Total issues   | Inheritance   | Exception   | JVMS   | Interface   | Threading   | Complexity   | Fully qualified class name                                                                                 |
+|:-----------------------------|:---------------|:--------------|:------------|:-------|:------------|:------------|:-------------|:-----------------------------------------------------------------------------------------------------------|
+| VesService.java              | 2              | 0             | 1           | 0      | 0           | 1           | 0            | UniversalVesAdapter/src/main/java/org/onap/universalvesadapter/service/VesService.java                     |
+| FetchDynamicConfig.java      | 2              | 0             | 0           | 0      | 2           | 0           | 0            | UniversalVesAdapter/src/main/java/org/onap/universalvesadapter/utils/FetchDynamicConfig.java               |
+| GenericAdapter.java          | 1              | 0             | 1           | 0      | 0           | 0           | 0            | UniversalVesAdapter/src/main/java/org/onap/universalvesadapter/adapter/GenericAdapter.java                 |
+| BaseDMaaPMRComponent.java    | 1              | 0             | 0           | 0      | 1           | 0           | 0            | UniversalVesAdapter/src/main/java/org/onap/universalvesadapter/dmaap/BaseDMaaPMRComponent.java             |
+| UniversalEventAdapter.java   | 1              | 0             | 1           | 0      | 0           | 0           | 0            | UniversalVesAdapter/src/main/java/org/onap/universalvesadapter/adapter/UniversalEventAdapter.java          |
+| SmooksUtils.java             | 1              | 0             | 0           | 0      | 1           | 0           | 0            | UniversalVesAdapter/src/main/java/org/onap/universalvesadapter/utils/SmooksUtils.java                      |
+| DMaaPMRSubscriberConfig.java | 1              | 0             | 1           | 0      | 0           | 0           | 0            | UniversalVesAdapter/src/main/java/org/onap/universalvesadapter/configs/DMaaPMRSubscriberConfig.java        |
+| DMaaPMRPublisherConfig.java  | 1              | 0             | 1           | 0      | 0           | 0           | 0            | UniversalVesAdapter/src/main/java/org/onap/universalvesadapter/configs/DMaaPMRPublisherConfig.java         |
+| DMaaPMRPublisherImpl.java    | 1              | 0             | 0           | 0      | 1           | 0           | 0            | UniversalVesAdapter/src/main/java/org/onap/universalvesadapter/dmaap/MRPublisher/DMaaPMRPublisherImpl.java |
+| -                            | -              | -             | -           | -      | -           | -           | -            | -                                                                                                          |
 
 ## Project: _onap/dcaegen2-services-prh_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_dcaegen2-services-prh.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/dcaegen2-services-prh) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_dcaegen2-services-prh) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_dcaegen2-services-prh.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| Class name                  |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                                  |
-|:----------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:------------------------------------------------------------------------------------------------------|
-| AaiClientConfiguration.java |              2 |             0 |           0 |      0 |           2 |           0 |            0 | prh-commons/src/main/java/org/onap/dcaegen2/services/prh/adapter/aai/main/AaiClientConfiguration.java |
+| Class name                    | Total issues   | Inheritance   | Exception   | JVMS   | Interface   | Threading   | Complexity   | Fully qualified class name                                                                            |
+|:------------------------------|:---------------|:--------------|:------------|:-------|:------------|:------------|:-------------|:------------------------------------------------------------------------------------------------------|
+| AaiClientConfiguration.java   | 2              | 0             | 0           | 0      | 2           | 0           | 0            | prh-commons/src/main/java/org/onap/dcaegen2/services/prh/adapter/aai/main/AaiClientConfiguration.java |
+| PrhModelAwareGsonBuilder.java | 1              | 0             | 0           | 0      | 1           | 0           | 0            | prh-commons/src/main/java/org/onap/dcaegen2/services/prh/model/utils/PrhModelAwareGsonBuilder.java    |
+| -                             | -              | -             | -           | -      | -           | -           | -            | -                                                                                                     |
+| -                             | -              | -             | -           | -      | -           | -           | -            | -                                                                                                     |
+| -                             | -              | -             | -           | -      | -           | -           | -            | -                                                                                                     |
+| -                             | -              | -             | -           | -      | -           | -           | -            | -                                                                                                     |
+| -                             | -              | -             | -           | -      | -           | -           | -            | -                                                                                                     |
+| -                             | -              | -             | -           | -      | -           | -           | -            | -                                                                                                     |
+| -                             | -              | -             | -           | -      | -           | -           | -            | -                                                                                                     |
+| -                             | -              | -             | -           | -      | -           | -           | -            | -                                                                                                     |
 
 ## Project: _onap/dcaegen2-services-sdk_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_dcaegen2-services-sdk.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/dcaegen2-services-sdk) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_dcaegen2-services-sdk) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_dcaegen2-services-sdk.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| Class name                  |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                                                             |
-|:----------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:---------------------------------------------------------------------------------------------------------------------------------|
-| CbsClientConfiguration.java |              5 |             0 |           0 |      0 |           5 |           0 |            0 | rest-services/cbs-client/src/main/java/org/onap/dcaegen2/services/sdk/rest/services/cbs/client/model/CbsClientConfiguration.java |
-| MdcVariables.java           |              3 |             0 |           0 |      0 |           3 |           0 |            0 | rest-services/http-client/src/main/java/org/onap/dcaegen2/services/sdk/rest/services/adapters/http/logging/MdcVariables.java     |
+| Class name                  |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified class name                                                                                                                           |
+|:----------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| CbsClientConfiguration.java |              5 |             0 |           0 |      0 |           5 |           0 |            0 | rest-services/cbs-client/src/main/java/org/onap/dcaegen2/services/sdk/rest/services/cbs/client/model/CbsClientConfiguration.java                     |
+| MdcVariables.java           |              3 |             0 |           0 |      0 |           3 |           0 |            0 | rest-services/http-client/src/main/java/org/onap/dcaegen2/services/sdk/rest/services/adapters/http/logging/MdcVariables.java                         |
+| DummyHttpServer.java        |              1 |             0 |           1 |      0 |           0 |           0 |            0 | rest-services/http-client/src/main/java/org/onap/dcaegen2/services/sdk/rest/services/adapters/http/test/DummyHttpServer.java                         |
+| DataStreamUtils.java        |              1 |             0 |           0 |      0 |           1 |           0 |            0 | rest-services/cbs-client/src/main/java/org/onap/dcaegen2/services/sdk/rest/services/cbs/client/impl/streams/gson/DataStreamUtils.java                |
+| StreamPredicates.java       |              1 |             0 |           0 |      0 |           1 |           0 |            0 | rest-services/cbs-client/src/main/java/org/onap/dcaegen2/services/sdk/rest/services/cbs/client/api/streams/StreamPredicates.java                     |
+| CbsRequests.java            |              1 |             0 |           0 |      0 |           1 |           0 |            0 | rest-services/cbs-client/src/main/java/org/onap/dcaegen2/services/sdk/rest/services/cbs/client/api/CbsRequests.java                                  |
+| CbsClientFactory.java       |              1 |             0 |           0 |      0 |           1 |           0 |            0 | rest-services/cbs-client/src/main/java/org/onap/dcaegen2/services/sdk/rest/services/cbs/client/api/CbsClientFactory.java                             |
+| SslFactory.java             |              1 |             0 |           0 |      0 |           1 |           0 |            0 | security/ssl/src/main/java/org/onap/dcaegen2/services/sdk/security/ssl/SslFactory.java                                                               |
+| StreamsConstants.java       |              1 |             0 |           0 |      0 |           1 |           0 |            0 | rest-services/cbs-client/src/main/java/org/onap/dcaegen2/services/sdk/rest/services/cbs/client/impl/streams/gson/StreamsConstants.java               |
+| WireFrameEncoder.java       |              1 |             0 |           1 |      0 |           0 |           0 |            0 | services/hv-ves-client/producer/impl/src/main/java/org/onap/dcaegen2/services/sdk/services/hvves/client/producer/impl/encoders/WireFrameEncoder.java |
 
 ## Project: _onap/dcaegen2-services-son-handler_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/onap_dcaegen2-services-son-handler.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/onap/dcaegen2-services-son-handler) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=onap_dcaegen2-services-son-handler) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/onap_dcaegen2-services-son-handler.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
-| Class name                       |   Total issues |   Inheritance |   Exception |   JVMS |   Interface |   Threading |   Complexity | Fully qualified name                                                                   |
-|:---------------------------------|---------------:|--------------:|------------:|-------:|------------:|------------:|-------------:|:---------------------------------------------------------------------------------------|
-| AppConfig.java                   |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/onap/dcaegen2/services/sonhms/utils/AppConfig.java                   |
-| EventHandler.java                |              1 |             0 |           1 |      0 |           0 |           0 |            0 | src/main/java/org/onap/dcaegen2/services/sonhms/EventHandler.java                      |
-| LteNeighborListInUseLteCell.java |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/onap/dcaegen2/services/sonhms/model/LteNeighborListInUseLteCell.java |
-| OofRestClient.java               |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/onap/dcaegen2/services/sonhms/restclient/OofRestClient.java          |
-| NotificationCallback.java        |              1 |             0 |           0 |      0 |           1 |           0 |            0 | src/main/java/org/onap/dcaegen2/services/sonhms/dmaap/NotificationCallback.java        |
+| Class name                       | Total issues   | Inheritance   | Exception   | JVMS   | Interface   | Threading   | Complexity   | Fully qualified class name                                                             |
+|:---------------------------------|:---------------|:--------------|:------------|:-------|:------------|:------------|:-------------|:---------------------------------------------------------------------------------------|
+| AppConfig.java                   | 1              | 0             | 0           | 0      | 1           | 0           | 0            | src/main/java/org/onap/dcaegen2/services/sonhms/utils/AppConfig.java                   |
+| EventHandler.java                | 1              | 0             | 1           | 0      | 0           | 0           | 0            | src/main/java/org/onap/dcaegen2/services/sonhms/EventHandler.java                      |
+| LteNeighborListInUseLteCell.java | 1              | 0             | 0           | 0      | 1           | 0           | 0            | src/main/java/org/onap/dcaegen2/services/sonhms/model/LteNeighborListInUseLteCell.java |
+| OofRestClient.java               | 1              | 0             | 0           | 0      | 1           | 0           | 0            | src/main/java/org/onap/dcaegen2/services/sonhms/restclient/OofRestClient.java          |
+| NotificationCallback.java        | 1              | 0             | 0           | 0      | 1           | 0           | 0            | src/main/java/org/onap/dcaegen2/services/sonhms/dmaap/NotificationCallback.java        |
+| -                                | -              | -             | -           | -      | -           | -           | -            | -                                                                                      |
+| -                                | -              | -             | -           | -      | -           | -           | -            | -                                                                                      |
+| -                                | -              | -             | -           | -      | -           | -           | -            | -                                                                                      |
+| -                                | -              | -             | -           | -      | -           | -           | -            | -                                                                                      |
+| -                                | -              | -             | -           | -      | -           | -           | -            | -                                                                                      |
 
