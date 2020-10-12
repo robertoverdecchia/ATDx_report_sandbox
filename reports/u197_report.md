@@ -12,7 +12,8 @@ ATDx provides an overview of the architectural technical debt in a project  in 6
 For each project, the dimensions assume a value between 0 and 5, where 0 denotes minimum architectural debt of the project in that dimension, and 5 maximum architectural debt.
 
 In the reminder of this report, we firstly provide a set of radar charts (one for each project). Then for each project we give:
-The same radar chart as shown at the beginning, plus a table showing the top-10 classes of the project with the highest architectural technical debt.
+1. The same radar chart as shown at the beginning
+2. A table showing the top-10 classes of the project with the highest architectural technical debt.
 
 Note that if numerous classes with 1 violation are reported, this might point to a widespread problem (only a maximum of 10 classes are provided per project for the sake of readability). Similarly, empty rows indicate that only a few classes are affected by ATDx violations.
 |||
