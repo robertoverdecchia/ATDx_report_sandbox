@@ -1,26 +1,28 @@
 # ATDx Report Summary
-Following the overview of the ATDx analysis of your projects.
+Our  ATDx analysis targets a portfolio of software projects and identifies the pain points of each project in terms of Architectural Technical Debt (ATD). This evaluation is based on a statistical analysis of the violations of SonarCloud rules.
 
-In short, the ATDx analysis is based on software metrics aggregation, and statistical severity evaluation of the aggregated values across a portfolio of software projects.
-
-ATDx provides an overview of the project Architectural Technical Debt (ATD) in 6 distinct dimensions:
+ATDx provides an overview of the architectural technical debt in a project  in 6 distinct dimensions:
 * **Inheritance**: flaws concerning inheritance mechanisms between classes, such as overrides and inheritance of methods or fields
-* **Exception**: flaws regarding the Java throwable class “Exception” and its subclasses
-* **JVMS**: potential misuse of the Java Virtual Machine, e.g., the incorrect usage of the specific Java class “Serializable”
+* **Exception**: flaws regarding the management of Java exceptions and the subclassing of the “Exception” Java class.
+* **JVMS**: potential misuses of the Java Virtual Machine, e.g., the incorrect usage of the specific Java class “Serializable”
 * **Threading**: flaws arising from the implementation of multiple execution threads, which could potentially lead to concurrency problems
 * **Interface**: flaws related to the usage of Java interfaces
 * **Complexity**: flaws derived from prominent complexity measures, such as McCabe’s cyclomatic complexity
 
-For each project, an overview of the ATDx values is presented, followed by the top classes of the project contributing to the ATDx values.
+For each project, the dimensions assume a value between 0 and 5, where 0 denotes minimum architectural debt of the project in that dimension, and 5 maximum architectural debt.
 
-Note that if numerous classes with 1 violation are reported, this might point to a widespread problematics (only a maximum of 10 classes are provided per project). Similarly, empty rows may indicate that only few classes are affected by ATDx violations.
+In the remainder of this report, we firstly provide a set of radar charts (one for each project). then for each project we give:
+The same radar chart as shown at the beginning
+ a table showing the top-10 classes of the project with the highest architectural technical debt.
+
+Note that if numerous classes with 1 violation are reported, this might point to a widespread problem (only a maximum of 10 classes are provided per project for the sake of readability). Similarly, empty rows indicate that only a few classes are affected by ATDx violations.
 ||||
 |-|-|-|
-|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-feature-extension-apiregions.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-feature-extension-apiregions) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-feature-extension-apiregions) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/apache_sling-org-apache-sling-feature-extension-apiregions.json)</p>|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-scripting-bundle-tracker.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-scripting-bundle-tracker) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-scripting-bundle-tracker) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/apache_sling-org-apache-sling-scripting-bundle-tracker.json)</p>|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-scripting-core.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-scripting-core) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-scripting-core) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/apache_sling-org-apache-sling-scripting-core.json)</p>
+|<p align="center">Project 1</p><img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-feature-extension-apiregions.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-feature-extension-apiregions) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-feature-extension-apiregions) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/apache_sling-org-apache-sling-feature-extension-apiregions.json)</p>|<p align="center">Project 2</p><img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-scripting-bundle-tracker.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-scripting-bundle-tracker) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-scripting-bundle-tracker) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/apache_sling-org-apache-sling-scripting-bundle-tracker.json)</p>|<p align="center">Project 3</p><img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-scripting-core.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-scripting-core) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-scripting-core) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/apache_sling-org-apache-sling-scripting-core.json)</p>
  | |
-|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-servlets-resolver.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-servlets-resolver) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-servlets-resolver) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/apache_sling-org-apache-sling-servlets-resolver.json)</p>|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-scriptingbundle-maven-plugin.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/apache/sling-scriptingbundle-maven-plugin) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-scriptingbundle-maven-plugin) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/apache_sling-scriptingbundle-maven-plugin.json)</p>
+|<p align="center">Project 4</p><img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-servlets-resolver.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-servlets-resolver) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-servlets-resolver) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/apache_sling-org-apache-sling-servlets-resolver.json)</p>|<p align="center">Project 5</p><img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-scriptingbundle-maven-plugin.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/apache/sling-scriptingbundle-maven-plugin) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-scriptingbundle-maven-plugin) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/apache_sling-scriptingbundle-maven-plugin.json)</p>
 # Project report summaries
-## Project: _apache/sling-org-apache-sling-feature-extension-apiregions_
+## Project 1: _apache/sling-org-apache-sling-feature-extension-apiregions_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-feature-extension-apiregions.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-feature-extension-apiregions) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-feature-extension-apiregions) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/apache_sling-org-apache-sling-feature-extension-apiregions.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
@@ -37,7 +39,7 @@ Note that if numerous classes with 1 violation are reported, this might point to
 | -                                        | -              | -             | -           | -      | -           | -           | -            | -                                                                                                             |
 | -                                        | -              | -             | -           | -      | -           | -           | -            | -                                                                                                             |
 
-## Project: _apache/sling-org-apache-sling-scripting-bundle-tracker_
+## Project 2: _apache/sling-org-apache-sling-scripting-bundle-tracker_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-scripting-bundle-tracker.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-scripting-bundle-tracker) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-scripting-bundle-tracker) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/apache_sling-org-apache-sling-scripting-bundle-tracker.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
@@ -54,7 +56,7 @@ Note that if numerous classes with 1 violation are reported, this might point to
 | -                                    | -              | -             | -           | -      | -           | -           | -            | -                                                                                                     |
 | -                                    | -              | -             | -           | -      | -           | -           | -            | -                                                                                                     |
 
-## Project: _apache/sling-org-apache-sling-scripting-core_
+## Project 3: _apache/sling-org-apache-sling-scripting-core_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-scripting-core.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-scripting-core) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-scripting-core) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/apache_sling-org-apache-sling-scripting-core.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
@@ -71,7 +73,7 @@ Note that if numerous classes with 1 violation are reported, this might point to
 | -                         | -              | -             | -           | -      | -           | -           | -            | -                                                                                 |
 | -                         | -              | -             | -           | -      | -           | -           | -            | -                                                                                 |
 
-## Project: _apache/sling-org-apache-sling-servlets-resolver_
+## Project 4: _apache/sling-org-apache-sling-servlets-resolver_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-org-apache-sling-servlets-resolver.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-org-apache-sling-servlets-resolver) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-org-apache-sling-servlets-resolver) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/apache_sling-org-apache-sling-servlets-resolver.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
@@ -88,7 +90,7 @@ Note that if numerous classes with 1 violation are reported, this might point to
 | -                                    | -              | -             | -           | -      | -           | -           | -            | -                                                                                                             |
 | -                                    | -              | -             | -           | -      | -           | -           | -            | -                                                                                                             |
 
-## Project: _apache/sling-scriptingbundle-maven-plugin_
+## Project 5: _apache/sling-scriptingbundle-maven-plugin_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_sling-scriptingbundle-maven-plugin.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/sling-scriptingbundle-maven-plugin) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_sling-scriptingbundle-maven-plugin) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/apache_sling-scriptingbundle-maven-plugin.json)</p>
 |-|-|
 ### Top classes with architectural debt violations

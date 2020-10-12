@@ -1,26 +1,28 @@
 # ATDx Report Summary
-Following the overview of the ATDx analysis of your projects.
+Our  ATDx analysis targets a portfolio of software projects and identifies the pain points of each project in terms of Architectural Technical Debt (ATD). This evaluation is based on a statistical analysis of the violations of SonarCloud rules.
 
-In short, the ATDx analysis is based on software metrics aggregation, and statistical severity evaluation of the aggregated values across a portfolio of software projects.
-
-ATDx provides an overview of the project Architectural Technical Debt (ATD) in 6 distinct dimensions:
+ATDx provides an overview of the architectural technical debt in a project  in 6 distinct dimensions:
 * **Inheritance**: flaws concerning inheritance mechanisms between classes, such as overrides and inheritance of methods or fields
-* **Exception**: flaws regarding the Java throwable class “Exception” and its subclasses
-* **JVMS**: potential misuse of the Java Virtual Machine, e.g., the incorrect usage of the specific Java class “Serializable”
+* **Exception**: flaws regarding the management of Java exceptions and the subclassing of the “Exception” Java class.
+* **JVMS**: potential misuses of the Java Virtual Machine, e.g., the incorrect usage of the specific Java class “Serializable”
 * **Threading**: flaws arising from the implementation of multiple execution threads, which could potentially lead to concurrency problems
 * **Interface**: flaws related to the usage of Java interfaces
 * **Complexity**: flaws derived from prominent complexity measures, such as McCabe’s cyclomatic complexity
 
-For each project, an overview of the ATDx values is presented, followed by the top classes of the project contributing to the ATDx values.
+For each project, the dimensions assume a value between 0 and 5, where 0 denotes minimum architectural debt of the project in that dimension, and 5 maximum architectural debt.
 
-Note that if numerous classes with 1 violation are reported, this might point to a widespread problematics (only a maximum of 10 classes are provided per project). Similarly, empty rows may indicate that only few classes are affected by ATDx violations.
+In the remainder of this report, we firstly provide a set of radar charts (one for each project). then for each project we give:
+The same radar chart as shown at the beginning
+ a table showing the top-10 classes of the project with the highest architectural technical debt.
+
+Note that if numerous classes with 1 violation are reported, this might point to a widespread problem (only a maximum of 10 classes are provided per project for the sake of readability). Similarly, empty rows indicate that only a few classes are affected by ATDx violations.
 ||||
 |-|-|-|
-|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_incubator-ratis.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/apache/incubator-ratis) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_incubator-ratis) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/apache_incubator-ratis.json)</p>|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/hadoop-ozone.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/apache/hadoop-ozone) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=hadoop-ozone) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/hadoop-ozone.json)</p>|<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/knox-gateway.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/apache/knox) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=knox-gateway) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/knox-gateway.json)</p>
+|<p align="center">Project 1</p><img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_incubator-ratis.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/apache/incubator-ratis) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_incubator-ratis) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/apache_incubator-ratis.json)</p>|<p align="center">Project 2</p><img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/hadoop-ozone.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/apache/hadoop-ozone) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=hadoop-ozone) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/hadoop-ozone.json)</p>|<p align="center">Project 3</p><img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/knox-gateway.jpg"/> <p style="text-align:left">[Project on Github](https://github.com/apache/knox) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=knox-gateway) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/knox-gateway.json)</p>
  | |
 
 # Project report summaries
-## Project: _apache/incubator-ratis_
+## Project 1: _apache/incubator-ratis_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/apache_incubator-ratis.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/incubator-ratis) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=apache_incubator-ratis) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/apache_incubator-ratis.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
@@ -37,7 +39,7 @@ Note that if numerous classes with 1 violation are reported, this might point to
 | LogAppender.java      |              3 |             0 |           3 |      0 |           0 |           0 |            0 | ratis-server/src/main/java/org/apache/ratis/server/impl/LogAppender.java                |
 | NetUtils.java         |              2 |             0 |           1 |      0 |           1 |           0 |            0 | ratis-common/src/main/java/org/apache/ratis/util/NetUtils.java                          |
 
-## Project: _apache/hadoop-ozone_
+## Project 2: _apache/hadoop-ozone_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/hadoop-ozone.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/hadoop-ozone) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=hadoop-ozone) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/hadoop-ozone.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
@@ -54,7 +56,7 @@ Note that if numerous classes with 1 violation are reported, this might point to
 | OMKeyRequest.java        |              4 |             0 |           0 |      0 |           4 |           0 |            0 | hadoop-ozone/ozone-manager/src/main/java/org/apache/hadoop/ozone/om/request/key/OMKeyRequest.java |
 | OzoneManagerLock.java    |              4 |             0 |           2 |      0 |           2 |           0 |            0 | hadoop-ozone/common/src/main/java/org/apache/hadoop/ozone/om/lock/OzoneManagerLock.java           |
 
-## Project: _apache/knox_
+## Project 3: _apache/knox_
 |<img src="https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/plots/knox-gateway.jpg"/>|<p style="text-align:left">[Project on Github](https://github.com/apache/knox) <br> [Project on SonarCloud ](https://sonarcloud.io/dashboard?id=knox-gateway) <br> [Complete issue report (JSON)](https://github.com/robertoverdecchia/ATDx_report_sandbox/blob/master/jsons/knox-gateway.json)</p>
 |-|-|
 ### Top classes with architectural debt violations
