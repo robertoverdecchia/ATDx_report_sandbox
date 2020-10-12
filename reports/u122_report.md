@@ -1,5 +1,5 @@
 # ATDx Report Summary
-Our  ATDx analysis targets a portfolio of software projects and identifies the pain points of each project in terms of Architectural Technical Debt (ATD). This evaluation is based on a statistical analysis of the violations of SonarCloud rules.
+Our ATDx analysis targets a portfolio of software projects and identifies the pain points of each project in terms of Architectural Technical Debt (ATD). This evaluation is based on a statistical analysis of the violations of SonarCloud rules.
 
 ATDx provides an overview of the architectural technical debt in a project  in 6 distinct dimensions:
 * **Inheritance**: flaws concerning inheritance mechanisms between classes, such as overrides and inheritance of methods or fields
@@ -11,7 +11,7 @@ ATDx provides an overview of the architectural technical debt in a project  in 6
 
 For each project, the dimensions assume a value between 0 and 5, where 0 denotes minimum architectural debt of the project in that dimension, and 5 maximum architectural debt.
 
-In the remainder of this report, we firstly provide a set of radar charts (one for each project). then for each project we give:
+In the reminder of this report, we firstly provide a set of radar charts (one for each project). then for each project we give:
 The same radar chart as shown at the beginning
  a table showing the top-10 classes of the project with the highest architectural technical debt.
 
